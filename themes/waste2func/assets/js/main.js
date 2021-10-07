@@ -227,8 +227,20 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Noyon*/
-
-
+if( $('.right-angle').length ){
+  var hdrH = $('.header').outerHeight();
+  var bnrH = $('.hm-banner').outerHeight();
+  var RAH = hdrH + bnrH + 40;
+  $(".right-angle").css('height', RAH);
+}
+$(window).resize(function() { 
+  var window2Width = $(window).width();
+  $(".right-angle").css('height', RAH);
+});
+if( $('.ftr-lft-bg').length ){
+  var ftrLftH = $('.ftr-lft-bg').outerHeight();
+  $('.ftr-lft-bg-angle').css('border-top', ftrLftH,'solid transparent');
+}
 
 /*start of Kashob*/
 
