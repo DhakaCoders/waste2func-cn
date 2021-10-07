@@ -42,6 +42,13 @@ i,em{
 u{
 	text-decoration: underline;
 }
+
+.page-body-cntlr{
+	max-width: 1920px; 
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
 input[type=text],
 input[type=email],
 input[type=tel],
