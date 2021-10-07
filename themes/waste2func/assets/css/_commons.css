@@ -21,6 +21,8 @@ a{
 }
 a:hover{
 	color: #36D56B;
+}
+.text-btn-hover a:hover{
 	letter-spacing: 1px;
 }
 
