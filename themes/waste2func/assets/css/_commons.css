@@ -316,3 +316,43 @@ body.login-register.hide-account-title .select2-container--open .select2-dropdow
 .hmProdctGrdsSlider.slick-initialized .hmProdctGrdsSlideItme{
 	display: block;
 }
+
+
+/*common button*/
+
+.fl-green-btn{
+	display: inline-block;
+	vertical-align: baseline;
+	max-width: 150px;
+	width: 100%;
+	position: relative;
+	color: #fff;
+	font-size: 20px;
+	line-height: 1;
+	text-align: center;
+	padding: 14px 20px 14px;
+	letter-spacing: -0.02em;
+	font-weight: 500;
+	border: 1px solid #239C4B;
+}
+
+.fl-green-btn:after{
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 100%;
+	height: 100%;
+	background: #36D56B;
+	z-index: -1;
+}
+.fl-green-btn:hover{
+	border-color: #D29500;
+	color: #fff;
+}
+.fl-green-btn:hover:after{
+	background: #D29500;
+	z-index: -1;
+}
+
+
