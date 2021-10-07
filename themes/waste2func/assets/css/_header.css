@@ -37,7 +37,10 @@
 }
 .logo a{
 	display: inline-block;
-	max-width: 120px;
+}
+.logo a img{
+	max-height: 128px;
+	width: auto;
 }
 .hdr-rgt{
 	margin-left: auto;
@@ -271,6 +274,10 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
 
 /*responsive*/
 @media(max-width: 1699px){
+	.logo a img{
+		max-height: 100px;
+		width: auto;
+	}
 	.left-angle i svg{
 		max-width: 180px!important;
 		height: auto!important;
@@ -298,6 +305,10 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
 	}
 }
 @media(max-width: 1399px){
+	.logo a img{
+		max-height: 80px;
+		width: auto;
+	}
 	.left-angle i svg{
 		max-width: 100px!important;
 		height: auto!important;
