@@ -201,4 +201,5 @@
 }
 .ftr-developed-by p a:hover{
 	color: #36D56B;
+	letter-spacing: initial;
 }
