@@ -17,9 +17,11 @@ a, a:hover, a:focus, button:hover, button:focus{
 a{
 	color: #D29500;
 	text-transform: capitalize;
+	font-weight: 700;
 }
 a:hover{
 	color: #36D56B;
+	letter-spacing: 1px;
 }
 
 body {
@@ -366,6 +368,7 @@ body.login-register.hide-account-title .select2-container--open .select2-dropdow
 .fl-green-btn:hover,
 .fl-coffee-btn:hover{
 	color: #fff;
+	letter-spacing: inherit;
 }
 
 .fl-coffee-btn{
