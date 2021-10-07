@@ -69,8 +69,94 @@
 	max-width:  21.94%;
 	padding-right: 10px;
 }
+.ftr-copyright p{
+	margin-bottom: 0;
+	font-size: 14px;
+	color: #859391;
+	line-height: 1;
+}
 .ftr-btm-mdl{
 	width: 100%;
 	max-width:  58.98%;
 	padding-right: 10px;
+	display: flex;
+	align-items: center;
+	background: #f9f9f9;
+	position: relative;
+	padding-top: 33px;
+	padding-bottom: 33px;
+	padding-left: 100px;
+	padding-right: 130px;
+}
+.ftr-btm-mdl:after{
+	position: absolute;
+	content: "";
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border-right: 65px solid #fff;
+	border-top: 177px solid transparent;
+	width: 65px;
+	height: 100%;
+}
+.ftr-btm-mdl:before{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	border-left: 65px solid #fff;
+	border-bottom: 177px solid transparent;
+	width: 65px;
+	height: 100%;
+}
+.ftr-btm-mdl-logo{
+	width: 100%;
+	max-width:  35.30%;
+	text-align: center;
+}
+.ftr-btm-mdl-logo a{
+	display: inline-block;
+}
+.ftr-btm-mdl-rgt{
+	width: 100%;
+	max-width:  64.70%;
+}
+.ftr-btm-mdl-rgt-hdr{
+	margin-bottom: 7px;
+}
+.ftr-btm-mdl-rgt-hdr ul{
+	display: flex;
+	align-items: center;
+	margin: 0 -17px;
+}
+.ftr-btm-mdl-rgt-hdr ul li{
+	padding: 0 17px;
+}
+.ftr-btm-mdl-rgt-desc p{
+	font-size: 12px;
+	line-height: 1.4;
+	color: #4C5D5B;
+
+}
+.ftr-btm-mdl-rgt-desc p:last-of-type{
+	margin-bottom: 0;
+}
+.ftr-developed-by{
+	width: 100%;
+	max-width: 19.06%;
+	
+}
+.ftr-developed-by p{
+	margin-bottom: 0;
+	color: #36D56B;
+	line-height: 1;
+	font-size: 14px;
+}
+.ftr-developed-by p a{
+	display: inline-block;
+	color: #859391;
+}
+.ftr-developed-by p a:hover{
+	color: #36D56B;
 }
