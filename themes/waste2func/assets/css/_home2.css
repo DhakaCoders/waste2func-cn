@@ -390,6 +390,10 @@ body.home{
 	}
 	.wf-nieuws-grd-item-img-ctlr{
 		margin-bottom: 45px;
+		max-width: 400px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.wf-cta-sec {
 	    padding-top: 90px;
