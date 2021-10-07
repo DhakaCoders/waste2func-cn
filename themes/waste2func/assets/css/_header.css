@@ -1,22 +1,58 @@
-nav.main-nav ul{
+.header{
 
 }
-nav.main-nav ul li{
-	
+.header-inr{
+	display: flex;
+	align-items: center;
 }
+.hdr-lft{
+
+}
+.logo{
+
+}
+.logo a{
+	display: inline-block;
+	max-width: 120px;
+}
+.hdr-rgt{
+	margin-left: auto;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.hdr-menu{
+
+}
+
+
 nav.main-nav ul li a{
-	
+	display: inline-block;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	color: #4C5D5B;
 }
 nav.main-nav > ul{
-
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 60px;
+	margin: 0 -25px;
 }
 nav.main-nav > ul > li{
-
+	position: relative;
+	padding: 0 25px;
 }
 nav.main-nav > ul > li > a{
-
+	font-size: 20px;
+	padding-bottom: 60px;
 }
-
+nav.main-nav > ul > li.menu-item-has-children:hover > a,
+nav.main-nav > ul > li.current-menu-item > a,
+nav.main-nav > ul > li > a:hover{
+	color: #36D56B;
+}
 nav.main-nav > ul > li.current-menu-item > a{
 
 }
@@ -25,6 +61,146 @@ nav.main-nav > ul > li.menu-item-has-children > a{
 
 }
 
-nav.main-nav > ul > li.menu-item-has-children ul.sub-menu{
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    z-index: 15;
+    width: 200px;
+    padding: 0 0 0 0;
+    transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transform: scale3d(1,0,1);
+    -ms-transform: scale3d(1,0,1);
+    -webkit-transform: scale3d(1,0,1);
+    -o-transform: scale3d(1,0,1);
+    transform-origin: top;
+    opacity: 0;
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
+    -ms-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.15%);
+    -webkit-box-shadow: 0 2px 12px 0 rgb(0 0 0 / 15%);
+}
+nav.main-nav > ul > li.menu-item-has-children:hover ul.sub-menu {
+    transform: scale3d(1,1,1);
+    -ms-transform: scale3d(1,1,1);
+    -webkit-transform: scale3d(1,1,1);
+    -o-transform: scale3d(1,1,1);
+    opacity: 1;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li {
+    padding: 10px 0 10px 10px;
+    line-height: 1;
+    display: block;
+    position: relative;
+    border-bottom: 1px solid #36D56B;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:last-child{
+	border-bottom: none;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a {
+   	font-size: 16px;
+    position: relative;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover a{
+	color: #36D56B;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 0;
+    opacity: 0;
+    background: #36D56B;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
+    height: 100%;
+    opacity: 1;
+}
+
+
+
+
+.allWork .bdoverlay {
+    z-index: 9999;
+    opacity: 1;
+}
+
+.bdoverlay {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    -ms-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+
+
+
+.hdr-btn{
+	margin-left: 50px;
+}
+.hdr-lang-cntlr{
+	margin-left: 35px;
+}
+.hdr-lang{
 	
+}
+.hdr-lang ul{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+.hdr-lang ul li{
+	position: relative;
+	padding: 0 15px;
+}
+.hdr-lang ul li:after{
+	position: absolute;
+	content: "";
+	margin-top: -1px;
+	right: 0;
+	top: 50%;
+	transform: translate(50%,-50%);
+	-ms-transform: translate(50%,-50%);
+	-webkit-transform: translate(50%,-50%);
+	-o-transform: translate(50%,-50%);
+	background-image: url('../images/slash-icon.png');
+	width: 8px;
+	height: 14px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+.hdr-lang ul li:last-child:after{
+	content: none;
+	display: none;
+}
+.hdr-lang ul li a{
+	display: inline-block;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	color: #4C5D5B;
+}.hdr-lang ul li.active a,
+.hdr-lang ul li a:hover{
+	color: #D29500;
+}
+.hdr-lang ul li.active a{
+	font-weight: 800;
 }

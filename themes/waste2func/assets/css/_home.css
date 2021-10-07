@@ -1,0 +1,52 @@
+.hm-banner {
+    position: relative;
+}
+.bnr-vdo {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#bt-vdo {
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    z-index: 4;
+}
+.hm-banner-bg-black {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: #000;
+}
+.hm-bnr-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+}
+.hm-bnr-cntlr {
+    position: relative;
+    z-index: 5;
+    padding: 160px 0;
+    height: 720px;
+    display: flex;
+    align-items: center;
+}
+.hm-bnr-desc {
+    width: 100%;
+    max-width: 500px;
+}
