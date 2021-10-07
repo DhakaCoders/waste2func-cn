@@ -2,6 +2,16 @@
 
 .wf-bio-plant-sec{
 	padding: 120px 0;
+	position: relative;
+}
+.wf-bio-plant-sec:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 5px;
+	background: #F5F9F6;
+	width: 64%;
 }
 
 .wf-bio-plant-sec-inr{
@@ -18,7 +28,136 @@
 }
 
 
+.wf-bio-plant-lft-img{
+	height: 525px;
+}
+.wf-bio-plant-lft-img img{
+	display: none;
+}
+
 .wf-bio-plant-des-title{
 	margin-bottom: 35px;
 	font-size: 45px;
+}
+
+.wf-recente-update-sec{
+	padding: 110px 0 50px;
+}
+
+.wf-recente-update-hdr-ctlr{
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+.wf-recente-update-hdr-lft{
+	padding-right: 20px;
+}
+.wf-recente-update-hdr-rgt{
+	margin-left: auto;
+}
+.wf-recente-hdr-title{
+	margin-bottom: 0;
+}
+.wf-recente-update-btn .fl-coffee-btn{
+	max-width: 275px;
+}
+
+
+.wf-nieuws-grds ul li{
+	padding-bottom: 60px;
+}
+
+.wf-nieuws-grd-item{
+	display: flex;
+	align-items: center;
+}
+
+.wf-nieuws-grd-item-lft{
+	width: 50%;
+}
+.wf-nieuws-grd-item-rgt{
+	width: 50%;
+	padding-left: 60px;
+}
+
+.wf-nieuws-grd-item-lft-inr{
+	padding-left: 120px;
+	position: relative;
+}
+
+.wf-nieuws-grd-item-img{
+	height: 300px;
+}
+.wf-nieuws-grd-item-img img{
+	display: none;
+}
+
+.niuews-date{
+	position: absolute;
+	top: 35px;
+	left: 0;
+}
+
+.niuews-date span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 28px;
+	line-height: 1;
+	color: #36D56B;
+	letter-spacing: -0.02em;
+}
+
+
+
+.wf-niuews-grd-item-title{
+	margin-bottom: 28px;
+}
+.wf-niuews-grd-item-title a{
+	color: #4C5D5B;
+}
+
+
+
+.cta-module-ctlr{
+	padding-left: 30px;
+	position: relative;
+}
+
+.cta-module-border{
+	position: absolute;
+	top: -30px;
+	left: 0;
+	right: 30px;
+	height: 100%;
+	border: 1px solid #BBDDC3;
+	z-index: 2;
+}
+
+.cta-module{
+	margin-bottom: 60px;
+	padding: 90px 40px;
+	background: #F5F9F6;
+	position: relative;
+	z-index: 1;
+}
+.cta-module-inr{
+	position: relative;
+	z-index: 3;
+}
+.cta-module-inr > div{
+	display: flex;
+	align-items: center;
+}
+.cta-module-lft{
+	padding-right: 20px;
+	width: 40%;
+}
+.cta-module-mid{
+	width: 40%;
+	padding-right: 20px;
+}
+.cta-module-rgt{
+	width: 20%;
+	margin-left: auto;
+	text-align: right;
 }
