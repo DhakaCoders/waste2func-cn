@@ -19,7 +19,7 @@
 	left: 0;
 	bottom: 0;
 }
-.ftr-lft-bg:after{
+.ftr-lft-bg-angle{
 	position: absolute;
 	content: "";
 	top: 0;
@@ -125,8 +125,8 @@
 	align-items: center;
 	background: #f9f9f9;
 	position: relative;
-	padding-top: 33px;
-	padding-bottom: 33px;
+	padding-top: 28px;
+	padding-bottom: 28px;
 	padding-left: 100px;
 	padding-right: 130px;
 }
