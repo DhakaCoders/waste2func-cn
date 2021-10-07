@@ -393,9 +393,9 @@ body.login-register.hide-account-title .select2-container--open .select2-dropdow
 	height: 100%;
 	background: #D29500;
 	z-index: -1;
-	-webkit-transition: all 0.4s;
-	-ms-transition: all 0.4s;
-	transition: all 0.4s;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
 }
 
 
