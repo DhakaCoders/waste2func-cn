@@ -238,8 +238,9 @@ $(window).resize(function() {
   $(".right-angle").css('height', RAH);
 });
 if( $('.ftr-lft-bg').length ){
-  var ftrLftH = $('.ftr-lft-bg').outerHeight();
-  $('.ftr-lft-bg-angle').css('border-top', ftrLftH,'solid transparent');
+  var ftrLftH = $('.ftr-top-cntlr').outerHeight();
+  alert(ftrLftH);
+  $('.ftr-lft-bg-angle').css('border-top-width', ftrLftH);
 }
 
 /*start of Kashob*/
