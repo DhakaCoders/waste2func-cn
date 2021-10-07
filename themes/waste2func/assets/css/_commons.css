@@ -16,6 +16,7 @@ a, a:hover, a:focus, button:hover, button:focus{
 }
 a{
 	color: #D29500;
+	text-transform: capitalize;
 }
 a:hover{
 	color: #36D56B;
