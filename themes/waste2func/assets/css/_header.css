@@ -4,6 +4,8 @@
 .header-inr{
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap;
+	padding: 20px 0;
 }
 .hdr-lft{
 
@@ -37,7 +39,7 @@ nav.main-nav > ul{
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	padding-top: 60px;
+	padding-top: 10px;
 	margin: 0 -25px;
 }
 nav.main-nav > ul > li{
@@ -46,7 +48,7 @@ nav.main-nav > ul > li{
 }
 nav.main-nav > ul > li > a{
 	font-size: 20px;
-	padding-bottom: 60px;
+	padding-bottom: 10px;
 }
 nav.main-nav > ul > li.menu-item-has-children:hover > a,
 nav.main-nav > ul > li.current-menu-item > a,
@@ -180,7 +182,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
 	-webkit-transform: translate(50%,-50%);
 	-o-transform: translate(50%,-50%);
 	background-image: url('../images/slash-icon.png');
-	width: 8px;
+	width: 10px;
 	height: 14px;
 	background-repeat: no-repeat;
 	background-size: contain;
