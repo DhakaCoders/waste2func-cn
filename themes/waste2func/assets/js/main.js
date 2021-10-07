@@ -239,9 +239,19 @@ $(window).resize(function() {
 });
 if( $('.ftr-lft-bg').length ){
   var ftrLftH = $('.ftr-top-cntlr').outerHeight();
-  alert(ftrLftH);
   $('.ftr-lft-bg-angle').css('border-top-width', ftrLftH);
 }
+
+if( $('.ftr-btm-mdl').length ){
+  var ftrBtmMdla = $('.ftr-btm-mdl').outerHeight();
+  $('.ftr-btm-mdl-after').css('border-top-width', ftrBtmMdla);
+}
+
+if( $('.ftr-btm-mdl').length ){
+  var ftrBtmMdlb = $('.ftr-btm-mdl').outerHeight();
+  $('.ftr-btm-mdl-before').css('border-bottom-width', ftrBtmMdlb);
+}
+
 
 /*start of Kashob*/
 

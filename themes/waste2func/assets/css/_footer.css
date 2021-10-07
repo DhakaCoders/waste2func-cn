@@ -130,7 +130,7 @@
 	padding-left: 100px;
 	padding-right: 130px;
 }
-.ftr-btm-mdl:after{
+.ftr-btm-mdl-after{
 	position: absolute;
 	content: "";
 	top: 0;
@@ -141,7 +141,7 @@
 	width: 65px;
 	height: 100%;
 }
-.ftr-btm-mdl:before{
+.ftr-btm-mdl-before{
 	position: absolute;
 	content: "";
 	top: 0;
