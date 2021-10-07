@@ -10,20 +10,20 @@ h1,h2,h3,h4,h5,h6{
 	letter-spacing: -0.02em;
 }
 h1,.fl-h1{
-	font-size: 64px;
+	font-size: 60px;
 }
 h2,.fl-h2{
-	font-size: 48px;
+	font-size: 46px;
 }
 h3,.fl-h3{
-	font-size: 38px;
+	font-size: 36px;
 }
 h4,.fl-h4{
-	font-size: 32px;
+	font-size: 30px;
 }
 h5,.fl-h5{
-	font-size: 24px;
+	font-size: 23px;
 }
 h6,.fl-h6{
-	font-size: 20px;
+	font-size: 19px;
 }
