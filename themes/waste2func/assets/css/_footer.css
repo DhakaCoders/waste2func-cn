@@ -49,9 +49,51 @@
 .ftr-col-03{
 	max-width: 42.801%;
 }
-
+.fl-h6.ftr-col-title{
+	margin-bottom: 40px;
+}
+.color-green{
+	color: #36D56B;
+}
+.color-yellow{
+	color: #D29500;
+}
 .ftr-col:last-of-type{
 	padding-right: 0;
+}
+.ftr-menu{
+
+}
+.ftr-menu ul{
+	margin: -7px 0;
+}
+.ftr-menu ul li{
+	font-size: 16px;
+	line-height: 1;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+.ftr-menu-d2.ftr-menu ul{
+	display: flex;
+	flex-wrap: wrap;
+}
+.ftr-menu-d2.ftr-menu ul li{
+	width: 50%;
+}
+.ftr-menu-d2.ftr-menu ul li:nth-child(2n+1){
+	padding-right: 32px;
+}
+.ftr-menu ul li a{
+	display: inline-block;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	color: #4C5D5B;
+	word-wrap: normal;
+}
+.ftr-menu ul li a:hover{
+	color: #36D56B;
 }
 .ftr-logo{
 
