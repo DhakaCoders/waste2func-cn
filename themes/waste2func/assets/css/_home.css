@@ -46,7 +46,23 @@
     display: flex;
     align-items: center;
 }
+.hm-bnr-desc-cntlr{
+    max-width: 500px;
+    width: 100%;
+}
+.hm-bnr-title{
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
 .hm-bnr-desc {
     width: 100%;
     max-width: 500px;
+}
+.hm-bnr-desc p{
+    color: #fff;
+    margin-bottom: 30px;
+}
+.hm-bnr-desc p:last-child{
+    margin-bottom: 20px;
 }
