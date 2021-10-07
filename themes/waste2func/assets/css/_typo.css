@@ -6,6 +6,8 @@ h1,h2,h3,h4,h5,h6{
 	margin-top: 0;
 	margin-bottom: 20px;
 	font-weight: 700;
+	color: #4C5D5B;
+	letter-spacing: -0.02em;
 }
 h1,.fl-h1{
 	font-size: 64px;
