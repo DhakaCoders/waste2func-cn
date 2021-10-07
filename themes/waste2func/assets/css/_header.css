@@ -13,7 +13,13 @@
 .left-angle i{
 	display: inline-block;
 }
-
+.right-angle{
+	width: 57.96%;
+	height: 953px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
 .header{
 
 }
