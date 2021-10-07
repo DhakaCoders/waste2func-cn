@@ -20,6 +20,13 @@
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     z-index: 4;
+    display: none;
+}
+.has-vdo #bt-vdo{
+    display: block;
+}
+.has-vdo .hm-bnr-bg{
+    display: none;
 }
 .hm-banner-bg-black {
     position: absolute;
@@ -41,7 +48,6 @@
 .hm-bnr-cntlr {
     position: relative;
     z-index: 5;
-    padding: 160px 0;
     height: 720px;
     display: flex;
     align-items: center;
@@ -55,14 +61,11 @@
     line-height: 1.1;
     margin-bottom: 25px;
 }
-.hm-bnr-desc {
-    width: 100%;
-    max-width: 500px;
-}
+
 .hm-bnr-desc p{
     color: #fff;
     margin-bottom: 30px;
 }
 .hm-bnr-desc p:last-child{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }

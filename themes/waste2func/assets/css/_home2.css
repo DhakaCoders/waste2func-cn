@@ -32,6 +32,29 @@
 	margin-bottom: 35px;
 	font-size: 42px;
 }
+.wf-bio-plant-des-title a{
+	color: #4C5D5B;
+}
+.wf-bio-plant-des-title a:hover{
+	color: #D29500;
+	letter-spacing: inherit;
+}
+
+.wf-bio-plant-lft-img{
+	overflow: hidden;
+}
+.wf-bio-plant-lft-img a{
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.wf-bio-plant-lft-img a:hover img{
+	-webkit-transform: scale(0.95);
+	-ms-transform: scale(0.95);
+	transform: scale(0.95);
+}
+
+
 
 .wf-recente-update-sec{
 	padding: 110px 0 50px;
@@ -224,6 +247,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.wf-client-grds ul li a:hover img{
+	-webkit-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
 }
 .wf-client-grd-item img{
 	max-height: 87px;
