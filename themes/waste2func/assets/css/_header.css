@@ -314,6 +314,42 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
 
 
 
+
+
+
+
+
+
+
+
+.allWork .xs-mobile-menu {
+    right: 0;
+    opacity: 1;
+    z-index: 99999;
+    width: 100%;
+}
+.xs-mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    background: #fff;
+    width: 0;
+    z-index: 99999;
+    opacity: 0;
+    -ms-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    padding-top: 94px;
+    height: 100%;
+    max-width: 375px;
+    width: 100%;
+    padding-bottom: 112px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
 /*responsive*/
 @media(max-width: 1699px){
 	.logo a img{
