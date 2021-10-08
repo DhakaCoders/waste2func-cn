@@ -45,3 +45,18 @@
 .sitemap ol li a:focus{
 	text-decoration: underline;
 }
+
+
+body::-webkit-scrollbar {
+  width: 12px; 
+}
+
+body::-webkit-scrollbar-track {
+  background: #36D56B;        
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #D29500;    
+  border-radius: 2px;       
+  border: 2px solid #D29500;  
+}

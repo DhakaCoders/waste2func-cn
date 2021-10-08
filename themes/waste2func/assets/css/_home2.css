@@ -42,7 +42,10 @@ body.home{
 	padding-left: 50px;
 }
 
-
+.wf-bio-plant-rgt-des > a,
+.wf-nieuws-grd-item-des > a{
+	text-transform: capitalize;
+}
 .wf-bio-plant-des-title{
 	margin-bottom: 35px;
 	font-size: 42px;

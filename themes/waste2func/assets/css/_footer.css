@@ -25,10 +25,13 @@
 	top: 0;
 	right: 0;
 	bottom: 0;
-	border-right: 267px solid #fff;
+	border-right: 200px solid #fff;
 	border-top: 454px solid transparent;
 	width: 203px;
 	height: 100%;
+}
+.home .ftr-lft-bg-angle{
+	border-right: 200px solid #FEFEFE;
 }
 .ftr-top-cntlr{
 	display: flex;
@@ -79,6 +82,7 @@
 }
 .ftr-menu-d2.ftr-menu ul li{
 	width: 50%;
+	font-size: 13px;
 }
 .ftr-menu-d2.ftr-menu ul li:nth-child(2n+1){
 	padding-right: 32px;
@@ -141,6 +145,9 @@
 	width: 65px;
 	height: 100%;
 }
+.home .ftr-btm-mdl-after{
+	border-right: 65px solid #FEFEFE;
+}
 .ftr-btm-mdl-before{
 	position: absolute;
 	content: "";
@@ -151,6 +158,9 @@
 	border-bottom: 177px solid transparent;
 	width: 65px;
 	height: 100%;
+}
+.home .ftr-btm-mdl-before{
+	border-left: 65px solid #FEFEFE;
 }
 .ftr-btm-mdl-logo{
 	width: 100%;

@@ -73,7 +73,11 @@
 
 
 
-
+@media(max-width: 991px){
+    .hm-bnr-desc-cntlr{
+       max-width: 400px;
+    }
+}
 @media(max-width: 767px){
     .hm-bnr-cntlr {
         min-height: 450px;
