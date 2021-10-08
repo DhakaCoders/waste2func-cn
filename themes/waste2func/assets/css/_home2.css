@@ -1,3 +1,16 @@
+.home-messege{
+	background: #4C5D5B;
+	padding: 20px 0;
+}
+.home-messege-inr{
+	text-align: center;
+}
+.home-messege-inr p{
+	margin-bottom: 0;
+	color: #fff;
+}
+
+
 body.home{
 	background: #FEFEFE;
 }
