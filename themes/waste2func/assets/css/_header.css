@@ -317,6 +317,19 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
 		width: 100px;
 	}
 }
+@media(max-width: 1299px){
+	.logo a img{
+		max-height: 70px;
+		width: auto;
+	}
+	.left-angle i svg{
+		max-width: 70px!important;
+		height: auto!important;
+	}
+	.left-angle{
+		width: 70px;
+	}
+}
 @media(max-width: 1199px){
 	
 }
