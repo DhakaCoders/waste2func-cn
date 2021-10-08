@@ -276,22 +276,34 @@ $(window).resize(function() {
   $(".right-angle").css('height', RAH);
 });
 
-
-if( $('.ftr-lft-bg').length ){
-  var ftrLftH = $('.ftr-top-cntlr').outerHeight();
-  $('.ftr-lft-bg-angle').css('border-top-width', ftrLftH);
+if (windowWidth > 767){
+  if( $('.ftr-lft-bg').length ){
+    var ftrLftH = $('.ftr-top-cntlr').outerHeight();
+    $('.ftr-lft-bg-angle').css('border-top-width', ftrLftH);
+  }
+}
+if (windowWidth > 767){
+  if( $('.ftr-btm-mdl').length ){
+    var ftrBtmMdla = $('.ftr-btm-mdl').outerHeight();
+    $('.ftr-btm-mdl-after').css('border-top-width', ftrBtmMdla);
+  }
+}
+if (windowWidth > 767){
+  if( $('.ftr-btm-mdl').length ){
+    var ftrBtmMdlb = $('.ftr-btm-mdl').outerHeight();
+    $('.ftr-btm-mdl-before').css('border-bottom-width', ftrBtmMdlb);
+  }
 }
 
-if( $('.ftr-btm-mdl').length ){
-  var ftrBtmMdla = $('.ftr-btm-mdl').outerHeight();
-  $('.ftr-btm-mdl-after').css('border-top-width', ftrBtmMdla);
+if (windowWidth <= 767){
+  $('.ftr-col h6').on('click', function(e){
+    e.preventDefault();
+    $(this).next().slideToggle(500);
+    $(this).parent().siblings().find('.ftr-menu').slideUp(300);
+    $(this).toggleClass('arrow-rotate');
+    $(this).parent().siblings().find('h6').removeClass('arrow-rotate');
+  });
 }
-
-if( $('.ftr-btm-mdl').length ){
-  var ftrBtmMdlb = $('.ftr-btm-mdl').outerHeight();
-  $('.ftr-btm-mdl-before').css('border-bottom-width', ftrBtmMdlb);
-}
-
 
 /*start of Kashob*/
 
