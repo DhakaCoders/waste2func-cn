@@ -2,7 +2,7 @@
 /**
 Constants->>
 */
-defined('THEME_NAME') or define('THEME_NAME', 'mbc');
+defined('THEME_NAME') or define('THEME_NAME', 'waste2func');
 defined( 'THEME_DIR' ) or define( 'THEME_DIR', get_template_directory() );
 defined( 'THEME_URI' ) or define( 'THEME_URI', get_template_directory_uri() );
 
@@ -15,7 +15,7 @@ if( !function_exists('cbv_theme_setup') ){
     
     function cbv_theme_setup(){
         
-      load_theme_textdomain( 'mbc', get_template_directory() . '/languages' );
+      load_theme_textdomain( 'waste2func', get_template_directory() . '/languages' );
         add_theme_support( 'title-tag' );
         add_theme_support('woocommerce');
         add_theme_support('post-thumbnails');
@@ -35,12 +35,12 @@ if( !function_exists('cbv_theme_setup') ){
         ) );
 
         register_nav_menus( array(
-            'cbv_main_menu' => __( 'Main Menu', 'mbc' ),
-            'cbv_footer_menu1' => __( 'Footer Menu 1', 'mbc' ),
-            'cbv_footer_menu2' => __( 'Footer Menu 2', 'mbc' ),
-            'cbv_footer_menu3' => __( 'Footer Menu 3', 'mbc' ),
-            'cbv_footer_menu4' => __( 'Footer Menu 4', 'mbc' ),
-            'cbv_copyright_menu' => __( 'Copyright', 'mbc' ),
+            'cbv_main_menu' => __( 'Main Menu', 'waste2func' ),
+            'cbv_footer_menu1' => __( 'Footer Menu 1', 'waste2func' ),
+            'cbv_footer_menu2' => __( 'Footer Menu 2', 'waste2func' ),
+            'cbv_footer_menu3' => __( 'Footer Menu 3', 'waste2func' ),
+            'cbv_footer_menu4' => __( 'Footer Menu 4', 'waste2func' ),
+            'cbv_copyright_menu' => __( 'Copyright', 'waste2func' ),
         ) );
 
     }
@@ -66,14 +66,14 @@ function cbv_theme_scripts(){
     include_once( THEME_DIR . '/enq-scripts/theme.default.php' );
 }
 
-add_action( 'wp_enqueue_scripts', 'cbv_theme_scripts');
+//add_action( 'wp_enqueue_scripts', 'cbv_theme_scripts');
 /**
 Includes->>
 */
-include_once(THEME_DIR .'/inc/widgets-area.php');
-include_once(THEME_DIR .'/inc/breadcrumbs.php');
-include_once(THEME_DIR .'/inc/cbv-functions.php');
-include_once(THEME_DIR .'/inc/ajax-services-load.php');
+//include_once(THEME_DIR .'/inc/widgets-area.php');
+//include_once(THEME_DIR .'/inc/breadcrumbs.php');
+//include_once(THEME_DIR .'/inc/cbv-functions.php');
+//include_once(THEME_DIR .'/inc/ajax-services-load.php');
 /**
 ACF Option pages->>
 */
@@ -82,8 +82,8 @@ if( function_exists('acf_add_options_page') ) {
     //parent tab
     //acf_add_options_page( 'Opties' );
     acf_add_options_page(array(
-        'page_title'    => __('Options', 'mbc'),
-        'menu_title'    => __('Options', 'mbc'),
+        'page_title'    => __('Options', 'waste2func'),
+        'menu_title'    => __('Options', 'waste2func'),
         'menu_slug'     => 'cbv_options',
         'capability'    => 'edit_posts',
         //'redirect'        => false
