@@ -30,6 +30,9 @@
 	width: 203px;
 	height: 100%;
 }
+.home .ftr-lft-bg-angle{
+	border-right: 267px solid #FEFEFE;
+}
 .ftr-top-cntlr{
 	display: flex;
 	flex-wrap: wrap;
@@ -141,6 +144,9 @@
 	width: 65px;
 	height: 100%;
 }
+.home .ftr-btm-mdl-after{
+	border-right: 65px solid #FEFEFE;
+}
 .ftr-btm-mdl-before{
 	position: absolute;
 	content: "";
@@ -151,6 +157,9 @@
 	border-bottom: 177px solid transparent;
 	width: 65px;
 	height: 100%;
+}
+.home .ftr-btm-mdl-before{
+	border-left: 65px solid #FEFEFE;
 }
 .ftr-btm-mdl-logo{
 	width: 100%;
