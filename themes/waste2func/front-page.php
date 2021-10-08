@@ -1,7 +1,4 @@
-<?php 
-  /*Template Name: Home*/
-  get_header(); 
-?>
+<?php get_header(); ?>
 <section class="wf-bio-plant-sec">
 <div class="container">
 <div class="row">
