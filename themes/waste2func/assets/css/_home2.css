@@ -64,9 +64,9 @@ body.home{
 }
 
 .wf-bio-plant-lft-img a:hover{
-	-webkit-transform: scale(0.95);
-	-ms-transform: scale(0.95);
-	transform: scale(0.95);
+	-webkit-transform: scale(0.99);
+	-ms-transform: scale(0.99);
+	transform: scale(0.99);
 }
 
 
