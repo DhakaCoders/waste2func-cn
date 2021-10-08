@@ -372,7 +372,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
 
 
 
-
+body.allWork {
+    overflow: hidden!important;
+}
 .allWork .xs-mobile-menu {
     right: 0;
     opacity: 1;
@@ -391,13 +393,45 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
     -ms-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    padding-top: 94px;
+    padding-top: 116px;
     height: 100%;
     max-width: 375px;
     width: 100%;
-    padding-bottom: 112px;
+    padding-bottom: 184px;
     padding-left: 20px;
     padding-right: 20px;
+
+
+    right: 0;
+    opacity: 1;
+    z-index: 99999;
+    width: 100%;
+}
+.xs-mbl-hdr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+}
+.xs-menu {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    padding-bottom: 80px;
+}
+.xs-mbl-btm {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    padding: 20px 20px 35px 20px;
+    background: #fff;
 }
 
 
@@ -408,19 +442,13 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
 		width: auto;
 	}
 	.left-angle{
-		width: 180px;
-	}
-}
-@media(max-width: 1599px){
-	.left-angle{
-		width: 160px;
-	}
-}
-@media(max-width: 1499px){
-	.left-angle{
 		width: 130px;
 	}
+	.right-angle{
+		border-right-width: 570px;
+	}
 }
+
 @media(max-width: 1399px){
 	.left-angle{
 		width: 80px;
@@ -434,6 +462,9 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
 	nav.main-nav > ul > li{
 		padding: 0 15px;
 	}
+	.right-angle{
+		border-right-width: 570px;
+	}
 }
 @media(max-width: 1299px){
 	.logo a img{
@@ -445,11 +476,16 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
 	}
 }
 @media(max-width: 1199px){
-	
+	.right-angle{
+		border-right-width: 400px;
+	}
 }
 @media(max-width: 991px){
 	.hdr-lang-cntlr{
 		margin-left: 25px;
+	}
+	.right-angle{
+		border-right-width: 300px;
 	}
 	nav.main-nav > ul{
 		margin: 0 -12px;
@@ -482,6 +518,92 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
 	}
 	.left-angle{
 		width: 100px;
+	}
+	.right-angle{
+		border-right: 184px solid rgba(218, 236, 224, 0.34);
+		border-top: 152px solid transparent;
+		bottom: -35px;
+		top: initial;
+		height: 152px;
+	}
+
+
+
+
+
+
+	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu {
+		position: static;
+		z-index: 15;
+		width: 100%;
+		padding: 10px 0 0 10px;
+		transition: initial;
+		transform: initial;
+		opacity: 1;
+		box-shadow: none;
+		display: none;
+		background: transparent!important;
+	}
+	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li {
+		border-bottom: 0;
+		padding-left: 0;
+	}
+	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:after{
+		content: none;
+	}
+	nav.main-nav > ul > li.menu-item-has-children > a:after{
+		font-size: 24px;
+		top: 2px;
+	}
+	nav.main-nav > ul > li.menu-item-has-children:hover > a:after{
+		transform: initial;
+		-ms-transform: initial;
+		-webkit-transform: initial;
+		-o-transform: initial;
+	}
+	nav.main-nav > ul > li.menu-item-has-children.this-sub-menu-active a:after{
+		transform: rotate(-180deg);
+		-ms-transform: rotate(-180deg);
+		-webkit-transform: rotate(-180deg);
+		-o-transform: rotate(-180deg);
+	}
+	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
+		font-size: 17px;
+	}
+	nav.main-nav > ul > li.menu-item-has-children > a {
+		padding-right: 25px;
+	}
+	nav.main-nav > ul{
+		display: block;
+		margin: 0;
+	}
+	nav.main-nav > ul > li{
+		padding: 32px 0;
+		text-align: center;
+	}
+	nav.main-nav > ul > li > a{
+		font-size: 24px;
+		padding-bottom: 0;
+		font-width: 700;
+		color: #4C5D5B;
+	}
+	.hdr-lang-cntlr{
+		margin-left: 0;
+		margin-bottom: 52px;
+	}
+	.hdr-lang ul{
+		padding-top: 0;
+		justify-content: center;
+		margin: 0 -19px;
+	}
+	.hdr-lang ul li{
+		padding: 0 19px;
+	}
+	.hdr-lang ul li a{
+		font-size: 24px;
+	}
+	.xs-mbl-btn .fl-green-btn{
+		max-width: 100%;
 	}
 }
 @media(max-width: 639px){

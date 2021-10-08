@@ -227,30 +227,47 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Noyon*/
-if( $('.right-sqr').length ){
-  var hdrH = $('.header').outerHeight();
-  var bnrH = $('.hm-banner').outerHeight();
-  var RAH = hdrH + bnrH + 40;
-  var windowWidth_1920 = $('.page-body-cntlr').width();
-  var ConW = $('.container').width();
-  var rightSqrW = ((windowWidth_1920 -ConW) /2);
-  $(".right-sqr").css('height', RAH);
-  $('.right-sqr').css('width', rightSqrW);
-
+if( $('.hamburger-icon-wrap').length ){
+  $('.hamburger-icon-wrap').click(function(){
+    $('body').toggleClass('allWork');
+  });
 }
-if( $('.right-angle').length ){
-  var windowWidth_1920 = $('.page-body-cntlr').width();
-  var ConW = $('.container').width();
-  var rightSqrW = ((windowWidth_1920 -ConW) /2);
-  var hdrH = $('.header').outerHeight();
-  var bnrH = $('.hm-banner').outerHeight();
-  var RAH = hdrH + bnrH + 40;
-  var RGTW = $('.right-angle').outerWidth();
-  $(".right-angle").css('height', RAH);
-  $('.right-angle').css('border-top-width', RAH);
-  $('.right-angle').css('right', rightSqrW);
+if( $('li.menu-item-has-children a').length ){
+  $('li.menu-item-has-children a').click(function(e){
+   e.preventDefault();
+   $(this).next().slideToggle(300);
+   $(this).parent().toggleClass('this-sub-menu-active');
+ });
+}
 
 
+
+if (windowWidth > 767) {
+  if( $('.right-sqr').length ){
+    var hdrH = $('.header').outerHeight();
+    var bnrH = $('.hm-banner').outerHeight();
+    var RAH = hdrH + bnrH + 40;
+    var windowWidth_1920 = $('.page-body-cntlr').width();
+    var ConW = $('.container').width();
+    var rightSqrW = ((windowWidth_1920 -ConW) /2);
+    $(".right-sqr").css('height', RAH);
+    $('.right-sqr').css('width', rightSqrW);
+  }
+}
+if (windowWidth > 767) {
+  if( $('.right-angle').length ){
+    var windowWidth_1920 = $('.page-body-cntlr').width();
+    var ConW = $('.container').width();
+    var rightSqrW = ((windowWidth_1920 -ConW) /2);
+    var hdrH = $('.header').outerHeight();
+    var bnrH = $('.hm-banner').outerHeight();
+    var RAH = hdrH + bnrH + 40;
+    var RGTW = $('.right-angle').outerWidth();
+    $(".right-angle").css('height', RAH);
+    $('.right-angle').css('border-top-width', RAH);
+    $('.right-angle').css('right', rightSqrW);
+
+  }
 }
 
 
