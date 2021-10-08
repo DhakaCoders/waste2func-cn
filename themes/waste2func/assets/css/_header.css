@@ -546,7 +546,8 @@ body.allWork {
 		padding-left: 0;
 	}
 	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li a{
-		font-size: 20px;
+		font-size: 20px!important;
+		font-weight: 700!important;
 	}
 	nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:after{
 		content: none;
