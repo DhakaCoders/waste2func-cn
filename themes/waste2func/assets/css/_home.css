@@ -76,7 +76,10 @@
 
 @media(max-width: 767px){
     .hm-bnr-cntlr {
-        height: 500px;
+        min-height: 450px;
+        height: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     .hm-bnr-desc p {
         margin-bottom: 25px;
