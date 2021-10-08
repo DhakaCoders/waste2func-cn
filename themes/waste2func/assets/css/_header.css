@@ -96,6 +96,9 @@ nav.main-nav > ul > li > a{
 	font-size: 20px;
 	padding-bottom: 10px;
 }
+nav.main-nav > ul > li.hdr-menu-btn{
+	margin-top: -10px;
+}
 nav.main-nav > ul > li.hdr-menu-btn > a{
 	display: inline-block;
 	vertical-align: baseline;
@@ -248,7 +251,6 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 0 -15px;
-	padding-top: 10px;
 }
 .hdr-lang ul li{
 	position: relative;
@@ -449,18 +451,10 @@ body.allWork {
 	.left-angle{
 		width: 80px;
 	}
-	.hdr-lang-cntlr{
-		margin-left: 30px;
-	}
-	nav.main-nav > ul{
-		margin: 0 -15px;
-	}
-	nav.main-nav > ul > li{
-		padding: 0 15px;
-	}
-	.right-angle{
+	
+	/*.right-angle{
 		border-right-width: 570px;
-	}
+	}*/
 }
 @media(max-width: 1299px){
 	.logo a img{
@@ -474,6 +468,15 @@ body.allWork {
 @media(max-width: 1199px){
 	.right-angle{
 		border-right-width: 400px;
+	}
+	.hdr-lang-cntlr{
+		margin-left: 30px;
+	}
+	nav.main-nav > ul{
+		margin: 0 -15px;
+	}
+	nav.main-nav > ul > li{
+		padding: 0 15px;
 	}
 }
 @media(max-width: 991px){
