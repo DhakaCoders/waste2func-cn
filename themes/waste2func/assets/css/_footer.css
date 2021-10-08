@@ -198,6 +198,7 @@
 .ftr-developed-by p a{
 	display: inline-block;
 	color: #859391;
+	font-weight: 400;
 }
 .ftr-developed-by p a:hover{
 	color: #36D56B;
