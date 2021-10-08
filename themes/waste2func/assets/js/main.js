@@ -2,7 +2,7 @@
 
 /*Google Map Style*/
 var CustomMapStyles  = [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
-
+var windowWidth_1920 = $('.page-body-cntlr').width();
 var windowWidth = $(window).width();
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
@@ -227,15 +227,29 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 /*start of Noyon*/
+if( $('.right-sqr').length ){
+  var hdrH = $('.header').outerHeight();
+  var bnrH = $('.hm-banner').outerHeight();
+  var RAH = hdrH + bnrH + 40;
+  var windowWidth_1920 = $('.page-body-cntlr').width();
+  var ConW = $('.container').width();
+  var rightSqrW = ((windowWidth_1920 -ConW) /2);
+  $(".right-sqr").css('height', RAH);
+  $('.right-sqr').css('width', rightSqrW);
+
+}
 if( $('.right-angle').length ){
+  var windowWidth_1920 = $('.page-body-cntlr').width();
+  var ConW = $('.container').width();
+  var rightSqrW = ((windowWidth_1920 -ConW) /2);
   var hdrH = $('.header').outerHeight();
   var bnrH = $('.hm-banner').outerHeight();
   var RAH = hdrH + bnrH + 40;
   var RGTW = $('.right-angle').outerWidth();
   $(".right-angle").css('height', RAH);
-  $('.right-angle').css('border-right-width', RGTW);
   $('.right-angle').css('border-top-width', RAH);
-  
+  $('.right-angle').css('right', rightSqrW);
+
 
 }
 
@@ -244,6 +258,8 @@ $(window).resize(function() {
   var window2Width = $(window).width();
   $(".right-angle").css('height', RAH);
 });
+
+
 if( $('.ftr-lft-bg').length ){
   var ftrLftH = $('.ftr-top-cntlr').outerHeight();
   $('.ftr-lft-bg-angle').css('border-top-width', ftrLftH);
