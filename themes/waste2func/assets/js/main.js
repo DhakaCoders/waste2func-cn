@@ -233,6 +233,8 @@ if( $('.right-angle').length ){
   var RAH = hdrH + bnrH + 40;
   $(".right-angle").css('height', RAH);
 }
+
+
 $(window).resize(function() { 
   var window2Width = $(window).width();
   $(".right-angle").css('height', RAH);
