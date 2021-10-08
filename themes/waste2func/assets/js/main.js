@@ -231,7 +231,12 @@ if( $('.right-angle').length ){
   var hdrH = $('.header').outerHeight();
   var bnrH = $('.hm-banner').outerHeight();
   var RAH = hdrH + bnrH + 40;
+  var RGTW = $('.right-angle').outerWidth();
   $(".right-angle").css('height', RAH);
+  $('.right-angle').css('border-right-width', RGTW);
+  $('.right-angle').css('border-top-width', RAH);
+  
+
 }
 
 
