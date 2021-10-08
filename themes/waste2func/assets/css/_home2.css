@@ -50,7 +50,7 @@ body.home{
 	vertical-align: baseline;
 }
 
-.wf-bio-plant-lft-img a:hover img{
+.wf-bio-plant-lft-img a:hover{
 	-webkit-transform: scale(0.95);
 	-ms-transform: scale(0.95);
 	transform: scale(0.95);
@@ -326,7 +326,7 @@ body.home{
 	.cta-module-lft{
 		padding-right: 0;
 	    width: 100%;
-	    padding-bottom: 30px;
+	    padding-bottom: 22px;
 	}
 	.cta-module-mid{
 		padding-right: 0;
@@ -422,6 +422,21 @@ body.home{
 	}
 	.cta-module-title {
 	    font-size: 30px!important;
+	}
+	.wf-bio-plant-rgt-des{
+		max-width: 450px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.wf-recente-update-hdr-ctlr,
+	.niuews-date,
+	.wf-nieuws-grd-item-des,
+	.wf-recente-update-btn{
+		max-width: 400px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
