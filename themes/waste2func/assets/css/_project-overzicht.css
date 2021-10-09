@@ -50,3 +50,32 @@
 	font-weight: 700;
 	margin-bottom: 26px;
 }
+
+.sbs-grd-cntlr{
+	display: flex;
+	align-items: center;
+}
+.supported-by-sec-inr{
+	padding-bottom: 65px;
+}
+.supported-by-sec-inr .sbs-title{
+	margin-bottom: 30px;
+}
+.sbs-grd-col-lft{
+	max-width: 160px;
+	width: 100%;
+}
+.sbs-grd-col-lft a{
+	max-width: 120px;
+	width: 100%;
+}
+.sbs-grd-col-rgt-hdr ul{
+	display: flex;
+}
+.sbs-grd-col-rgt-hdr ul li{
+	padding-right: 45px;
+	padding-bottom: 15px;
+}
+.sbs-grd-col-rgt-des{
+	max-width: 690px;
+}
