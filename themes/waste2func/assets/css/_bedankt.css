@@ -1,0 +1,44 @@
+.page-bedankt-cntent-cntlr{
+	padding-top: 134px;
+	padding-bottom: 98px;
+}
+.page-bedankt-box{
+	position: relative;
+	padding-left: 25px;
+	max-width: 1063px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.page-bedankt-box-bg{
+	padding: 90px 84px 87px 81px;
+	background: #F5F9F6; 
+}
+.page-bedankt-box-border{
+	position: absolute;
+    top: -24px;
+    left: 0;
+    right: 25px;
+    height: 100%;
+    border: 1px solid #BBDDC3;
+    z-index: 2;
+}
+.page-bedankt-box-bg-inr{
+	position: relative;
+	z-index: 3;
+}
+.page-bedankt-box-title{
+	font-weight: 500;
+	margin-bottom: 14px;
+	font-size: 96px;
+}
+.page-bedankt-box-bg-inr p{
+	margin-bottom: 38px;
+}
+.page-bedankt-box ul{
+	padding-left: 0;
+	padding-bottom: 38px;
+}
+
+
+------------start-responsive-----------------------------------
