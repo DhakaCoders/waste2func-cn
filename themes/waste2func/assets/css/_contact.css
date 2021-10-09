@@ -384,3 +384,10 @@ textarea {
 .cnt-social a i svg.cnt-linkedin-icon:hover{
     fill: #36D56B;
 }
+
+
+.cnt-boder {
+    position: absolute;
+    left: 0;
+    border-bottom: 5px solid #F5F9F6;
+}
