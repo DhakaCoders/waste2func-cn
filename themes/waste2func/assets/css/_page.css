@@ -161,3 +161,27 @@ body::-webkit-scrollbar-thumb {
 	margin-bottom: 38px;
 	text-transform: capitalize;
 }
+
+.page-entry-hdr ul{
+	display: flex;
+	align-items: center;
+	margin-left: -23px;
+	margin-right: -23px;
+}
+.page-entry-hdr ul li{
+	padding-left: 23px;
+	padding-right: 23px;
+	padding-bottom: 10px;
+}
+.page-entry-hdr ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #4C5D5B;
+	letter-spacing: -0.02em;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+.page-entry-hdr ul li.active a,
+.page-entry-hdr ul li a:hover{
+	color: #36D56B;
+}
