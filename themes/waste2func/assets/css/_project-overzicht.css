@@ -8,13 +8,18 @@
 .pod-grds{
 	display: flex;
 	flex-wrap: wrap;
+	padding-bottom: 55px;
 }
 .pod-lft-des{
 	width: 68%;
 	padding-right: 25px;
 }
+.pod-lft-des .dfp-text-module h3{
+	padding-top: 15px;
+}
 .pod-rgt-sidebar{
 	width: 32%;
+	padding-top: 40px;
 }
 
 .page-project-overview-con .wf-sec-entry-hdr{
@@ -29,6 +34,7 @@
 
 .project-overview-des-cntlr .cta-module-inr{
 	flex-wrap: wrap;
+	padding-right: 15px;
 }
 
 .project-overview-des-cntlr .cta-module-lft,
@@ -38,7 +44,9 @@
 	padding-left: 0;
 	padding-right: 0;
 }
-
+.project-overview-des-cntlr .cta-module{
+	padding-top: 65px;
+}
 .project-overview-des-cntlr .cta-module-rgt{
 	text-align: left;
 }
@@ -49,4 +57,44 @@
 .project-overview-des-cntlr .cta-module-title{
 	font-weight: 700;
 	margin-bottom: 26px;
+}
+
+.sbs-grd-cntlr{
+	display: flex;
+	align-items: center;
+}
+.supported-by-sec-inr{
+	padding-bottom: 65px;
+}
+.supported-by-sec-inr .sbs-title{
+	margin-bottom: 30px;
+}
+.sbs-grd-col-lft{
+	max-width: 160px;
+	width: 100%;
+}
+.sbs-grd-col-lft a{
+	max-width: 120px;
+	width: 100%;
+	display: inline-block;
+	vertical-align: baseline;
+}
+.sbs-grd-col-rgt-hdr ul{
+	display: flex;
+}
+.sbs-grd-col-rgt-hdr ul li{
+	padding-right: 45px;
+	padding-bottom: 15px;
+}
+.sbs-grd-col-rgt-hdr ul li a{
+	display: inline-block;
+	vertical-align: baseline;
+}
+.sbs-grd-col-rgt-des{
+	max-width: 690px;
+}
+
+.page-project-overview-con .wf-client-sec{
+	padding-bottom: 25px;
+	padding-top: 0;
 }
