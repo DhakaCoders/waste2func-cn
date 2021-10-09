@@ -15,7 +15,7 @@
 }
 .pp-grd-item{
 	border: 1px solid #BBDDC3;
-	padding: 35px;
+	padding: 6px 35px 35px;
 }
 .pp-grd-img{
 	border-bottom: 1px solid #F5F9F6;
@@ -23,26 +23,31 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 234px;
 }
 .pp-grd-img i {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
+
 }
 .pp-grd-img i img{
-	max-width: 210px;
-	height: auto;
+	max-height: 135px;
+	width: auto;
 
 }
 .pp-grd-cont{
-
+	position: relative;
 }
 .pp-grd-cont-cntlr{
-
+	padding-bottom: 25px;
+	position: relative;
 }
 .pp-grd-cont-hdng{
 
 }
-.pp-grd-abs-btn{
-
+.pp-grd-abs-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.pp-grd-abs-btn a{
+	padding-top: 30px;
 }
