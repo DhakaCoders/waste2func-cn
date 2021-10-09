@@ -1,0 +1,17 @@
+.nieuws-grd-sec{
+	padding: 70px 0 50px;
+	position: relative;
+}
+.nieuws-grd-sec:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 5px;
+	background: #F5F9F6;
+	width: 65%;
+}
+
+.pagination-sec{
+	padding: 90px 0;
+}

@@ -1,14 +1,14 @@
-.partner-page-grids-cntlr{
+.partners-page-grids-cntlr{
 
 }
-.partner-page-grids-cntlr ul{
+.partners-page-grids-cntlr ul{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 0 -12px;
 
 }
-.partner-page-grids-cntlr ul li{
+.partners-page-grids-cntlr ul li{
 	max-width: 33.3333%;
 	width: 100%;
 	padding: 0 12px;
