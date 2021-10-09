@@ -460,7 +460,7 @@ hr{
 	padding-top: 40px;
 }
 .dfp-blockqoute-ctlr{
-	padding-left: 42px;
+	padding-left: 30px;
 	position: relative;
 }
 
@@ -475,7 +475,7 @@ hr{
 }
 
 .dfp-blockqoute blockquote{
-	padding: 70px 50px 70px 80px;
+	padding: 100px 50px 100px 200px;
 	background: #F5F9F6;
 	position: relative;
 	margin-bottom: 0;
@@ -486,13 +486,13 @@ hr{
 }
 .dfp-blockqoute blockquote i{
 	position: absolute;
-	top: 58px;
-	left: 20px;
-	max-width: 30px;
+	top: 65px;
+    left: 55px;
+    max-width: 70px;
 	width: 100%;
 }
 .dfp-blockqoute blockquote p{
-	font-size: 26px;
+	font-size: 30px;
 	line-height: 1.1;
 	color: #4C5D5B;
 	font-weight: 300;
