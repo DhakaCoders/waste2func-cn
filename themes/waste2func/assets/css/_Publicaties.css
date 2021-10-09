@@ -8,13 +8,8 @@
 	padding-right: 33px;
 	padding-bottom: 86px;
 }
-.cat-grd-hdr > h2{
+.cat-grd-hdr-title{
 	color: #D29500;
-	font-family: Tajawal;
-	font-style: normal;
-	font-weight: bold;
-	line-height: 36px;
-	letter-spacing: -0.02em;
 }
 .cat-grid-list-item{
 	display: flex;
@@ -44,6 +39,7 @@
 	line-height: 29px;
 	letter-spacing: -0.02em;
 	color: #4C5D5B;
+	margin-bottom: 0;
 }
 .cat-grid-list-item:hover p{
 	color: green;
