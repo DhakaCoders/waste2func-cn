@@ -4,17 +4,16 @@
 	padding: 0 20px!important;
 }
 .slick-slider .slick-dots li{
-	width: 16px!important;
-	height: 16px!important;
+	width: 42px!important;
+	height: 8px!important;
 	position: static;
-	background: #E1E1E1!important;
-	border-radius: 100% 100%!important;
+	background: #DADADA!important;
 	margin: 0 8px;
 	padding: 0!important;
 }
 .slick-slider .slick-dots li.slick-active,
 .slick-slider .slick-dots li:hover{
-	background: #F3BA4B!important;
+	background: #36D56B!important;
 }
 .slick-slider .slick-dots li:before,
 .slick-slider .slick-dots li button:before{
@@ -22,8 +21,8 @@
 }
 .slick-slider .slick-dots li button{
 	padding: 0;
-	width: 16px;
-	height: 16px;
+	width: 42px;
+	height: 8px;
 }
 
 .slick-dots li:only-child{ 
@@ -268,6 +267,7 @@ body::-webkit-scrollbar-thumb {
 	.page-entry-hdr-title {
 	    margin-bottom: 32px;
 	}
+	
 }
 @media(max-width: 991px){
 	.breadcrumb-sec {
@@ -279,9 +279,21 @@ body::-webkit-scrollbar-thumb {
 	.page-entry-hdr-title {
 	    margin-bottom: 25px;
 	}
+	
 }
 @media(max-width: 767px){
-
+	.page-entry-hdr-sec {
+	    padding-bottom: 0;
+	    padding-top: 40px;
+	}
+	.page-entry-hdr-sec:after{
+		bottom: initial;
+		top: 0;
+	}
+	.page-entry-hdr-title {
+	    margin-bottom: 15px;
+	}
+	
 }
 @media(max-width: 575px){
 

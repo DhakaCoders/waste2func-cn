@@ -47,7 +47,108 @@
 }
 
 
-------------responsive-----------------------------------
-------------responsive-----------------------------------
+/*start responsive*/
+/*start responsive*/
+/*start responsive*/
 
+@media(max-width: 1699px){
+	.page-bedankt-cntent-cntlr{
+		padding-top: 100px;
+		padding-bottom: 70px;
+	}
+	.page-bedankt-box-bg-inr .page-bedankt-box-title{
+		font-size: 82px;
+		line-height: 1;
+	}
+	.page-bedankt-box-bg{
+		padding: 71px 80px 82px 73px;
+	}
+	.page-bedankt-box-bg-inr p {
+    	margin-bottom: 35px;
+	}
+	.page-bedankt-box ul{
+		padding-bottom: 35px;
+	}
 
+}
+@media(max-width: 1499px){
+	.page-bedankt-box-bg-inr .page-bedankt-box-title{
+		font-size: 72px;
+	}
+}
+@media(max-width: 1199px){
+	.page-bedankt-box-bg {
+    	padding: 65px 50px 78px 65px;
+	}
+	.page-bedankt-box-bg-inr .page-bedankt-box-title{
+		font-size: 62px;
+	}
+	.page-bedankt-box-bg-inr p{
+		margin-bottom: 30px;
+	}
+	.page-bedankt-box ul{
+		padding-bottom: 28px;
+	}
+	.page-bedankt-cntent-cntlr{
+		padding-top: 90px;
+		padding-bottom: 65px;
+	}
+	.page-bedankt-box-border {
+		top: -23px;
+		right: 23px;
+	}
+}
+@media(max-width: 991px){
+	.page-bedankt-box-bg {
+    	padding: 50px 40px 75px 45px;
+	}
+	.page-bedankt-box-bg-inr .page-bedankt-box-title{
+		font-size: 52px;
+	}
+}
+@media(max-width: 767px){
+	.page-bedankt-box-bg {
+    	padding: 50px 40px 75px 45px;
+	}
+	.page-bedankt-box-bg-inr .page-bedankt-box-title{
+		font-size: 42px;
+	}
+}
+@media(max-width: 575px){
+	.page-bedankt-box-bg {
+    	padding: 36px 45px 52px 29px;
+	}
+	.page-bedankt-box-bg-inr .page-bedankt-box-title{
+		font-size: 32px;
+	}
+	.page-bedankt-box-border {
+	    top: -20px;
+	    right: 20px;
+	}
+	.page-bedankt-box-bg-inr p{
+		margin-bottom: 12px;
+	}
+	.page-bedankt-box ul{
+		padding-bottom: 22px;
+	}
+	.page-bedankt-cntent-cntlr{
+		padding-top: 40px;
+		padding-bottom: 45px;
+	}
+	
+}
+@media(max-width: 375px){
+	.page-bedankt-box-bg-inr .page-bedankt-box-title br{
+		display: none;
+	}
+
+}
+@media(max-width: 359px){
+	/*.page-bedankt-box-bg-inr .page-bedankt-box-title{
+		letter-spacing: -2px;
+	}*/
+	.page-bedankt-box-bg-inr .page-bedankt-box-title{
+		font-size: 30px;
+		letter-spacing: -1px;
+	}
+}

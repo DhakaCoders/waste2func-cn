@@ -349,6 +349,34 @@ $(window).resize(function(){
 });
 /*start of Shariful*/
 
+  if (windowWidth < 767){
+    if( $('.gallerySlider').length ){
+      $('.gallerySlider').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
+  if (windowWidth < 767){
+    if( $('.btmGallerySlider').length ){
+      $('.btmGallerySlider').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1.5,
+        slidesToScroll: 1
+      });
+    }
+  }
 
 
 
