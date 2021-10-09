@@ -50,23 +50,24 @@
 }
 /*Responsive start*/
 
+@media(max-width: 991px){
+	.publicaties-grid-cntlr{
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
 @media(max-width: 767px){
 .publicaties-grid-col{
 		width: 100%;
 		padding-right: 0;
 	}
-	.publicaties-cntlr{
+	.publicaties-grid-cntlr{
 		max-width: 530px;
 		width: 100%;
 		margin: 0 auto;
 	}
 }
-@media(max-width: 991px){
-	.publicaties-grid-cntlr{
-		max-width: 900px;
-		width: 100%;
-		margin: 0 auto;
-	}
-}
+
 
 /*Responsive end*/
