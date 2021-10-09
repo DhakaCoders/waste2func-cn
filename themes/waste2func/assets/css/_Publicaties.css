@@ -18,7 +18,7 @@
 }
 .cat-grid-list-item{
 	display: flex;
-	/*align-items: center;*/
+	align-items: center;
 	position: relative;
 }
 .cat-grd-list ul{
