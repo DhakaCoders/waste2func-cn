@@ -1,17 +1,18 @@
-.partners-page-grids-cntlr{
 
+.partners-page-section {
+    padding-top: 70px;
+    padding-bottom: 55px;
 }
 .partners-page-grids-cntlr ul{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 0 -12px;
-
 }
 .partners-page-grids-cntlr ul li{
 	max-width: 33.3333%;
 	width: 100%;
-	padding: 0 12px;
+	padding: 0 12px 40px 12px;
 }
 .pp-grd-item{
 	border: 1px solid #BBDDC3;
@@ -25,13 +26,9 @@
 	align-items: center;
 	height: 234px;
 }
-.pp-grd-img i {
-
-}
 .pp-grd-img i img{
 	max-height: 135px;
 	width: auto;
-
 }
 .pp-grd-cont{
 	position: relative;
@@ -51,3 +48,8 @@
 .pp-grd-abs-btn a{
 	padding-top: 30px;
 }
+.pp-grd-cont-hdng{
+	font-size: 24px;
+	line-height: 1.5;
+}
+
