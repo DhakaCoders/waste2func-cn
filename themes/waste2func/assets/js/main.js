@@ -329,10 +329,23 @@ var containerOffset = (windowWidth_1920 - containerWidth);
 var containerLgtOffset = ((containerOffset / 2)+2);
 $('.cnt-boder').css('width', containerLgtOffset);
 
+
+$(window).resize(function(){
+  var containerWidth = $('.container').width();
+  var containerOffset = (windowWidth_1920 - containerWidth);
+
+  var containerLgtOffset = ((containerOffset / 2)+2);
+  $('.cnt-boder').css('width', containerLgtOffset); 
+
+});
+
 var contactEntryHeader = $('.contact-entry-header').height();
 $('.cnt-boder').css('top', contactEntryHeader);
 
-
+$(window).resize(function(){
+  var contactEntryHeader = $('.contact-entry-header').height();
+  $('.cnt-boder').css('top', contactEntryHeader);
+});
 /*start of Shariful*/
 
 
