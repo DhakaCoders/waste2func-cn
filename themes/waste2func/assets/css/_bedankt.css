@@ -11,7 +11,7 @@
 	margin-right: auto;
 }
 .page-bedankt-box-bg{
-	padding: 90px 84px 87px 81px;
+	padding: 75px 84px 87px 78px;
 	background: #F5F9F6; 
 }
 .page-bedankt-box-border{
@@ -26,6 +26,9 @@
 .page-bedankt-box-bg-inr{
 	position: relative;
 	z-index: 3;
+}
+.page-bedankt-box-bg-inr ul li{
+	color: #D29500;
 }
 .page-bedankt-box-title{
 	font-weight: 300;
@@ -44,4 +47,7 @@
 }
 
 
-------------start-responsive-----------------------------------
+------------responsive-----------------------------------
+------------responsive-----------------------------------
+
+
