@@ -31,6 +31,8 @@
 	bottom: 0;
 }*/
 .cat-grid-list-item > i{
+	display: inline-block;
+	width: 34px;
 	padding-right: 37px;
 }
 .cat-grid-list-item  p{
