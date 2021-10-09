@@ -129,6 +129,9 @@ body::-webkit-scrollbar-thumb {
 	line-height: 1;
 	letter-spacing: -0.02em;
 	color: #4C5D5B;
+	-webkit-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .breadcrumb-cntlr ul li a:hover, 
 .breadcrumb-cntlr ul li span:hover, 
