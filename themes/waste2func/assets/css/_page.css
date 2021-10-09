@@ -135,3 +135,29 @@ body::-webkit-scrollbar-thumb {
 .breadcrumb-cntlr ul li a span:hover {
     color: #36D56B;
 }
+
+
+/*page entry hdr*/
+
+.page-entry-hdr-sec{
+	padding-bottom: 30px;
+	position: relative;
+}
+.page-entry-hdr-sec:after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 5px;
+    background: #F5F9F6;
+    width: 68%;
+}
+.page-entry-hdr{
+	max-width: 860px;
+	width: 100%;
+}
+
+.page-entry-hdr-title{
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
