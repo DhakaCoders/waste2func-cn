@@ -279,8 +279,11 @@ textarea {
     color: #36D56B;
     text-decoration: none;
 }
+.contact-form-wrp {
+    padding-top: 46px;
+}
 .contact-entry-header{
-    
+    border-bottom: 5px solid #F5F9F6;
 }
 .cnt-sec-entry-hdr-title{
     margin-bottom: 23px;
@@ -295,7 +298,7 @@ textarea {
     margin-top: 20px;
 }
 .contact-info-details-cntlr {
-    padding: 80px 80px 50px 80px;
+    padding: 60px 60px 80px 60px;
     background: #F5F9F6;
 }
 .cnt-info-bdr{
@@ -306,4 +309,18 @@ textarea {
     height: 100%;
     border: 1px solid #BBDDC3;
     z-index: 2;
+}
+.cnt-info-details-inr {
+    position: relative;
+    z-index: 5;
+}
+.contact-form-info-title{
+    color: #36D56B;
+    font-size: 26px;
+
+}
+.cnt-details-col a{
+    color: #4C5D5B;
+    font-size: 16px;
+    line-height: 1.3;
 }
