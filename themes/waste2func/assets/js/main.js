@@ -322,6 +322,10 @@ if( $('.wpforms-error').length ){
 }
 
 
+
+
+
+
 /*start of Shariful*/
 
 
