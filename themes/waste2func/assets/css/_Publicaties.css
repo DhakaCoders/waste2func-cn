@@ -37,9 +37,6 @@
 	height: auto;
 }
 .cat-grid-list-item p{
-
-}
-.cat-grid-list-item p{
 	font-family: Tajawal;
 	font-style: normal;
 	font-weight: 500;
@@ -48,6 +45,10 @@
 	letter-spacing: -0.02em;
 	color: #4C5D5B;
 }
+.cat-grid-list-item:hover p{
+	color: green;
+}
+
 /*Responsive start*/
 
 @media(max-width: 991px){
@@ -55,6 +56,10 @@
 		max-width: 800px;
 		width: 100%;
 		margin: 0 auto;
+	}
+	.cat-grid-list-item p{
+		font-size: 20px;
+		line-height: 20px;
 	}
 }
 @media(max-width: 767px){
@@ -66,6 +71,10 @@
 		max-width: 530px;
 		width: 100%;
 		margin: 0 auto;
+	}
+	.cat-grid-list-item p{
+		font-size: 18px;
+		line-height: 22px;
 	}
 }
 
