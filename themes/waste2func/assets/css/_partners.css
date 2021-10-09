@@ -25,9 +25,7 @@
 	align-items: center;
 }
 .pp-grd-img i {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
+
 }
 .pp-grd-img i img{
 	max-width: 210px;
@@ -35,7 +33,7 @@
 
 }
 .pp-grd-cont{
-
+	position: relative;
 }
 .pp-grd-cont-cntlr{
 
@@ -43,6 +41,11 @@
 .pp-grd-cont-hdng{
 
 }
-.pp-grd-abs-btn{
-
+.pp-grd-abs-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.pp-grd-abs-btn a{
+	padding-top: 30px;
 }
