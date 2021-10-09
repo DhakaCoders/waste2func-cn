@@ -1,10 +1,14 @@
 .contact-form-block {
     display: flex;
     flex-wrap: wrap;
+    background: #fff;
 }
 .contact-form-lft {
     width: 70%;
     background: #fff;
+}
+.contact-form-lft {
+    padding-right: 20px;
 }
 .contact-form-rgt {
     width: 30%;
@@ -67,6 +71,7 @@
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label{
     font-weight: 500;
     font-size: 14px;
+    line-height: 1.1;
     margin-bottom: 10px;
     color: #4C5D5B;
 }
@@ -115,7 +120,7 @@ textarea {
     outline: none;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container label.wpforms-error {
-    display: ;
+    display: none;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-has-error label.wpforms-error {
     display: block;
@@ -214,7 +219,91 @@ textarea {
   opacity: 1;
 }
 
-
-.wpforms-field-description input{
+.wpforms-field-description{
+    position: relative;
+    padding: 40px 15px 15px 20px;
+    font-size:  16px;
+}
+.wpforms-field-description input[type="checkbox"]{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  top: 42px;
+  bottom: 0;
+  height: 18px!important;
+  width: 18px!important;
+  z-index: 1;
+}
+.wpforms-field-description span.checkmark{
+  position: absolute;
+  top: 42px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background: transparent;
+  border: 1px solid #7b8ca8;
+}
+.wpforms-field-description span.checkmark::after{
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid #239C4B;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.wpforms-field-description span.checkmark:after{
+  content: "";
+  position: absolute;
+  display: none;
+}
+.wpforms-field-description input:checked ~ .checkmark:after{
+  display: block;
+}
+.wpforms-field-description input:checked ~ .checkmark{
+  background: transparent;
+}
+.wpforms-field-description label {
+    margin-bottom: 0!important;
+    padding-left: 10px;
+    font-size: 16px!important;
+    cursor: pointer!important;
+}
+.wpforms-field-description label a{
+    color: #4C5D5B;
+    text-decoration: underline;
+}
+.wpforms-field-description label a:hover{
+    color: #36D56B;
+    text-decoration: none;
+}
+.contact-entry-header{
     
+}
+.cnt-sec-entry-hdr-title{
+    margin-bottom: 23px;
+}
+.contact-entry-header p{
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+.contact-form-info {
+    padding-left: 20px;
+    position: relative;
+    margin-top: 20px;
+}
+.contact-info-details-cntlr {
+    padding: 80px 80px 50px 80px;
+    background: #F5F9F6;
+}
+.cnt-info-bdr{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 20px;
+    height: 100%;
+    border: 1px solid #BBDDC3;
+    z-index: 2;
 }
