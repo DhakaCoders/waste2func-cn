@@ -8,13 +8,8 @@
 	padding-right: 33px;
 	padding-bottom: 86px;
 }
-.cat-grd-hdr > h2{
+.cat-grd-hdr-title{
 	color: #D29500;
-	font-family: Tajawal;
-	font-style: normal;
-	font-weight: bold;
-	line-height: 36px;
-	letter-spacing: -0.02em;
 }
 .cat-grid-list-item{
 	display: flex;
@@ -37,9 +32,6 @@
 	height: auto;
 }
 .cat-grid-list-item p{
-
-}
-.cat-grid-list-item p{
 	font-family: Tajawal;
 	font-style: normal;
 	font-weight: 500;
@@ -47,7 +39,12 @@
 	line-height: 29px;
 	letter-spacing: -0.02em;
 	color: #4C5D5B;
+	margin-bottom: 0;
 }
+.cat-grid-list-item:hover p{
+	color: green;
+}
+
 /*Responsive start*/
 
 @media(max-width: 991px){
@@ -55,6 +52,10 @@
 		max-width: 800px;
 		width: 100%;
 		margin: 0 auto;
+	}
+	.cat-grid-list-item p{
+		font-size: 20px;
+		line-height: 20px;
 	}
 }
 @media(max-width: 767px){
@@ -66,6 +67,10 @@
 		max-width: 530px;
 		width: 100%;
 		margin: 0 auto;
+	}
+	.cat-grid-list-item p{
+		font-size: 18px;
+		line-height: 22px;
 	}
 }
 

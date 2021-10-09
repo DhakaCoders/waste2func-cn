@@ -34,6 +34,7 @@
 
 .project-overview-des-cntlr .cta-module-inr{
 	flex-wrap: wrap;
+	padding-right: 15px;
 }
 
 .project-overview-des-cntlr .cta-module-lft,
