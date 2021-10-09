@@ -66,6 +66,9 @@ body::-webkit-scrollbar-thumb {
 .breadcrumb-sec {
     margin-bottom: 60px;
 }
+.breadcrumb-cntlr{
+	overflow: hidden;
+}
 .breadcrumb-cntlr ul {
     display: flex;
     align-items: center;
@@ -251,4 +254,35 @@ body::-webkit-scrollbar-thumb {
 }
 .fl-pagination-ctlr ul li a:hover svg{
 	fill: #36D56B;
+}
+
+
+
+@media(max-width: 1199px){
+	.breadcrumb-sec {
+	    margin-bottom: 50px;
+	}
+	.page-entry-hdr-sec {
+	    padding-bottom: 40px;
+	}
+	.page-entry-hdr-title {
+	    margin-bottom: 32px;
+	}
+}
+@media(max-width: 991px){
+	.breadcrumb-sec {
+	    margin-bottom: 40px;
+	}
+	.page-entry-hdr-sec {
+	    padding-bottom: 30px;
+	}
+	.page-entry-hdr-title {
+	    margin-bottom: 25px;
+	}
+}
+@media(max-width: 767px){
+
+}
+@media(max-width: 575px){
+
 }
