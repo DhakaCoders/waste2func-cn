@@ -308,7 +308,24 @@ if (windowWidth <= 767){
 /*start of Kashob*/
 
 
+
+
 /*start of Shariful*/
+
+
+
+
+/*start of Dipok*/
+
+
+
+/*start of Momin*/
+
+
+
+/*start of Jahir*/
+
+
 
 
 
