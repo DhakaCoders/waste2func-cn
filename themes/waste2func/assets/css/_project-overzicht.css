@@ -3,7 +3,7 @@
 }
 
 .project-overview-des-cntlr{
-	padding: 85px 0 0;
+	padding: 75px 0 0;
 }
 .pod-grds{
 	display: flex;
@@ -15,4 +15,14 @@
 }
 .pod-rgt-sidebar{
 	width: 30%;
+}
+
+.page-project-overview-con .wf-sec-entry-hdr{
+	margin-left: 0;
+	text-align: left;
+	max-width: 830px;
+}
+
+.page-project-overview-con .wf-client-grds ul{
+	justify-content: left;
 }
