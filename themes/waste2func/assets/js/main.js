@@ -331,6 +331,7 @@ $('.cnt-boder').css('width', containerLgtOffset);
 
 
 $(window).resize(function(){
+  var windowWidth_1920 = $('.page-body-cntlr').width();
   var containerWidth = $('.container').width();
   var containerOffset = (windowWidth_1920 - containerWidth);
 
