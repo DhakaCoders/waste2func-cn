@@ -140,7 +140,7 @@ body::-webkit-scrollbar-thumb {
 /*page entry hdr*/
 
 .page-entry-hdr-sec{
-	padding-bottom: 30px;
+	padding-bottom: 45px;
 	position: relative;
 }
 .page-entry-hdr-sec:after{
@@ -158,6 +158,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .page-entry-hdr-title{
-	margin-bottom: 25px;
+	margin-bottom: 38px;
 	text-transform: capitalize;
 }
