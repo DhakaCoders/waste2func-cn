@@ -19,24 +19,27 @@
 .cat-grid-list-item{
 	display: flex;
 	align-items: center;
+	position: relative;
 }
-.cat-grd-list > ul > li{
-	padding: 16.5px 0;
+.cat-grd-list ul{
+	display: flex;
+	flex-wrap: wrap;
 }
-/*.cat-grd-list > ul > li > a > i{
-	position: absolute;
-	left: 2px;
-	right: 2px;
-	top: 24px;
-	bottom: 0;
-}*/
-.cat-grid-list-item > i{
-	padding-right: 37px;
+.cat-grd-list ul li{
+	padding: 16px 0;
 }
-.cat-grid-list-item  p{
+.cat-grid-list-item i{
+	max-width: 88px;
+    width: 100%;
+}
+.cat-grid-list-item  i img{
+	max-width: 50px;
+	height: auto;
+}
+.cat-grid-list-item p{
 
 }
-.cat-grid-list-item  p{
+.cat-grid-list-item p{
 	font-family: Tajawal;
 	font-style: normal;
 	font-weight: 500;
