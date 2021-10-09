@@ -109,17 +109,6 @@
     -webkit-transition: all 0.3s;
     -ms-transition: all 0.3s;
 }
-/*.contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container button:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border: 1px solid #239C4B;
-    z-index: 2;
-
-}*/
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-submit-container:hover:after{
     top: 0;
     left: 0;
@@ -309,10 +298,13 @@ textarea {
     padding-left: 10px;
     font-size: 16px!important;
     cursor: pointer!important;
+    font-weight: 400!important;
+    color: #4C5D5B!important;
 }
 .wpforms-field-description label a{
     color: #4C5D5B;
     text-decoration: underline;
+    font-weight: 400;
 }
 .wpforms-field-description label a:hover{
     color: #36D56B;
