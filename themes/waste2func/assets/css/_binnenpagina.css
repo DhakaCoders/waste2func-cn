@@ -129,10 +129,15 @@ ol li::before {
 Gallery design
 */
 
-.gallery-wrap{
-	padding-top: 20px;
-	padding-bottom: 20px;
+.gallery-wrap h1,
+.gallery-wrap h2,
+.gallery-wrap h3,
+.gallery-wrap h4,
+.gallery-wrap h5,
+.gallery-wrap h6{
+	margin-bottom: 30px;
 }
+
 .gallery {
 	margin-left: -12px;
 	margin-right: -12px;
@@ -258,18 +263,12 @@ Gallery design
     justify-content: center;
 }
 
-hr{
-	margin-top: 0;
-	padding-top: 40px;
-	margin-bottom: 40px;
-	border-top: none;
-	border-bottom: 1px solid #E4E4E4;
-}
+
 
 
 .fl-dft-lftimg-rgtdes {
 	margin: 0 0;
-	padding-bottom: 55px;
+	padding-bottom: 65px;
 	display: flex;
 	align-items: center;
 }
@@ -313,7 +312,7 @@ hr{
 
 /*-- left des right img customize---*/
 .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes{
-	padding-top: 10px;
+	padding-top: 0;
 }
 .fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-lft{
 	float: right;
@@ -530,6 +529,7 @@ hr{
 
 .dfp-partners-module{
 	padding-top: 60px;
+	padding-bottom: 50px;
 }
 
 .dfp-nieuws-module .wf-recente-update-hdr-lft {
@@ -559,6 +559,34 @@ hr{
 	padding-left: 12px;
 	padding-right: 12px;
 	width: 21%;
+}
+
+.dfp-lft-hr-border{
+	padding-top: 70px;
+	position: relative;
+}
+.dfp-lft-hr-border:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 67%;
+	height: 5px;
+	background: #F5F9F6;
+}
+
+.dfp-rgt-hr-border{
+	padding-top: 70px;
+	position: relative;
+}
+.dfp-rgt-hr-border:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 67%;
+	height: 5px;
+	background: #F5F9F6;
 }
 
 
