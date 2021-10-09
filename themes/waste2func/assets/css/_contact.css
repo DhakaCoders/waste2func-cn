@@ -54,7 +54,7 @@
     border-left: none!important;
     border-right: none!important;
     box-sizing: border-box;
-    padding: 20px 20px 20px 0px;
+    padding: 18px 18px 18px 0px;
     padding-right: 20px;
     color: #808080;
     font-weight: 400;
@@ -530,36 +530,90 @@ textarea {
         width: 100%;
         margin: 0 auto;
     }
-    /*.contact-entry-header{
+    .contact-entry-header{
         border-bottom: none;
-        padding-bottom: 5px;
         position: relative;
     }
-    .contact-entry-header:after{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        right: -20px;
-        height: 5px;
-        background: #F5F9F6;
-        width: 68%;
-    }*/
     .cnt-sec-entry-hdr-title {
         margin-bottom: 15px;
     }
     .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea, 
-    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input {
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
         font-size: 24px;
+        height: 60px;
+        padding: 18px 18px 18px 0px;
+    }
+    .contact-form-lft{
+        position: relative;
+    }
+    .xs-cnt-bdr {
+        position: absolute;
+        right: -20px;
+        height: 5px;
+        background: #F5F9F6;
+        width: 68%;
+    }
+    .contact-entry-header p {
+        padding-bottom: 30px;
+    }
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container{
+        margin: 0 -10px;
+    }
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field {
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field label {
+        margin-bottom: 10px;
     }
     .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.wpforms-field-textarea textarea, 
-    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field input{
-        height: 60px;
-        padding: 20px 20px 20px 0px;
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field.FullWidthField textarea {
+        height: 200px!important;
+    }
+    .wpforms-field-description label{
+        font-size: 14px!important;
+    }
+    .wpforms-submit-container{
+        margin-top: 0;
+    }
+    .wpforms-field-description{
+        padding-bottom: 0;
+        padding-right: 0;
+    }
+    .contact-form-sec-wrp {
+        padding-bottom: 68px;
+    }
+    .contact-info-details-cntlr {
+        padding: 38px 30px 59px;
+    }
+    .contact-form-info-title{
+        font-size: 26px;
+    }
+    .cnt-addrs.cnt-details-col,
+    .contact-form-info-title {
+        margin-bottom: 38px;
+    }
+    .cnt-mail.cnt-details-col {
+        margin-bottom: 10px;
+    }
+    .cnt-tel.cnt-details-col {
+        margin-bottom: 42px;
+    }
+    .cnt-code.cnt-details-col {
+        margin-bottom: 30px;
+    }
+    .contact-form-wrp {
+        padding-top: 40px;
     }
 }
 @media (max-width: 575px){
+    .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container .wpforms-field{
+        width: 100%;
+    }
     
 }
 @media (max-width: 479px){
-    
+    .xs-cnt-bdr{
+        width: 75%;
+    }   
 }

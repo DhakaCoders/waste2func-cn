@@ -347,6 +347,15 @@ $(window).resize(function(){
   var contactEntryHeader = $('.contact-entry-header').height();
   $('.cnt-boder').css('top', contactEntryHeader);
 });
+
+
+var contactEntryHeader = $('.contact-entry-header').height();
+$('.xs-cnt-bdr').css('top', contactEntryHeader);
+
+$(window).resize(function(){
+  var contactEntryHeader = $('.contact-entry-header').height();
+  $('.xs-cnt-bdr').css('top', contactEntryHeader);
+});
 /*start of Shariful*/
 
   if (windowWidth < 767){
