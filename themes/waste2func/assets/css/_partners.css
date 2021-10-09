@@ -25,9 +25,9 @@
 	align-items: center;
 }
 .pp-grd-img i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
 }
 .pp-grd-img i img{
 	max-width: 210px;
