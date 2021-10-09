@@ -27,6 +27,9 @@
 	position: relative;
 	z-index: 3;
 }
+.page-bedankt-box-bg-inr ul li{
+	color: #D29500;
+}
 .page-bedankt-box-title{
 	font-weight: 300;
 	margin-bottom: 14px;
