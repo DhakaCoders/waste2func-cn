@@ -1,0 +1,18 @@
+.project-overview-fea-img-cntlr img{
+	width: 100%;
+}
+
+.project-overview-des-cntlr{
+	padding: 85px 0 0;
+}
+.pod-grds{
+	display: flex;
+	flex-wrap: wrap;
+}
+.pod-lft-des{
+	width: 70%;
+	padding-right: 25px;
+}
+.pod-rgt-sidebar{
+	width: 30%;
+}
