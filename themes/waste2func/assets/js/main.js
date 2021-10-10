@@ -253,6 +253,14 @@ if (windowWidth > 767) {
     $(".right-sqr").css('height', RAH);
     $('.right-sqr').css('width', rightSqrW);
   }
+  if( $('.page-right-sqr').length ){
+    var phdrH = $('.header').outerHeight();
+    var windowWidth_1920 = $('.page-body-cntlr').width();
+    var pConW = $('.container').width();
+    var prightSqrW = ((windowWidth_1920 - pConW) /2);
+    $(".page-right-sqr").css('height', phdrH);
+    $('.page-right-sqr').css('width', prightSqrW);
+  }
 }
 if (windowWidth > 767) {
   if( $('.right-angle').length ){
@@ -266,8 +274,18 @@ if (windowWidth > 767) {
     $(".right-angle").css('height', RAH);
     $('.right-angle').css('border-top-width', RAH);
     $('.right-angle').css('right', rightSqrW);
-
   }
+  /*if( $('.page-right-angle').length ){
+    var windowWidth_1920 = $('.page-body-cntlr').width();
+    var ConW = $('.container').width();
+    var rightSqrW = ((windowWidth_1920 -ConW) /2);
+    var pahdrH = $('.header').outerHeight();
+    $(".page-right-angle").css('height', pahdrH);
+    $('.page-right-angle').css('border-top-width', RAH);
+    $('.page-right-angle').css('right', rightSqrW);
+  }*/
+
+
 }
 
 
