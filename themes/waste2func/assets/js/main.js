@@ -388,9 +388,9 @@ $(window).resize(function(){
   }
 
   if(windowWidth < 767){
-    $('.page-entry-hdr ul li a').on('click', function(){
-      
-    });
+    if($('.select-2-cntlr').length ){
+      $('.select-2-cntlr').select2();
+    }
   }
 
 
