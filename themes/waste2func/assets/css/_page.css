@@ -249,6 +249,7 @@ body::-webkit-scrollbar-thumb {
 	font-weight: 400;
 	color: #4C5D5B;
 	line-height: 1;
+	text-decoration: none;
 }
 .fl-pagination-ctlr ul li span.current{
 	color: #36D56B;
