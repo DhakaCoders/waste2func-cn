@@ -46,7 +46,7 @@
 	z-index: 5;
 	background: rgba(218, 236, 224, 0.34);
 }
-/*.page-right-angle{
+.page-right-angle{
 	height: 200px;
 	position: absolute;
 	top: 0;
@@ -54,8 +54,8 @@
 	z-index: 5;
 	content: "";
     border-right: 178px solid rgba(218, 236, 224, 0.34);
-    border-top: 178px solid transparent;
-}*/
+    border-top: 140px solid transparent;
+}
 
 .header{
 
@@ -260,7 +260,7 @@ nav.main-nav > ul > li.menu-item-has-children ul.sub-menu li:hover:after {
 	margin-left: 50px;
 }
 .hdr-lang-cntlr{
-	margin-left: 35px;
+	margin-left: 50px;
 }
 .hdr-lang{
 	
