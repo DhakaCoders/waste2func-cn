@@ -292,6 +292,7 @@ body::-webkit-scrollbar-thumb {
     background-repeat: no-repeat;
     width: 14px;
     height: 8px;
+    z-index: 9;
 }
 .hm-select-down-icon option{
     background: #ff9140;
@@ -309,7 +310,6 @@ body::-webkit-scrollbar-thumb {
     height: 48px!important;
     border-color: #cecece!important;
     border: none!important;
-    padding-top: 2px;
 }
 .select2-search--dropdown{
     padding: 0!important;
@@ -350,6 +350,19 @@ body .select2-dropdown {
     opacity:1;
     border: none;
     font-size: 16px;
+    padding: 10px 35px 10px 9px;
+    position: relative;
+    z-index: 2;
+}
+.hm-select-down-icon .select2-container--default .select2-selection--single .select2-selection__rendered:after{
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	background: #F5F9F6;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
 }
 .select2-container--default .select2-search--dropdown .select2-search__field, 
 .bootstrap-select .dropdown-menu .bs-searchbox input {
@@ -439,7 +452,7 @@ span.select2.select2-container.select2-container--default {
 		top: 0;
 	}
 	.page-entry-hdr-title {
-	    margin-bottom: 15px;
+	    margin-bottom: 20px;
 	}
 	.fl-pagination-ctlr ul li a.prev i{
 		margin-top: 10px;
