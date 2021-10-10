@@ -815,7 +815,7 @@ Gallery design
 	    width: 100%;
 	    padding-left: 0;
 	    padding-right: 0;
-	    float: none;
+	    float: initial!important;
 	}
 	.gallerySlider .gallery-item{
 		display: none;
@@ -830,7 +830,7 @@ Gallery design
 	}
 
 
-	.btmGallerySlider .gallery-item{
+	/*.btmGallerySlider .gallery-item{
 		display: none;
 	}
 
@@ -840,7 +840,7 @@ Gallery design
 
 	.btmGallerySlider.slick-initialized .gallery-item{
 		display: block;
-	}
+	}*/
 	.fl-video-play-cntlr i svg{
 		width: 66px;
 		height:66px;
@@ -888,15 +888,8 @@ Gallery design
 	    padding-top: 40px;
 	}
 
-	.gallery-columns-2 .gallery-item:nth-child(2n+1), 
-	.gallery-columns-3 .gallery-item:nth-child(3n+1), 
-	.gallery-columns-4 .gallery-item:nth-child(4n+1), 
-	.gallery-columns-5 .gallery-item:nth-child(5n+1), 
-	.gallery-columns-6 .gallery-item:nth-child(6n+1), 
-	.gallery-columns-7 .gallery-item:nth-child(7n+1), 
-	.gallery-columns-8 .gallery-item:nth-child(8n+1), 
-	.gallery-columns-9 .gallery-item:nth-child(9n+1) {
-	    clear: none;
+	.gallery-item {
+	    clear: initial!important;
 	}
 	.dfp-grd-module-ctlr .dfp-grd-item{
 		margin-bottom: 40px;
