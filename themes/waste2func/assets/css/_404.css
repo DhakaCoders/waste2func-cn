@@ -5,10 +5,12 @@
 	border: 1px solid #D9534F
 }
 
+/*start responsive*/
+/*start responsive*/
+/*start responsive*/
 
-
-@media(max-width: 420px){
-	.page-bedankt-box-bg-inr .page-bedankt-box-title br{
+@media(max-width: 479px){
+	.page-404-box-bg-inr .page-bedankt-box-title br{
 		display: none;
 	}
 }

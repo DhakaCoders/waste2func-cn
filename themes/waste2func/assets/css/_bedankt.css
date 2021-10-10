@@ -1,11 +1,12 @@
 .page-bedankt-cntent-cntlr{
 	padding-top: 134px;
 	padding-bottom: 98px;
+	position: relative;
 }
 .page-bedankt-box{
 	position: relative;
 	padding-left: 25px;
-	max-width: 1063px;
+	max-width: 950px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -77,6 +78,9 @@
 	}
 }
 @media(max-width: 1199px){
+	.page-bedankt-box{
+		padding-left: 23px;
+	}
 	.page-bedankt-box-bg {
     	padding: 65px 50px 78px 65px;
 	}
@@ -113,8 +117,21 @@
 	.page-bedankt-box-bg-inr .page-bedankt-box-title{
 		font-size: 42px;
 	}
+
 }
 @media(max-width: 575px){
+	.page-bedankt-cntent-cntlr:after{
+		top: 0;
+		content: "";
+		background: #F5F9F6;
+		width: 60%;
+		position: absolute;
+		left: 0;
+		height: 5px;
+	}
+	.page-bedankt-box{
+		padding-left: 20px;
+	}
 	.page-bedankt-box-bg {
     	padding: 36px 45px 52px 29px;
 	}
@@ -129,26 +146,20 @@
 		margin-bottom: 12px;
 	}
 	.page-bedankt-box ul{
-		padding-bottom: 22px;
+		padding-bottom: 18px;
 	}
 	.page-bedankt-cntent-cntlr{
-		padding-top: 40px;
+		padding-top: 65px;
 		padding-bottom: 45px;
 	}
 	
 }
 @media(max-width: 375px){
-	.page-bedankt-box-bg-inr .page-bedankt-box-title br{
-		display: none;
-	}
+	
 
 }
 @media(max-width: 359px){
-	/*.page-bedankt-box-bg-inr .page-bedankt-box-title{
-		letter-spacing: -2px;
-	}*/
-	.page-bedankt-box-bg-inr .page-bedankt-box-title{
-		font-size: 30px;
-		letter-spacing: -1px;
+	.page-bedankt-box-bg-inr .page-bedankt-box-title br{
+		display: none;
 	}
 }
