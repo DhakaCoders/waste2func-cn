@@ -245,13 +245,16 @@ Gallery design
     -webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     color: #fff;
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
+.fl-video-play-cntlr i svg{
+	width: 70px;
+	height: 70px;
+}
 
 
 
@@ -632,7 +635,7 @@ Gallery design
 
 @media(max-width: 991px){
 	.dfp-promo-module-title{
-		margin-bottom: 30px;
+		margin-bottom: 25px;
 	}
 	.dfp-plate-one-img-bx {
 	    margin-bottom: 35px;
@@ -711,6 +714,9 @@ Gallery design
 	.dfp-blockqoute blockquote p{
 		font-size: 25px;
 	}
+	.dfp-full-img-module {
+	    padding-bottom: 70px;
+	}
 	
 
 }
@@ -777,9 +783,9 @@ Gallery design
 	.default-page-con h2 {
 	    margin-bottom: 20px;
 	}
-	.default-page-con p {
+	/*.default-page-con p {
 	    margin-bottom: 20px;
-	}
+	}*/
 	.default-page-con ol li, ol li{
 		padding-bottom: 10px;
 		padding-left: 35px;
@@ -1009,7 +1015,7 @@ Gallery design
 	}
 	.gallery-item {
 	    padding: 0 8px;
-	    margin-bottom: 10px;
+	    margin-bottom: 15px;
 	}
 	.default-page-con ol,
 	.default-page-con ul,
@@ -1094,7 +1100,7 @@ Gallery design
 	    text-align: center;
 	}
 	.dfp-full-img-module{
-		padding-bottom: 40px;
+		padding-bottom: 50px;
 	}
 	
 

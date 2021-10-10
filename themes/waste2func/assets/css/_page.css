@@ -260,6 +260,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+@media(max-width: 1699px){
+	.page-entry-hdr-sec:after{
+		width: 63%;
+	}
+}
 
 @media(max-width: 1199px){
 	.breadcrumb-sec {
