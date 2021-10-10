@@ -642,6 +642,20 @@ Gallery design
 }
 
 
+.dfp-nieuws-details-grds-module{
+	display: flex;
+}
+
+.dfp-nieuws-details-lft{
+	width: 20%;
+	padding-right: 20px;
+}
+
+.dfp-nieuws-details-grds-ctlr{
+	width: 80%;
+}
+
+
 
 
 
