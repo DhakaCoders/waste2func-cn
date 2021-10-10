@@ -122,6 +122,9 @@
 	.pod-lft-des{
 		padding-right: 20px;
 	}
+	.pod-lft-des .dfp-text-module h3{
+		padding-top: 10px;
+	}
 }
 @media (max-width: 1199px){
 	
