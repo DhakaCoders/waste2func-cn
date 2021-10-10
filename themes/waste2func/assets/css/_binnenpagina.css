@@ -796,11 +796,44 @@ Gallery design
 	.dfp-rgt-hr-border {
 	    padding-top: 35px;
 	}
+	.gallery {
+	    margin-left: 0;
+	    margin-right: 0;
+	}
 	.gallery-columns-2 .gallery-item {
 	    width: 100%;
+	    padding-left: 0;
+	    padding-right: 0;
 	}
 	.gallery-columns-3 .gallery-item {
 	    width: 100%;
+	    padding-left: 0;
+	    padding-right: 0;
+	    float: none;
+	}
+	.gallerySlider .gallery-item{
+		display: none;
+	}
+
+	.gallerySlider .gallery-item:first-child{
+		display: block;
+	}
+
+	.gallerySlider.slick-initialized .gallery-item{
+		display: block;
+	}
+
+	
+	.btmGallerySlider .gallery-item{
+		display: none;
+	}
+
+	.btmGallerySlider .gallery-item:first-child{
+		display: block;
+	}
+
+	.btmGallerySlider.slick-initialized .gallery-item{
+		display: block;
 	}
 	.fl-video-play-cntlr i svg{
 		width: 66px;
@@ -847,6 +880,10 @@ Gallery design
 	}
 	.dfp-btn-module {
 	    padding-top: 40px;
+	}
+
+	.gallery-columns-2 .gallery-item:nth-child(2n+1), .gallery-columns-3 .gallery-item:nth-child(3n+1), .gallery-columns-4 .gallery-item:nth-child(4n+1), .gallery-columns-5 .gallery-item:nth-child(5n+1), .gallery-columns-6 .gallery-item:nth-child(6n+1), .gallery-columns-7 .gallery-item:nth-child(7n+1), .gallery-columns-8 .gallery-item:nth-child(8n+1), .gallery-columns-9 .gallery-item:nth-child(9n+1) {
+	    clear: none;
 	}
 }
 

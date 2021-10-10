@@ -375,13 +375,13 @@ $(window).resize(function(){
   if (windowWidth < 767){
     if( $('.btmGallerySlider').length ){
       $('.btmGallerySlider').slick({
-        dots: false,
+        dots: true,
         arrows: false,
         infinite: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         speed: 700,
-        slidesToShow: 1.5,
+        slidesToShow: 1,
         slidesToScroll: 1
       });
     }
