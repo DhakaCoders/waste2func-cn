@@ -1,6 +1,7 @@
 .page-bedankt-cntent-cntlr{
 	padding-top: 134px;
 	padding-bottom: 98px;
+	position: relative;
 }
 .page-bedankt-box{
 	position: relative;
@@ -113,8 +114,18 @@
 	.page-bedankt-box-bg-inr .page-bedankt-box-title{
 		font-size: 42px;
 	}
+
 }
 @media(max-width: 575px){
+	.page-bedankt-cntent-cntlr:after{
+		top: 0;
+		content: "";
+		background: #F5F9F6;
+		width: 60%;
+		position: absolute;
+		left: 0;
+		height: 5px;
+	}
 	.page-bedankt-box-bg {
     	padding: 36px 45px 52px 29px;
 	}
@@ -132,7 +143,7 @@
 		padding-bottom: 18px;
 	}
 	.page-bedankt-cntent-cntlr{
-		padding-top: 60px;
+		padding-top: 65px;
 		padding-bottom: 45px;
 	}
 	
