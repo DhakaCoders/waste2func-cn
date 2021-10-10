@@ -6,7 +6,7 @@
 .page-bedankt-box{
 	position: relative;
 	padding-left: 25px;
-	max-width: 1063px;
+	max-width: 950px;
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -78,6 +78,9 @@
 	}
 }
 @media(max-width: 1199px){
+	.page-bedankt-box{
+		padding-left: 23px;
+	}
 	.page-bedankt-box-bg {
     	padding: 65px 50px 78px 65px;
 	}
@@ -126,6 +129,9 @@
 		left: 0;
 		height: 5px;
 	}
+	.page-bedankt-box{
+		padding-left: 20px;
+	}
 	.page-bedankt-box-bg {
     	padding: 36px 45px 52px 29px;
 	}
@@ -149,17 +155,11 @@
 	
 }
 @media(max-width: 375px){
-	.page-bedankt-box-bg-inr .page-bedankt-box-title br{
-		display: none;
-	}
+	
 
 }
 @media(max-width: 359px){
-	/*.page-bedankt-box-bg-inr .page-bedankt-box-title{
-		letter-spacing: -2px;
-	}*/
-	.page-bedankt-box-bg-inr .page-bedankt-box-title{
-		font-size: 30px;
-		letter-spacing: -1px;
+	.page-bedankt-box-bg-inr .page-bedankt-box-title br{
+		display: none;
 	}
 }
