@@ -673,7 +673,16 @@ Gallery design
 	.dfp-full-img-module {
 	    padding-bottom: 70px;
 	}
-	
+	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt {
+	    padding-right: 30px;
+	}
+	.fl-dft-lftimg-rgtdes-rgt {
+	    padding-left: 30px;
+	}
+	.dfp-partners-module {
+	    padding-top: 50px;
+	    padding-bottom: 35px;
+	}
 
 }
 
@@ -712,24 +721,22 @@ Gallery design
 		padding-bottom: 30px;
 	}
 	.dfp-tbl-wrap{
-		margin-bottom: 20px;
-		padding-bottom: 20px;
+		margin-bottom: 0;
+		padding-bottom: 0;
 		border-top: none;
 	}
 	.default-page-con{
-		padding-top: 30px;
+		padding-top: 40px;
 	}
-	/*.table-dsc {
-	    overflow-x: scroll;
-	    overflow-y: hidden;
-	    white-space: nowrap;
+	.default-page-con:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 5px;
+		background: #F5F9F6;
+		width: 70%;
 	}
-	.table-dsc::-webkit-scrollbar {
-	  height: 6px;
-	}
-	.table-dsc::-webkit-scrollbar-thumb {
-	  border-radius: 4px;
-	}*/
 	.table-dsc table {
 	    width: 700px;
 	}
@@ -801,7 +808,7 @@ Gallery design
 	}
 	.fl-dft-lftimg-rgtdes{
 		display: block;
-		padding-bottom: 35px;
+		padding-bottom: 10px;
 	}
 	.fl-dft-lftimg-rgtdes-lft, 
 	.fl-dft-lftimg-rgtdes-rgt {
@@ -815,29 +822,32 @@ Gallery design
 	    width: 100%;
 	}
 	.dfp-btn-module-ctlr ul li {
-	    width: 50%;
+	    width: 32%;
+	}
+	.fl-dft-lftimg-rgtdes.fl-dft-rgtimg-lftdes .fl-dft-lftimg-rgtdes-rgt {
+	    padding-right: 0;
 	}
 	.dfp-blockqoute blockquote {
-	    padding: 100px 40px 55px 25px;
-	}
-	.dfp-blockqoute blockquote p {
-	    font-size: 24px;
-	}
-	.dfp-blockqoute-ctlr {
-	    padding-left: 20px;
-	}
-	.dfp-blockqoute-border {
-	    position: absolute;
-	    top: -20px;
-	    left: 0;
-	    right: 20px;
+	    padding: 70px 40px 70px 90px;
 	}
 	.dfp-blockqoute blockquote i {
-	    top: 30px;
+	    top: 55px;
 	    left: 25px;
 	}
-
-	
+	.dfp-blockqoute blockquote i img {
+	    max-width: 40px;
+	    width: 100%;
+	}
+	.dfp-blockqoute blockquote p {
+	    font-size: 22px;
+	}
+	.dfp-partners-module {
+	    padding-top: 40px;
+	    padding-bottom: 20px;
+	}
+	.dfp-btn-module {
+	    padding-top: 40px;
+	}
 }
 
 
@@ -901,6 +911,28 @@ Gallery design
 	.dfp-full-img-module{
 		padding-bottom: 50px;
 	}
+	.dfp-blockqoute blockquote {
+	    padding: 100px 40px 55px 25px;
+	}
+	.dfp-blockqoute blockquote p {
+	    font-size: 24px;
+	}
+	.dfp-blockqoute-ctlr {
+	    padding-left: 20px;
+	}
+	.dfp-blockqoute-border {
+	    position: absolute;
+	    top: -20px;
+	    left: 0;
+	    right: 20px;
+	}
+	.dfp-blockqoute blockquote i {
+	    top: 30px;
+	    left: 25px;
+	}
+	.dfp-btn-module-ctlr ul li {
+	    width: 38%;
+	}
 
 }
 
@@ -915,7 +947,9 @@ Gallery design
 	.glry-col-2 .gallery-icon-img {
 	    height: 100px;
 	}
-	
+	.dfp-btn-module-ctlr ul li {
+	    width: 50%;
+	}
 }
 
 

@@ -289,7 +289,6 @@ body.home{
 	}
 	.cta-module{
 		padding: 75px 30px;
-		margin-bottom: 40px;
 	}
 	.cta-module-border{
 		right: 25px;
@@ -355,7 +354,7 @@ body.home{
 	}
 	.cta-module {
 	    padding: 60px 30px;
-	    margin-bottom: 30px;
+	    margin-bottom: 40px;
 	}
 	.wf-client-sec {
 	    padding-bottom: 40px;
@@ -465,7 +464,7 @@ body.home{
 	.wf-nieuws-grds ul li {
 	    padding-bottom: 45px;
 	}
-	.wf-nieuws-grd-item-des a{
+	.wf-nieuws-grd-item-des > a{
 		font-size: 20px;
 	}
 }
