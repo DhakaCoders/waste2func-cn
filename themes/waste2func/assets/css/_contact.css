@@ -357,6 +357,7 @@ textarea {
     font-weight: 400;
     display: inline-block;
     vertical-align: baseline;
+    text-decoration: none;
 }
 .cnt-details-col a:hover{
     color: #36D56B;
