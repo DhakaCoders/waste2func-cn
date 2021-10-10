@@ -356,6 +356,23 @@ $(window).resize(function(){
   var contactEntryHeader = $('.contact-entry-header').height();
   $('.xs-cnt-bdr').css('top', contactEntryHeader);
 });
+
+
+if (windowWidth < 575){
+    if( $('.xs-po-gallery-halfslider').length ){
+      $('.xs-po-gallery-halfslider').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
+
 /*start of Shariful*/
 
   if (windowWidth < 767){
