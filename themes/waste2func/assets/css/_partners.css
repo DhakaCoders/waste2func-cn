@@ -35,6 +35,8 @@
 }
 .pp-grd-item:hover i  img{
 	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
 }
 .pp-grd-item:hover{
 	border: 1px solid #e9ab17;
