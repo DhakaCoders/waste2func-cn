@@ -35,6 +35,8 @@
 }
 .pp-grd-item:hover i  img{
 	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
 }
 .pp-grd-item:hover{
 	border: 1px solid #e9ab17;
@@ -82,9 +84,6 @@
 
 /*-------------responsive------------------*/
 @media(max-width: 1199px){
-	.pp-grd-cont-hdng {
-    	font-size: 21px;
-	}
 	.pp-grd-item {
 	    padding: 6px 30px 30px;
 	}
@@ -111,7 +110,8 @@
 	}
 	.pp-grd-img i img {
 	    max-height: 111px;
-	    /*max-width: 245px;*/
+	    max-width: 245px;
+	    width: 100%;
 	}
 	.pp-grd-img {
 	    height: 195px;
@@ -120,7 +120,7 @@
 	    padding: 0 10px 35px 10px;
 	}
 	.pp-grd-item {
-	    padding: 6px 20px 35px;
+	    padding: 6px 24px 35px;
 	}
 	.pp-grd-cont-hdng{
 		margin-bottom: 15px;
@@ -129,10 +129,6 @@
 	.pp-grd-cont-cntlr p{
 		letter-spacing: 0;
 		line-height: 1.5;
-
-	}
-	.pp-grd-abs-btn{
-		font-size: ;
 	}
 	.pp-page-entry-hdr-sec{
 		margin-bottom: 20px;
@@ -168,11 +164,7 @@
 	    margin-bottom: 30px;
 	}
 	.partners-page-grids-cntlr ul li {
-	    max-width: 100%;
-	}
-	.pp-grd-item{
-		max-width: 650px;
-		margin: 0 auto;
+	    max-width: 50%;
 	}
 	.page-entry-hdr p{
 		margin-bottom: 33px;
@@ -189,9 +181,14 @@
 
 @media(max-width: 639px){
 
+
 }
 
 @media(max-width: 575px){
+	.partners-page-grids-cntlr ul li {
+	    max-width: 100%;
+	    width: 500px;
+	}
 	.pp-grd-img i img {
 	    height: auto;
 	    max-width: 245px;
