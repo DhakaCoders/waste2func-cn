@@ -46,7 +46,7 @@
 	z-index: 5;
 	background: rgba(218, 236, 224, 0.34);
 }
-.page-right-angle hide-sm{
+.page-right-angle{
 	height: 200px;
 	position: absolute;
 	top: 0;
