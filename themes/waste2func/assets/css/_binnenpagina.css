@@ -598,6 +598,42 @@ Gallery design
 
 
 
+/*nieuws details*/
+
+.dfp-large-text-module{
+	padding-bottom: 15px;
+}
+.dfp-large-text-module p{
+	font-size: 30px;
+}
+
+#nieuws-details .dfp-plate-one-img-bx{
+	position: relative;
+}
+#nieuws-details .dfp-img-border{
+	position: absolute;
+	top: 85px;
+	left: 0;
+	height: 5px;
+	background: #F5F9F6;
+	width: 194px;
+}
+
+.nieuws-details-border{
+	position: absolute;
+	left: 0;
+	height: 5px;
+	background: #F5F9F6;
+	margin-top: 85px;
+}
+.dfp-promo-module-des-ctlr{
+	padding-bottom: 1px;
+}
+
+
+
+
+
 /*responsive*/
 
 @media(max-width: 1699px){

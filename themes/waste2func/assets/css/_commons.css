@@ -15,12 +15,12 @@ a, a:hover, a:focus, button:hover, button:focus{
 	outline: 0;
 }
 a{
-	color: #D29500;
-	/*text-transform: capitalize;*/
-	font-weight: 700;
+	color: #4C5D5B;
+	text-decoration: underline;
 }
 a:hover{
-	color: #36D56B;
+	color: #4C5D5B;
+	text-decoration: none;
 }
 .text-btn-hover a:hover{
 	letter-spacing: 1px;

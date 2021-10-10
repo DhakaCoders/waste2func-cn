@@ -375,7 +375,7 @@ if (windowWidth < 575){
 
 /*start of Shariful*/
 
-  if (windowWidth < 767){
+  if (windowWidth <= 767){
     if( $('.gallerySlider').length ){
       $('.gallerySlider').slick({
         dots: true,
@@ -389,7 +389,7 @@ if (windowWidth < 575){
       });
     }
   }
-  if (windowWidth < 767){
+  if (windowWidth <= 767){
     if( $('.btmGallerySlider').length ){
       $('.btmGallerySlider').slick({
         dots: true,
@@ -404,7 +404,7 @@ if (windowWidth < 575){
     }
   }
 
-  if (windowWidth < 767){
+  if (windowWidth <= 767){
     if( $('.dfpGrdSlider').length ){
       $('.dfpGrdSlider').slick({
         dots: true,
@@ -419,11 +419,16 @@ if (windowWidth < 575){
     }
   }
 
-  if(windowWidth < 767){
+  if(windowWidth <= 767){
     if($('.select-2-cntlr').length ){
       $('.select-2-cntlr').select2();
     }
   }
+
+  var promodesHeight = $('.dfp-promo-module-des-ctlr').height();
+
+  $('.nieuws-details-border').css('width', containerLgtOffset);
+  $('.nieuws-details-border').css('top', promodesHeight);
 
 
 
