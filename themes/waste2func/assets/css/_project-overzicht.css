@@ -185,11 +185,14 @@
 	}
 	.pod-rgt-sidebar{
 		padding-top: 35px;
-		width: 33%;
+		width: 35%;
 	}
 	.pod-lft-des{
 		padding-right: 15px;
-		width: 67%;
+		width: 65%;
+	}
+	.pod-lft-des .dfp-text-module h2 br{
+		display: none;
 	}
 	.project-overview-des-cntlr .cta-module {
     	padding-top: 45px;
@@ -237,9 +240,7 @@
 	.pod-lft-des{
 		padding-right: 0;
 	}
-	.pod-lft-des .dfp-text-module h2 br{
-		display: none;
-	}
+	
 	.pod-lft-des .dfp-text-module h2 {
     	margin-bottom: 20px;
 	}
