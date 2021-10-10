@@ -630,6 +630,17 @@ Gallery design
 	padding-bottom: 1px;
 }
 
+.dfp-date-module{
+	padding-bottom: 35px;
+}
+.dfp-date-module span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 30px;
+	color: #36D56B;
+	letter-spacing: -0.02em;
+}
+
 
 
 
