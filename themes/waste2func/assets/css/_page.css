@@ -186,6 +186,7 @@ body::-webkit-scrollbar-thumb {
 	letter-spacing: -0.02em;
 	font-weight: 700;
 	text-transform: capitalize;
+	text-decoration: none;
 }
 .page-entry-hdr-grds ul li.active a,
 .page-entry-hdr-grds ul li a:hover{

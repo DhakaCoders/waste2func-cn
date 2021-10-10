@@ -15,12 +15,12 @@ a, a:hover, a:focus, button:hover, button:focus{
 	outline: 0;
 }
 a{
-	color: #D29500;
-	/*text-transform: capitalize;*/
-	font-weight: 700;
+	color: #4C5D5B;
+	text-decoration: underline;
 }
 a:hover{
-	color: #36D56B;
+	color: #4C5D5B;
+	text-decoration: none;
 }
 .text-btn-hover a:hover{
 	letter-spacing: 1px;
@@ -347,6 +347,7 @@ body.login-register.hide-account-title .select2-container--open .select2-dropdow
 	font-weight: 500;
 	border: 1px solid #239C4B;
 	text-transform: capitalize;
+	text-decoration: none;
 }
 
 .fl-green-btn:after{
@@ -387,6 +388,7 @@ body.login-register.hide-account-title .select2-container--open .select2-dropdow
 	font-weight: 500;
 	border: 1px solid #A1750A;
 	text-transform: capitalize;
+	text-decoration: none;
 }
 .fl-coffee-btn:after{
 	content: "";
@@ -400,6 +402,12 @@ body.login-register.hide-account-title .select2-container--open .select2-dropdow
 	-webkit-transition: all 0.3s;
 	-ms-transition: all 0.3s;
 	transition: all 0.3s;
+}
+
+.fl-btn{
+	text-decoration: none;
+	color: #D29500;
+	font-weight: 700;
 }
 
 
