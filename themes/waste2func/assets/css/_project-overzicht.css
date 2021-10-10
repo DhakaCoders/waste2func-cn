@@ -8,7 +8,7 @@
 .pod-grds{
 	display: flex;
 	flex-wrap: wrap;
-	padding-bottom: 55px;
+	padding-bottom: 53px;
 }
 .pod-lft-des{
 	width: 68%;
@@ -20,7 +20,7 @@
 }
 .pod-rgt-sidebar{
 	width: 32%;
-	padding-top: 40px;
+	padding-top: 36px;
 }
 
 .page-project-overview-con .wf-sec-entry-hdr{
@@ -35,7 +35,7 @@
 
 .project-overview-des-cntlr .cta-module-inr{
 	flex-wrap: wrap;
-	padding-right: 15px;
+	padding-right: 13px;
 }
 
 .project-overview-des-cntlr .cta-module-lft,
@@ -56,6 +56,7 @@
 	margin-bottom: 26px;
 }
 .project-overview-des-cntlr .cta-module-title{
+	font-size: 38px!important;
 	font-weight: 700;
 	margin-bottom: 26px;
 }
@@ -111,6 +112,12 @@
 .page-project-overview-con .dfp-rgt-hr-border{
 	padding-top: 55px;
 }
+.pod-rgt-sidebar .cta-module-ctlr{
+	padding-left: 25px;
+}
+.pod-rgt-sidebar .cta-module-ctlr .cta-module-border{
+	top: -25px;
+}
 
 
 
@@ -125,15 +132,149 @@
 	.pod-lft-des .dfp-text-module h3{
 		padding-top: 10px;
 	}
+	.page-project-overview-con .dfp-rgt-hr-border {
+    	padding-top: 50px;
+	}
+	.supported-by-sec-inr {
+    	padding-bottom: 60px;
+	}
+	.project-overview-des-cntlr .cta-module-title{
+		font-size: 36px!important;
+	}
+	.pod-grds{
+		padding-bottom: 50px;
+	}
 }
 @media (max-width: 1199px){
-	
+	.project-overview-des-cntlr {
+    	padding: 60px 0 0;
+	}
+	.pod-lft-des .dfp-text-module h2 {
+    	margin-bottom: 10px;
+	}
+	.pod-lft-des .dfp-text-module p{
+		margin-bottom: 26px;
+	}
+	.project-overview-des-cntlr .cta-module-title {
+    	font-size: 31px!important;
+    	margin-bottom: 24px;
+	}
+	.pod-lft-des .dfp-text-module h3 {
+    	padding-top: 7px;
+    	margin-bottom: 30px;
+	}
+	.pod-lft-des .gallery .gallery-item {
+    	margin-bottom: 28px;
+	}
+	.pod-grds{
+		padding-bottom: 40px;
+	}
+	.page-project-overview-con .dfp-rgt-hr-border {
+    	padding-top: 40px;
+	}
+	.page-project-overview-con .wf-client-sec{
+		padding-bottom: 20px;
+	}
+	.project-overview-des-cntlr .cta-module {
+    	padding-top: 58px;
+	}
 }
 @media (max-width: 991px){
-	
+	.project-overview-des-cntlr {
+    	padding: 50px 0 0;
+	}
+	.pod-rgt-sidebar{
+		padding-top: 35px;
+		width: 33%;
+	}
+	.pod-lft-des{
+		padding-right: 15px;
+		width: 67%;
+	}
+	.project-overview-des-cntlr .cta-module {
+    	padding-top: 45px;
+    	padding-left: 25px;
+    	padding-right: 25px;
+	}
+	.project-overview-des-cntlr .cta-module-mid,
+	.project-overview-des-cntlr .cta-module-lft{
+		padding-bottom: 0;
+	}
+	.project-overview-des-cntlr .cta-module-title{
+		font-size: 27px!important;
+	}
+	.project-overview-des-cntlr .cta-module-inr{
+		padding-right: 10px;
+	}
+	.pod-lft-des .dfp-text-module p {
+    	margin-bottom: 23px;
+	}
+	.pod-lft-des .dfp-text-module h3{
+		padding-top: 4px;
+		margin-bottom: 24px;
+	}
+	.pod-lft-des .gallery .gallery-item {
+    	margin-bottom: 25px;
+	}
+	.pod-grds {
+    	padding-bottom: 30px;
+	}
+	.page-project-overview-con .dfp-rgt-hr-border {
+   	 	padding-top: 30px;
+	}
+	.supported-by-sec-inr {
+    	padding-bottom: 50px;
+	}
 }
 @media (max-width: 767px){
-	
+	.pod-lft-des,
+	.pod-rgt-sidebar{
+		width: 100%;
+	}
+	.project-overview-des-cntlr {
+    	padding: 40px 0 0;
+	}
+	.pod-lft-des{
+		padding-right: 0;
+	}
+	.pod-lft-des .dfp-text-module h2 br{
+		display: none;
+	}
+	.pod-lft-des .dfp-text-module h2 {
+    	margin-bottom: 20px;
+	}
+	.pod-lft-des .dfp-text-module p {
+    	margin-bottom: 26px;
+	}
+	.pod-lft-des .dfp-text-module ul{
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+	.pod-rgt-sidebar .cta-module-ctlr {
+    	padding-left: 20px;
+	}
+	.pod-rgt-sidebar .cta-module-ctlr .cta-module-border {
+    	top: -20px;
+	}
+	.project-overview-des-cntlr .cta-module {
+    	padding: 38px 26px 65px;
+    	margin-bottom: 0;
+	}
+	.page-project-overview-con .wf-client-sec .dfp-rgt-hr-border{
+		display: none;
+	}
+	.page-project-overview-con .wf-sec-entry-hdr{
+		text-align: center;
+		max-width: 550px;
+    	width: 100%;
+    	margin: 0 auto;
+	}
+	.supported-by-sec-inr {
+    	padding-bottom: 40px;
+	}
+	.supported-by-sec-inr .sbs-title {
+    	margin-bottom: 23px;
+	}
 }
 @media (max-width: 575px){
 	
