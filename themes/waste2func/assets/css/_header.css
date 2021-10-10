@@ -38,6 +38,25 @@
     border-right: 767px solid rgba(218, 236, 224, 0.34);
     border-top: 454px solid transparent;
 }
+
+.page-right-sqr{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 5;
+	background: rgba(218, 236, 224, 0.34);
+}
+.page-right-angle{
+	height: 200px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 5;
+	content: "";
+    border-right: 178px solid rgba(218, 236, 224, 0.34);
+    border-top: 178px solid transparent;
+}
+
 .header{
 
 }
