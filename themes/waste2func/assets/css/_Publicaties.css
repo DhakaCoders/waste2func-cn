@@ -56,7 +56,13 @@
 		font-size: 22px;
 	}
 }
-
+/*@media(max-width: 1199px){
+	.publicaties-grid-cntlr{
+		max-width: 950px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}*/
 @media(max-width: 991px){
 	.publicaties-grid-cntlr{
 		max-width: 800px;

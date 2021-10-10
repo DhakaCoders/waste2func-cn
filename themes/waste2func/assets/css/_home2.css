@@ -167,6 +167,10 @@ body.home{
 	letter-spacing: inherit;
 }
 
+.wf-nieuws-grd-item-des > a{
+	font-size: 20px;
+}
+
 
 .wf-cta-sec{
 	padding-top: 50px;
