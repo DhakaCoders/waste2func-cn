@@ -141,9 +141,36 @@
 @media(max-width: 767px){
 	.pp-page-entry-hdr-sec{
 		margin-bottom: 15px;
+		position: relative;
+	}
+	.pp-page-entry-hdr-sec:before{
+		content: "";
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    height: 5px;
+	    background: #F5F9F6;
+	    width: 68%;
 	}
 	.pp-page-entry-hdr-sec {
 	    margin-bottom: 30px;
+	}
+	.partners-page-grids-cntlr ul li {
+	    max-width: 100%;
+	}
+	.pp-grd-item{
+		max-width: 550px;
+		margin: 0 auto;
+	}
+	.page-entry-hdr p{
+		margin-bottom: 33px;
+	}
+	.pp-page-entry-hdr-title {
+	    margin-bottom: 20px;
+	}
+	.partners-page-section {
+	    padding-top: 0;
+	    padding-bottom: 20px;
 	}
 
 }
@@ -157,5 +184,15 @@
 }
 
 @media(max-width: 479px){
+
+}
+
+@media(max-width: 359px){
+	.pp-grd-item {
+	    padding:0px 20px 35px;
+	}
+	.pp-grd-img {
+	    height: 175px;
+	}
 
 }
