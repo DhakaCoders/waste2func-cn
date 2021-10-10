@@ -108,7 +108,8 @@
 	}
 	.pp-grd-img i img {
 	    max-height: 111px;
-	    /*max-width: 245px;*/
+	    max-width: 245px;
+	    width: 100%;
 	}
 	.pp-grd-img {
 	    height: 195px;
