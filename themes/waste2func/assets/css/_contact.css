@@ -15,8 +15,6 @@
 }
 .contact-form-sec-wrp {
     position: relative;
-    z-index: 111111111;
-    background: #fff;
     padding-bottom: 94px;
 }
 .contact-form-wrp .wpforms-container .wpforms-form .wpforms-field-container {
@@ -629,4 +627,9 @@ textarea {
     .xs-cnt-bdr{
         width: 75%;
     }   
+}
+@media (max-width: 369px){
+    .wpforms-field-description label {
+        font-size: 13px!important;
+    }
 }
