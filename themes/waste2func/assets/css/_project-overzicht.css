@@ -303,6 +303,9 @@
 		padding-right: 20px;
 		padding-bottom: 20px;
 	}
+	.pod-lft-des .gallery .gallery-item {
+    	margin-bottom: 23px;
+	}
 	.page-project-overview-con .wf-client-grds ul {
     	justify-content: center;
 	}
