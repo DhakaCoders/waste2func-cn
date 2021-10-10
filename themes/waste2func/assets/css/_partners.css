@@ -20,7 +20,7 @@
 }
 .pp-grd-img{
 	border-bottom: 1px solid #F5F9F6;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -37,25 +37,125 @@
 	padding-bottom: 25px;
 	position: relative;
 }
-.pp-grd-cont-hdng{
-
+.pp-grd-cont-hdng a:hover{
+	color: #36D56B;
 }
 .pp-grd-abs-btn {
     position: absolute;
     left: 0;
     bottom: 0;
 }
-.pp-grd-abs-btn a{
-	padding-top: 30px;
-}
 .pp-grd-cont-hdng{
 	font-size: 24px;
 	line-height: 1.5;
-	margin-bottom: 25px;
+	font-weight: 500;
 }
 .pp-grd-cont-hdng a{
 	color: #4C5D5B;
+	font-weight: 500;
 }
 .pp-grd-cont-cntlr p{
 	line-height: 1.4;
+	margin-bottom: 20px;
+	letter-spacing: -0.7px;
+}
+.pp-page-entry-hdr-title{
+	margin-bottom: 30px;
+}
+.pp-grd-abs-btn a{
+	font-size: 20px;
+}
+
+
+/*-------------responsive------------------*/
+@media(max-width: 1199px){
+	.pp-grd-cont-hdng {
+    	font-size: 21px;
+	}
+	.pp-grd-item {
+	    padding: 6px 30px 30px;
+	}
+	.pp-grd-img i img {
+	    max-height: 120px;
+	    width: auto;
+	}
+	.partners-page-section {
+	    padding-top: 60px;
+	    padding-bottom: 45px;
+	}
+	.pp-grd-img{
+		height: 220px;
+	}
+
+
+
+}
+
+@media(max-width: 991px){
+	.partners-page-grids-cntlr ul li{
+		max-width: 50%;
+	}
+	.partners-page-section {
+	    padding-top: 50px;
+	    padding-bottom: 40px;
+	}
+	.pp-grd-img i img {
+	    max-height: 111px;
+	    max-width: 245px;
+	}
+	.pp-grd-img {
+	    height: 195px;
+	}
+	.partners-page-grids-cntlr ul li {
+	    padding: 0 12px 35px 12px;
+	}
+	.pp-grd-item {
+	    padding: 6px 25px 35px;
+	}
+	.pp-grd-cont-hdng{
+		margin-bottom: 15px;
+	}
+	.pp-grd-cont-cntlr p{
+		letter-spacing: 0;
+		line-height: 1.5;
+
+	}
+	.pp-grd-abs-btn{
+		font-size: ;
+	}
+	.pp-page-entry-hdr-sec{
+		margin-bottom: 20px;
+	}
+	.partners-page-section {
+	    padding-top: 15px;
+	    padding-bottom: 20px;
+	}
+
+
+}
+
+@media(max-width: 880px){
+
+}
+
+@media(max-width: 767px){
+	.pp-page-entry-hdr-sec{
+		margin-bottom: 15px;
+	}
+	.pp-page-entry-hdr-sec {
+	    margin-bottom: 30px;
+	}
+
+}
+
+@media(max-width: 639px){
+
+}
+
+@media(max-width: 575px){
+
+}
+
+@media(max-width: 479px){
+
 }
