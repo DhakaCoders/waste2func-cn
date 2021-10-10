@@ -376,7 +376,7 @@ $(window).resize(function(){
 });
 
 
-if (windowWidth < 575){
+if (windowWidth <= 575){
     if( $('.xs-po-gallery-halfslider').length ){
       $('.xs-po-gallery-halfslider').slick({
         dots: false,
