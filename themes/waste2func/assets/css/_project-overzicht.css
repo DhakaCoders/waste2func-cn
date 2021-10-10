@@ -339,6 +339,9 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+	.pod-lft-des .xs-po-gallery-halfslider .draggable{
+		padding-right: 100px;
+	}
 }
 @media (max-width: 359px){
 	.project-overview-des-cntlr .cta-module-title {
