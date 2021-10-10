@@ -387,6 +387,12 @@ $(window).resize(function(){
     }
   }
 
+  /*if(windowWidth < 767){
+    if($('.select-2-cntlr').length ){
+      $('.select-2-cntlr').select2();
+    }
+  }*/
+
 
 
 /*start of Dipok*/

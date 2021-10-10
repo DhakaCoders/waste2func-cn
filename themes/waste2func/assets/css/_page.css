@@ -238,6 +238,7 @@ body::-webkit-scrollbar-thumb {
 	-webkit-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
+	margin-top: -1px;
 }
 
 
@@ -247,7 +248,10 @@ body::-webkit-scrollbar-thumb {
 	color: #4C5D5B;
 	line-height: 1;
 }
-.fl-pagination-ctlr ul li span.current,
+.fl-pagination-ctlr ul li span.current{
+	color: #36D56B;
+	font-weight: 700;
+}
 .fl-pagination-ctlr ul li a:hover{
 	color: #36D56B;
 }
@@ -292,6 +296,12 @@ body::-webkit-scrollbar-thumb {
 	}
 	.page-entry-hdr-title {
 	    margin-bottom: 15px;
+	}
+	.fl-pagination-ctlr ul li a.prev i{
+		margin-top: 10px;
+	}
+	.fl-pagination-ctlr ul li a.next i{
+		margin-top: 10px;
 	}
 	
 }
