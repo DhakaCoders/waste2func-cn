@@ -387,6 +387,21 @@ $(window).resize(function(){
     }
   }
 
+  if (windowWidth < 767){
+    if( $('.dfpGrdSlider').length ){
+      $('.dfpGrdSlider').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
+
   if(windowWidth < 767){
     if($('.select-2-cntlr').length ){
       $('.select-2-cntlr').select2();
