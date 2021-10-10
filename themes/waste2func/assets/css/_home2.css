@@ -52,6 +52,7 @@ body.home{
 }
 .wf-bio-plant-des-title a{
 	color: #4C5D5B;
+	text-decoration: none;
 }
 .wf-bio-plant-des-title a:hover{
 	color: #D29500;
