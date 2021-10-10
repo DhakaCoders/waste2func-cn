@@ -530,6 +530,10 @@ body.allWork {
 	}
 }
 @media(max-width: 767px){
+	.header-inr{
+		padding-top: 35px;
+		padding-bottom: 30px;
+	}
 	.hdr-lft{
 		margin-left: auto;
 		transform: translateX(23px);
@@ -541,7 +545,7 @@ body.allWork {
 		max-height: 95px;
 	}
 	.left-angle{
-		width: 100px;
+		width: 70px;
 	}
 	.right-angle{
 		border-right: 184px solid rgba(218, 236, 224, 0.34);
