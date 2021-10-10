@@ -308,6 +308,12 @@ body::-webkit-scrollbar-thumb {
 	.fl-pagination-ctlr ul li a.next i{
 		margin-top: 10px;
 	}
+	.page-entry-hdr ul li{
+		display: none;
+	}
+	.page-entry-hdr ul li.active{
+		display: block;
+	}
 	
 }
 @media(max-width: 575px){
