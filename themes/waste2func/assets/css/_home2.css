@@ -160,6 +160,7 @@ body.home{
 }
 .wf-niuews-grd-item-title a{
 	color: #4C5D5B;
+	text-decoration: none;
 }
 
 .wf-niuews-grd-item-title a:hover{
