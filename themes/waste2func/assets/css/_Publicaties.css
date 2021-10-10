@@ -88,6 +88,9 @@
 	.publicaties-grid-col{
 		padding-bottom: 55px;
 	}
+	.cat-grid-list-item i{
+		max-width: 83px;
+	}
 }
 @media(max-width: 767px){
 .publicaties-grid-col{
