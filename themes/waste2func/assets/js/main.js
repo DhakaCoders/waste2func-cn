@@ -523,7 +523,7 @@ if (windowWidth <= 575){
     }
   }
 
-  var promodesHeight = $('.dfp-promo-module-des-ctlr').height();
+  var promodesHeight = $('.dfp-promo-module-des-ctlr').outerHeight();
 
   $('.nieuws-details-border').css('width', containerLgtOffset);
   $('.nieuws-details-border').css('top', promodesHeight);
