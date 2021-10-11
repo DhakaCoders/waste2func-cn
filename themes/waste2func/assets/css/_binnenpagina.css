@@ -690,6 +690,9 @@ Gallery design
 #nieuws-details .niuews-date{
 	padding-bottom: 20px;
 }
+.nieuws-details-lft-title br{
+	display: none;
+}
 
 
 
@@ -817,7 +820,6 @@ Gallery design
 	.dfp-nieuws-details-lft{
 		width: 100%;
 		padding-right: 0;
-		text-align: center;
 	}
 	.dfp-nieuws-details-grds-ctlr{
 		width: 100%;
@@ -828,6 +830,7 @@ Gallery design
 	.dfp-date-module {
     	padding-bottom: 25px;
 	}
+	
 
 }
 
@@ -1056,6 +1059,21 @@ Gallery design
 	.dfp-date-module {
     	padding-bottom: 20px;
 	}
+	.dfp-promo-module-des-ctlr .dfp-promo-module-des .dfp-promo-module-title{
+		font-size: 40px;
+		margin-bottom: 25px;
+	}
+	.dfp-nieuws-details-lft .nieuws-details-lft-title {
+    	font-size: 32px;
+	}
+	.dfp-nieuws-details-grds {
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+	.dfpNdGrdSlider.slick-dotted.slick-slider{
+		margin-bottom: 13px;
+	}
+
 }
 
 
@@ -1141,6 +1159,12 @@ Gallery design
 	.dfp-btn-module-ctlr ul li {
 	    width: 38%;
 	}
+	.dfp-promo-module-des-ctlr .dfp-promo-module-des .dfp-promo-module-title{
+		font-size: 32px;
+	}
+	.dfp-date-module {
+    	padding-bottom: 12px;
+	}
 
 }
 
@@ -1157,6 +1181,9 @@ Gallery design
 	}
 	.dfp-btn-module-ctlr ul li {
 	    width: 50%;
+	}
+	.nieuws-details-lft-title br{
+		display: block;
 	}
 }
 
