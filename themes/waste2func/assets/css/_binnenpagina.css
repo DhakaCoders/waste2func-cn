@@ -1073,6 +1073,12 @@ Gallery design
 	.dfpNdGrdSlider.slick-dotted.slick-slider{
 		margin-bottom: 13px;
 	}
+	#nieuws-details .wf-nieuws-grd-item-img-ctlr {
+    	margin-bottom: 41px;
+	}
+	#nieuws-details .wf-nieuws-grd-item-des p{
+		margin-bottom: 17px;
+	}
 
 }
 
