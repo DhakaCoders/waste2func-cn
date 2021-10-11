@@ -601,7 +601,12 @@ if (windowWidth <= 575){
   $('.nieuws-details-border').css('width', containerLgtOffset);
   $('.nieuws-details-border').css('top', promodesHeight);
 
+$(window).resize(function(){
+  var promodesHeight = $('.dfp-promo-module-des-ctlr').outerHeight();
 
+  $('.nieuws-details-border').css('width', containerLgtOffset);
+  $('.nieuws-details-border').css('top', promodesHeight);
+});
 
 /*start of Dipok*/
 
