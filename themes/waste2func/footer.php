@@ -110,6 +110,6 @@
 <script src="<?php echo THEME_URI; ?>/assets/select2/select2.min.js"></script>
 <script src="<?php echo THEME_URI; ?>/assets/flatpickr/flatpickr.js"></script>
 <script src="<?php echo THEME_URI; ?>/assets/js/main.js"></script>
-
+<?php wp_footer(); ?>
 </body>
 </html>

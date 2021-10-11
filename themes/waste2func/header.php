@@ -23,7 +23,7 @@
   <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/flatpickr/flatpickr.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="assets/fonts/custom-fonts.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/fonts/custom-fonts.css">
 
   <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/style.css">
   <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/css/responsive.css">
@@ -54,7 +54,7 @@
 
 
   </svg>
-
+  <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
     <div class="page-body-cntlr">
