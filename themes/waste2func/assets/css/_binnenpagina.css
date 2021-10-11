@@ -693,6 +693,9 @@ Gallery design
 .nieuws-details-lft-title br{
 	display: none;
 }
+#nieuws-details .dfp-promo-module-title{
+	max-width: 600px;
+}
 
 
 
