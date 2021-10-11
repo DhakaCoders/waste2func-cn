@@ -1121,9 +1121,16 @@ Gallery design
 	    width: 50%;
 	    padding: 0 11px;
 	}
-	#nieuws-details .gallerySlider .gallery {
+	#nieuws-details .gallery {
 	    margin-left: -11px;
 	    margin-right: -11px;
+	}
+	#nieuws-details .gallery-icon{
+		max-width: 100%;
+		width: 100%;
+	}
+	#nieuws-details .gallerySlider .draggable {
+    	padding-right: 77px;
 	}
 	
 
@@ -1225,9 +1232,6 @@ Gallery design
 	}
 	.dfp-date-module {
     	padding-bottom: 12px;
-	}
-	#nieuws-details .gallerySlider .draggable {
-    	padding-right: 77px;
 	}
 
 }
