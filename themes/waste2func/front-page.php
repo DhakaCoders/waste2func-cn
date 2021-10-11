@@ -15,7 +15,7 @@
         <div class="wf-bio-plant-rgt-des text-btn-hover">
           <h2 class="wf-bio-plant-des-title fl-h2"><a href="#">Waste2func by BIO BASE EUROPE PILOT PLANT</a></h2>
           <p>Diam sed tempor posuere blandit feugiat eu lacus augue. Tincidunt consectetur elit platea a fames pretium turpis. Ipsum, id vitae aliquam pharetra consectetur tortor pulvinar lobortis in.</p>
-          <a href="#">Meer Info</a>
+          <a class="fl-btn" href="#">Meer Info</a>
         </div>
       </div>
     </div>
@@ -62,7 +62,7 @@
                 <div class="wf-nieuws-grd-item-des text-btn-hover">
                   <h3 class="wf-niuews-grd-item-title fl-h3"><a href="#">Non, nulla purus, volutpat sit pretium volutpat.</a></h3>
                   <p>Diam sed tempor posuere blandit feugiat eu lacus augue. Tincidunt consectetur elit platea a fames pretium turpis. Ipsum, id vitae aliquam pharetra consectetur tortor pulvinar lobortis in.</p>
-                  <a href="#">Lees Meer</a>
+                  <a class="fl-btn" href="#">Lees Meer</a>
                 </div>
               </div>
             </div>

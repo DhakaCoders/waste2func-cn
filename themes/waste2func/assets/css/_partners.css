@@ -35,9 +35,14 @@
 }
 .pp-grd-item:hover i  img{
 	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
 }
 .pp-grd-item:hover{
 	border: 1px solid #e9ab17;
+}
+.pp-grd-cont-hdng a:hover{
+	color: #36D56B;
 }
 .pp-grd-img i img{
 	max-height: 135px;
@@ -49,9 +54,6 @@
 .pp-grd-cont-cntlr{
 	padding-bottom: 25px;
 	position: relative;
-}
-.pp-grd-cont-hdng a:hover{
-	color: #36D56B;
 }
 .pp-grd-abs-btn {
     position: absolute;
@@ -66,6 +68,7 @@
 .pp-grd-cont-hdng a{
 	color: #4C5D5B;
 	font-weight: 500;
+	text-decoration: none;
 }
 .pp-grd-cont-cntlr p{
 	line-height: 1.4;

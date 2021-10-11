@@ -98,6 +98,7 @@
 	letter-spacing: -0.02em;
 	color: #4C5D5B;
 	word-wrap: normal;
+	text-decoration: none;
 }
 .ftr-menu ul li a:hover{
 	color: #36D56B;
@@ -211,6 +212,7 @@
 	display: inline-block;
 	color: #859391;
 	font-weight: 400;
+	text-decoration: none;
 }
 .ftr-developed-by p a:hover{
 	color: #36D56B;

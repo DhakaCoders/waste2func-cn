@@ -52,6 +52,7 @@ body.home{
 }
 .wf-bio-plant-des-title a{
 	color: #4C5D5B;
+	text-decoration: none;
 }
 .wf-bio-plant-des-title a:hover{
 	color: #D29500;
@@ -160,6 +161,7 @@ body.home{
 }
 .wf-niuews-grd-item-title a{
 	color: #4C5D5B;
+	text-decoration: none;
 }
 
 .wf-niuews-grd-item-title a:hover{
@@ -173,7 +175,7 @@ body.home{
 
 
 .wf-cta-sec{
-	padding-top: 50px;
+	padding-top: 70px;
 }
 
 .cta-module-ctlr{
@@ -193,7 +195,7 @@ body.home{
 
 .cta-module{
 	margin-bottom: 60px;
-	padding: 90px 40px;
+	padding: 85px 40px;
 	background: #F5F9F6;
 }
 .cta-module-inr{
