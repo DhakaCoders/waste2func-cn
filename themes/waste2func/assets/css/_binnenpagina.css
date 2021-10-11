@@ -853,6 +853,20 @@ Gallery design
 		padding-left: 0;
 		padding-right: 0;
 	}
+	#nieuws-details .cta-module-lft {
+	    padding-right: 0;
+	    width: 100%;
+	    padding-bottom: 7px;
+	}
+	#nieuws-details .cta-module-mid {
+	    padding-right: 0;
+	    width: 100%;
+	    padding-bottom: 23px;
+	}
+	#nieuws-details .cta-module-rgt {
+	    width: 100%;
+	    text-align: left;
+	}
 	
 
 }

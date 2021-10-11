@@ -529,6 +529,20 @@ if (windowWidth <= 575){
       });
     }
   }
+  if (windowWidth <= 767){
+    if( $('#nieuws-details .gallerySlider').length ){
+      $('#nieuws-details .gallerySlider').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
 
 /*start of Shariful*/
 
