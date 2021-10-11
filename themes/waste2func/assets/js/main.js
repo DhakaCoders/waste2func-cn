@@ -563,7 +563,7 @@ if (windowWidth <= 575){
   if (windowWidth <= 767){
     if( $('.btmGallerySlider').length ){
       $('.btmGallerySlider').slick({
-        dots: true,
+        dots: false,
         arrows: false,
         infinite: false,
         autoplay: false,

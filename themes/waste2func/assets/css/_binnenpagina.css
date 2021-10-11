@@ -1134,7 +1134,13 @@ Gallery design
 	#nieuws-details .gallerySlider .draggable {
     	padding-right: 77px;
 	}
-	
+	.btmGallerySlider .gallery-item .gallery-icon{
+		max-width: 100%;
+		width: 100%;
+	}
+	.btmGallerySlider .gallery-item{
+		clear: initial!important;
+	}
 
 }
 
@@ -1172,9 +1178,6 @@ Gallery design
 	}
 	.default-page-con ol li::before, ol li::before{
 		margin-right: 5px;
-	}
-	.default-page-con ul li::before, ul li::before{
-		margin-top: 8px;
 	}
 	.default-page-con h1, 
 	.default-page-con h2, 
@@ -1265,6 +1268,10 @@ Gallery design
 	#nieuws-details .has-inline-bg .gallery-icon-img {
 	    height: 185px;
 	    display: block;
+	}
+	.cta-module-title {
+	    max-width: 243px;
+	    width: 100%;
 	}
 }
 
