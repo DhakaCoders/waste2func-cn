@@ -721,6 +721,9 @@ Gallery design
 	.dfp-large-text-module p {
     	font-size: 28px;
 	}
+	.dfp-promo-module-title{
+		max-width: 700px;
+	}
 
 
 }
