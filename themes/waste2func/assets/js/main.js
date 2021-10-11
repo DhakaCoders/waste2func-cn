@@ -403,11 +403,11 @@ if (windowWidth > 767) {
   
   var psahdrH = $('.header-sticky-inr').outerHeight();
   $(".page-left-angle-fixed").css('height', psahdrH);
-  $('.page-left-angle-fixed').css('border-bottom-width', psahdrH);
+  $('.page-left-angle-fixed').css('border-bottom-width', psahdrH + 2);
   $(window).resize(function(){
       var psahdrH = $('.header-sticky-inr').outerHeight();
       $(".page-left-angle-fixed").css('height', psahdrH);
-      $('.page-left-angle-fixed').css('border-bottom-width', psahdrH);
+      $('.page-left-angle-fixed').css('border-bottom-width', psahdrH + 2);
   });
 
 /* end of  sticky header angle */    
@@ -529,6 +529,20 @@ if (windowWidth <= 575){
       });
     }
   }
+  if (windowWidth <= 767){
+    if( $('#nieuws-details .gallerySlider').length ){
+      $('#nieuws-details .gallerySlider').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
 
 /*start of Shariful*/
 
@@ -549,7 +563,7 @@ if (windowWidth <= 575){
   if (windowWidth <= 767){
     if( $('.btmGallerySlider').length ){
       $('.btmGallerySlider').slick({
-        dots: true,
+        dots: false,
         arrows: false,
         infinite: false,
         autoplay: false,
@@ -560,6 +574,7 @@ if (windowWidth <= 575){
       });
     }
   }
+
 
   if (windowWidth <= 767){
     if( $('.dfpGrdSlider').length ){
@@ -587,7 +602,12 @@ if (windowWidth <= 575){
   $('.nieuws-details-border').css('width', containerLgtOffset);
   $('.nieuws-details-border').css('top', promodesHeight);
 
+$(window).resize(function(){
+  var promodesHeight = $('.dfp-promo-module-des-ctlr').outerHeight();
 
+  $('.nieuws-details-border').css('width', containerLgtOffset);
+  $('.nieuws-details-border').css('top', promodesHeight);
+});
 
 /*start of Dipok*/
 
