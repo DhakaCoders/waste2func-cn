@@ -575,6 +575,7 @@ if (windowWidth <= 575){
     }
   }
 
+
   if (windowWidth <= 767){
     if( $('.dfpGrdSlider').length ){
       $('.dfpGrdSlider').slick({

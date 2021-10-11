@@ -14,4 +14,24 @@ Text Domain: waste2func
 @import url('assets/css/main.css');
 
 
+.half-item-gallery .gallery-columns-2 .gallery-item:nth-child(2n+1), 
+.half-item-gallery .gallery-columns-3 .gallery-item:nth-child(3n+1), 
+.half-item-gallery .gallery-columns-4 .gallery-item:nth-child(4n+1), 
+.half-item-gallery .gallery-columns-5 .gallery-item:nth-child(5n+1), 
+.half-item-gallery .gallery-columns-6 .gallery-item:nth-child(6n+1), 
+.half-item-gallery .gallery-columns-7 .gallery-item:nth-child(7n+1), 
+.half-item-gallery .gallery-columns-8 .gallery-item:nth-child(8n+1), 
+.half-item-gallery .gallery-columns-9 .gallery-item:nth-child(9n+1){
+	clear: initial!important;
+}
+/*.half-item-gallery .gallery-item{
+	display: none;
+}*/
+.half-item-gallery .gallery-item:first-child{
+	display: block;
+}
+.half-item-gallery.slick-initialized .gallery-item{
+	display: block;
+}
+
 
