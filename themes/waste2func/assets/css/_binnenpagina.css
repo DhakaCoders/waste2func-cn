@@ -697,7 +697,9 @@ Gallery design
 	max-width: 600px;
 }
 
-
+#nieuws-details .dfp-promo-module{
+	position: relative;
+}
 
 
 
@@ -833,18 +835,16 @@ Gallery design
 	.dfp-date-module {
     	padding-bottom: 25px;
 	}
-	
-
-}
-
-@media(max-width: 880px){
 	.block-850{
 		max-width: 100%;
 		width: 100%;
 		padding-left: 0;
 		padding-right: 0;
 	}
+	
+
 }
+
 
 
 @media(max-width: 767px){
@@ -1082,10 +1082,21 @@ Gallery design
 	#nieuws-details .wf-nieuws-grd-item-des p{
 		margin-bottom: 17px;
 	}
+	.nieuws-details-border {
+    	margin-top: 85px;
+	}
 
 }
 
-
+@media(max-width: 639px){
+	#nieuws-details .dfp-img-border{
+	    top: 45px;
+    	width: 120px;
+	}
+	.nieuws-details-border{
+		margin-top: 45px;
+	}
+}
 
 
 @media(max-width: 575px){
@@ -1193,6 +1204,13 @@ Gallery design
 	}
 	.nieuws-details-lft-title br{
 		display: block;
+	}
+	#nieuws-details .dfp-img-border{
+	    top: 30px;
+    	width: 84px;
+	}
+	.nieuws-details-border{
+		margin-top: 30px;
 	}
 }
 
