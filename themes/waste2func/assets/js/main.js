@@ -456,6 +456,21 @@ if (windowWidth <= 575){
     }
   }
 
+  if (windowWidth <= 767){
+    if( $('.dfpNdGrdSlider').length ){
+      $('.dfpNdGrdSlider').slick({
+        dots: true,
+        arrows: false,
+        infinite: false,
+        autoplay: false,
+        autoplaySpeed: 4000,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+    }
+  }
+
 /*start of Shariful*/
 
   if (windowWidth <= 767){

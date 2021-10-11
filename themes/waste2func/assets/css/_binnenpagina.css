@@ -690,6 +690,9 @@ Gallery design
 #nieuws-details .niuews-date{
 	padding-bottom: 20px;
 }
+.nieuws-details-lft-title br{
+	display: none;
+}
 
 
 
@@ -698,7 +701,9 @@ Gallery design
 /*responsive*/
 
 @media(max-width: 1699px){
-	
+	.dfp-large-text-module p {
+    	font-size: 28px;
+	}
 
 
 }
@@ -718,7 +723,24 @@ Gallery design
 	.dfp-rgt-hr-border {
 	    padding-top: 60px;
 	}
-	
+	.dfp-large-text-module {
+    	padding-bottom: 10px;
+	}
+	.dfp-large-text-module p {
+    	font-size: 27px;
+	}
+	.dfp-plate-one-img-bx {
+    	margin-bottom: 40px;
+	}
+	.dfp-nieuws-details-lft .nieuws-details-lft-title{
+		font-size: 40px;
+	} 
+	.dfp-nieuws-details-lft{
+		padding-right: 15px;
+	}
+	.dfp-date-module {
+    	padding-bottom: 30px;
+	}
 
 }
 
@@ -786,6 +808,29 @@ Gallery design
 	    padding-top: 50px;
 	    padding-bottom: 35px;
 	}
+	.dfp-large-text-module {
+    	padding-bottom: 5px;
+	}
+	.dfp-large-text-module p {
+    	font-size: 26px;
+	}
+	.dfp-nieuws-details-grds-module{
+		flex-wrap: wrap;
+	}
+	.dfp-nieuws-details-lft{
+		width: 100%;
+		padding-right: 0;
+	}
+	.dfp-nieuws-details-grds-ctlr{
+		width: 100%;
+	}
+	.dfp-nieuws-details-lft .nieuws-details-lft-title {
+    	font-size: 35px;
+	}
+	.dfp-date-module {
+    	padding-bottom: 25px;
+	}
+	
 
 }
 
@@ -1011,6 +1056,30 @@ Gallery design
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.dfp-date-module {
+    	padding-bottom: 20px;
+	}
+	.dfp-promo-module-des-ctlr .dfp-promo-module-des .dfp-promo-module-title{
+		font-size: 40px;
+		margin-bottom: 25px;
+	}
+	.dfp-nieuws-details-lft .nieuws-details-lft-title {
+    	font-size: 32px;
+	}
+	.dfp-nieuws-details-grds {
+	    display: flex;
+	    flex-wrap: wrap;
+	}
+	.dfpNdGrdSlider.slick-dotted.slick-slider{
+		margin-bottom: 13px;
+	}
+	#nieuws-details .wf-nieuws-grd-item-img-ctlr {
+    	margin-bottom: 41px;
+	}
+	#nieuws-details .wf-nieuws-grd-item-des p{
+		margin-bottom: 17px;
+	}
+
 }
 
 
@@ -1096,6 +1165,12 @@ Gallery design
 	.dfp-btn-module-ctlr ul li {
 	    width: 38%;
 	}
+	.dfp-promo-module-des-ctlr .dfp-promo-module-des .dfp-promo-module-title{
+		font-size: 32px;
+	}
+	.dfp-date-module {
+    	padding-bottom: 12px;
+	}
 
 }
 
@@ -1112,6 +1187,9 @@ Gallery design
 	}
 	.dfp-btn-module-ctlr ul li {
 	    width: 50%;
+	}
+	.nieuws-details-lft-title br{
+		display: block;
 	}
 }
 
