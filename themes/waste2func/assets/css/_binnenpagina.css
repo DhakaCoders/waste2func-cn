@@ -744,6 +744,9 @@ Gallery design
 	.dfp-date-module {
     	padding-bottom: 30px;
 	}
+	.nieuws-details-border{
+		margin-top: 86px;
+	}
 
 }
 
@@ -1079,6 +1082,9 @@ Gallery design
 	}
 	#nieuws-details .wf-nieuws-grd-item-des p{
 		margin-bottom: 17px;
+	}
+	.nieuws-details-border {
+    	margin-top: 82px;
 	}
 
 }
