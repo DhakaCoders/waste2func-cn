@@ -300,6 +300,10 @@ if (windowWidth > 767) {
   });
 }
 
+
+  
+
+
 if (windowWidth > 767) {
   if( $('.right-angle').length ){
     var windowWidth_1920 = $('.page-body-cntlr').width();
@@ -352,6 +356,61 @@ if (windowWidth > 767) {
   }
 
 }
+
+
+/*sticky header angle */
+  /* right*/
+  if( $('.page-right-sqr-fixed').length ){
+      var psdrH = $('.header-sticky').outerHeight();
+      var windowWidth_1920 = $('.page-body-cntlr').width();
+      var psConW = $('.container').width();
+      var psrightSqrW = ((windowWidth_1920 - psConW) /2);
+      $(".page-right-sqr-fixed").css('height', psdrH);
+      $('.page-right-sqr-fixed').css('width', psrightSqrW);
+  }
+  $(window).resize(function(){
+    if( $('.page-right-sqr-fixed').length ){
+     var psdrH = $('.header-sticky').outerHeight();
+      var windowWidth_1920 = $('.page-body-cntlr').width();
+      var psConW = $('.container').width();
+      var psrightSqrW = ((windowWidth_1920 - psConW) /2);
+      $(".page-right-sqr-fixed").css('height', psdrH);
+      $('.page-right-sqr-fixed').css('width', psrightSqrW);
+    }
+  });
+
+  var windowWidth_1920 = $('.page-body-cntlr').width();
+  var psaConW = $('.container').width();
+  var psahdrH = $('.header-sticky-inr').outerHeight();
+  var psaraightSqrW = ((windowWidth_1920 -psaConW) /2);
+  $(".page-right-angle-fixed").css('height', psahdrH);
+  $('.page-right-angle-fixed').css('border-top-width', psahdrH);
+  $('.page-right-angle-fixed').css('right', psaraightSqrW);
+
+  $(window).resize(function(){
+      var windowWidth_1920 = $('.page-body-cntlr').width();
+      var psaConW = $('.container').width();
+      var psahdrH = $('.header-sticky-inr').outerHeight();
+      var psaraightSqrW = ((windowWidth_1920 -psaConW) /2);
+      $(".page-right-angle-fixed").css('height', psahdrH);
+      $('.page-right-angle-fixed').css('border-top-width', psahdrH);
+      $('.page-right-angle-fixed').css('right', psaraightSqrW);
+  });
+
+  /* left */
+
+
+  
+  var psahdrH = $('.header-sticky-inr').outerHeight();
+  $(".page-left-angle-fixed").css('height', psahdrH);
+  $('.page-left-angle-fixed').css('border-bottom-width', psahdrH);
+  $(window).resize(function(){
+      var psahdrH = $('.header-sticky-inr').outerHeight();
+      $(".page-left-angle-fixed").css('height', psahdrH);
+      $('.page-left-angle-fixed').css('border-bottom-width', psahdrH);
+  });
+
+/* end of  sticky header angle */    
 
 
 $(window).resize(function() { 
