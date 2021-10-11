@@ -403,11 +403,11 @@ if (windowWidth > 767) {
   
   var psahdrH = $('.header-sticky-inr').outerHeight();
   $(".page-left-angle-fixed").css('height', psahdrH);
-  $('.page-left-angle-fixed').css('border-bottom-width', psahdrH);
+  $('.page-left-angle-fixed').css('border-bottom-width', psahdrH + 2);
   $(window).resize(function(){
       var psahdrH = $('.header-sticky-inr').outerHeight();
       $(".page-left-angle-fixed").css('height', psahdrH);
-      $('.page-left-angle-fixed').css('border-bottom-width', psahdrH);
+      $('.page-left-angle-fixed').css('border-bottom-width', psahdrH + 2);
   });
 
 /* end of  sticky header angle */    
