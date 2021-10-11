@@ -8,6 +8,19 @@ $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
 	
+
+//fixed header
+$(window).scroll(function() { 
+    var scroll = $(window).scrollTop();   
+    if (scroll >= 100) {
+        $('.header-sticky').addClass('fixed-hdr');
+    } else {
+        $('.header-sticky').removeClass('fixed-hdr');
+    }  
+});
+
+
+  
 if($("ul.slick-dots li").length == 1){
    $("ul.slick-dots").hide();
 }
