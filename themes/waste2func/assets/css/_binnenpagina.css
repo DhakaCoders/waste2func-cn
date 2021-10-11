@@ -1117,6 +1117,15 @@ Gallery design
 	#nieuws-details .cta-module-title {
 	    font-size: 32px!important;
 	}
+	#nieuws-details .gallerySlider .gallery-item {
+	    width: 50%;
+	    padding: 0 11px;
+	}
+	#nieuws-details .gallerySlider .gallery {
+	    margin-left: -11px;
+	    margin-right: -11px;
+	}
+	
 
 }
 
@@ -1217,6 +1226,9 @@ Gallery design
 	.dfp-date-module {
     	padding-bottom: 12px;
 	}
+	#nieuws-details .gallerySlider .draggable {
+    	padding-right: 77px;
+	}
 
 }
 
@@ -1243,6 +1255,10 @@ Gallery design
 	}
 	.nieuws-details-border{
 		margin-top: 30px;
+	}
+	#nieuws-details .has-inline-bg .gallery-icon-img {
+	    height: 185px;
+	    display: block;
 	}
 }
 
