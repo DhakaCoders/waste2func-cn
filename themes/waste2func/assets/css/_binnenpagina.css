@@ -833,18 +833,16 @@ Gallery design
 	.dfp-date-module {
     	padding-bottom: 25px;
 	}
-	
-
-}
-
-@media(max-width: 880px){
 	.block-850{
 		max-width: 100%;
 		width: 100%;
 		padding-left: 0;
 		padding-right: 0;
 	}
+	
+
 }
+
 
 
 @media(max-width: 767px){
