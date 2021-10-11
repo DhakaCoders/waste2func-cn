@@ -41,6 +41,9 @@
 .pp-grd-item:hover{
 	border: 1px solid #e9ab17;
 }
+.pp-grd-cont-hdng a:hover{
+	color: #36D56B;
+}
 .pp-grd-img i img{
 	max-height: 135px;
 	width: auto;
