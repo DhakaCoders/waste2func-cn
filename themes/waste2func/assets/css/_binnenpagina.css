@@ -128,19 +128,15 @@ Gallery design
 }
 
 .gallery {
+	display: flex;
+	flex-wrap: wrap;
 	margin-left: -12px;
 	margin-right: -12px;
 }
 
-.gallery:after {
-	display: table;
-	content: "";
-	clear: both;
-}
 
 .gallery-item {
 	margin: 0;
-	float: left;
 	padding: 0 12px;
 	margin-bottom: 24px;
 }
@@ -189,16 +185,6 @@ Gallery design
     width: 11.1111%
 }
 
-.gallery-columns-2 .gallery-item:nth-child(2n+1),
-.gallery-columns-3 .gallery-item:nth-child(3n+1),
-.gallery-columns-4 .gallery-item:nth-child(4n+1),
-.gallery-columns-5 .gallery-item:nth-child(5n+1),
-.gallery-columns-6 .gallery-item:nth-child(6n+1),
-.gallery-columns-7 .gallery-item:nth-child(7n+1),
-.gallery-columns-8 .gallery-item:nth-child(8n+1),
-.gallery-columns-9 .gallery-item:nth-child(9n+1) {
-	clear: left;
-}
 
 
 .gallery-icon-img{
@@ -984,6 +970,7 @@ Gallery design
 	    padding-top: 35px;
 	}
 	.gallery {
+		display: block;
 	    margin-left: 0;
 	    margin-right: 0;
 	}
@@ -996,7 +983,6 @@ Gallery design
 	    width: 100%;
 	    padding-left: 0;
 	    padding-right: 0;
-	    float: initial!important;
 	}
 	.gallerySlider .gallery-item{
 		display: none;
@@ -1011,7 +997,7 @@ Gallery design
 	}
 
 
-	/*.btmGallerySlider .gallery-item{
+	.btmGallerySlider .gallery-item{
 		display: none;
 	}
 
@@ -1021,7 +1007,7 @@ Gallery design
 
 	.btmGallerySlider.slick-initialized .gallery-item{
 		display: block;
-	}*/
+	}
 	.fl-video-play-cntlr i svg{
 		width: 66px;
 		height:66px;
@@ -1067,10 +1053,6 @@ Gallery design
 	}
 	.dfp-btn-module {
 	    padding-top: 40px;
-	}
-
-	.gallery-item {
-	    clear: initial!important;
 	}
 	.dfp-grd-module-ctlr .dfp-grd-item{
 		margin-bottom: 40px;
@@ -1141,23 +1123,13 @@ Gallery design
 	#nieuws-details .gallerySlider .draggable {
     	padding-right: 77px;
 	}
-	.btmGallerySlider .gallery{
-		margin-left: -11px;
-	    margin-right: -11px;
-	}
-	.btmGallerySlider .gallery-item{
-		padding: 0 11px;
-	}
-	.btmGallerySlider .draggable {
+	/*.btmGallerySlider .draggable {
     	padding-right: 77px;
-	}
-	.btmGallerySlider .gallery-item .gallery-icon{
+	}*/
+	/*.btmGallerySlider .gallery-item .gallery-icon{
 		max-width: 100%;
 		width: 100%;
-	}
-	.btmGallerySlider .gallery-item{
-		clear: initial!important;
-	}
+	}*/
 
 }
 
