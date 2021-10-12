@@ -566,7 +566,7 @@ if (windowWidth <= 575){
         dots: false,
         arrows: false,
         infinite: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
         speed: 700,
         slidesToShow: 1,
