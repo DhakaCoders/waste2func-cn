@@ -1123,13 +1123,21 @@ Gallery design
 	#nieuws-details .gallerySlider .draggable {
     	padding-right: 77px;
 	}
-	/*.btmGallerySlider .draggable {
+	.btmGallerySlider .draggable {
     	padding-right: 77px;
-	}*/
-	/*.btmGallerySlider .gallery-item .gallery-icon{
+	}
+	.btmGallerySlider .gallery-item .gallery-icon{
 		max-width: 100%;
 		width: 100%;
-	}*/
+	}
+	.half-item-gallery{
+		margin-left: -11px;
+		margin-right: -11px;
+	}
+	.half-item-gallery .gallery-item{
+		padding-left: 11px;
+		padding-right: 11px;
+	}
 
 }
 
