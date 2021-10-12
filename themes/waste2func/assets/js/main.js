@@ -569,7 +569,7 @@ if (windowWidth <= 575){
         autoplay: false,
         autoplaySpeed: 4000,
         speed: 700,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
 
       });
