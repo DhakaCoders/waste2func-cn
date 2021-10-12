@@ -8,9 +8,14 @@
 /*start responsive*/
 /*start responsive*/
 /*start responsive*/
-
+@media (max-width: 575px){
+	.page-404-cntent-cntlr .page-bedankt-box-title{
+		font-weight: 400;
+		line-height: 1.1;
+	}
+}
 @media(max-width: 479px){
-	.page-404-box-bg-inr .page-bedankt-box-title br{
+	.page-404-cntent-cntlr .page-bedankt-box-title br{
 		display: none;
 	}
 }
