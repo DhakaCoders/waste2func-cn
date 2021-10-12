@@ -530,8 +530,8 @@ if (windowWidth <= 575){
     }
   }
   if (windowWidth <= 767){
-    if( $('#nieuws-details .gallerySlider').length ){
-      $('#nieuws-details .gallerySlider').slick({
+    if( $('.NdGallerySlider').length ){
+      $('.NdGallerySlider').slick({
         dots: false,
         arrows: false,
         infinite: false,
