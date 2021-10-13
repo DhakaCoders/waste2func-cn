@@ -1,6 +1,8 @@
 <?php 
 get_header(); 
 $thisID = get_option( 'page_for_posts' );
+$customtitle = get_field('custom_page_title', $thisID);
+$post_title = !empty($customtitle)? $customtitle: get_the_title($thisID);
 ?>
 <section class="breadcrumb-sec hide-sm">
   <div class="container">
@@ -25,34 +27,38 @@ $thisID = get_option( 'page_for_posts' );
     </div>
   </div>
 </section>
-
+<?php 
+$terms = get_terms( array(
+    'taxonomy' => 'category',
+    'hide_empty' => false
+) );
+?>
 <section class="page-entry-hdr-sec">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="page-entry-hdr">
-          <h2 class="page-entry-hdr-title fl-h2">Nieuws</h2>
+          <h2 class="page-entry-hdr-title fl-h2"><?php echo $post_title; ?></h2>
+          <?php if( !empty($terms) && ! is_wp_error( $terms ) ): ?>
           <div class="page-entry-hdr-grds hide-sm">
             <ul class="reset-list">
-              <li class="active"><a href="#">Alle</a></li>
-              <li><a href="#">Category</a></li>
-              <li><a href="#">Category</a></li>
-              <li><a href="#">Category</a></li>
-              <li><a href="#">Category</a></li>
+              <li class="active"><a href="#"><?php _e('Alle', 'waste2func'); ?></a></li>
+              <?php foreach ( $terms as $term ): ?>
+              <li><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></a></li>
+              <?php endforeach; ?>
             </ul>
           </div>
           <div class="page-entry-hdr-select show-sm">
             <div class="wf-select hm-select-down-icon">
               <select class="wf-custom-select select-2-cntlr">
-                <option selected>Alle</option>
-                <option value="category1">Category 1</option>
-                <option value="category2">Category 2</option>
-                <option value="category3">Category 3</option>
-                <option value="category4">Category 4</option>
-                <option value="category5">Category 5</option>
+                <option selected><?php _e('Alle', 'waste2func'); ?></option>
+                <?php foreach ( $terms as $term ): ?>
+                <option value="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></option>
+                <?php endforeach; ?>
               </select>
             </div>
           </div>
+          <?php endif; ?>
         </div>
       </div>
     </div>
@@ -124,25 +130,6 @@ if( $wp_query->max_num_pages > 1 ):
         <div class="pagination-sec-inr">
           <div class="fl-pagination-ctlr hide-sm">
             <ul class="page-numbers">
-              <li>
-                <a class="prev page-numbers" href="#">
-                  Terug<i><svg class="pagi-lft-arrow-svg" width="10" height="7" viewBox="0 0 10 7" fill="#D29500"><use xlink:href="#pagi-lft-arrow-svg"></use> </svg></i>
-                </a>
-              </li>
-              <li><a class="page-numbers" href="#">1</a></li>
-              <li><a class="page-numbers" href="#">2</a></li>
-              <li><span class="page-numbers dots">…</span></li>
-              <li><a class="page-numbers" href="#3">6</a></li>
-              <li><span class="page-numbers current">7</span></li>
-              <li><a class="page-numbers" href="#3">8</a></li>
-              <li><a class="page-numbers" href="#3">9</a></li>
-              <li><span class="page-numbers dots">…</span></li>
-              <li><a class="page-numbers" href="#">20</a></li>
-              <li>
-                <a class="next page-numbers" href="#">Volgende<i><svg class="pagi-rgt-arrow-svg" width="10" height="7" viewBox="0 0 10 7" fill="#D29500"><use xlink:href="#pagi-rgt-arrow-svg"></use> </svg></i>
-                </a>
-              </li>
-            </ul>
             <?php
               $big = 999999999; // need an unlikely integer
               $wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
@@ -159,30 +146,6 @@ if( $wp_query->max_num_pages > 1 ):
             ?>
           </div>
           <div class="fl-pagination-ctlr show-sm">
-            <ul class="page-numbers">
-              <li>
-                <a class="prev page-numbers" href="#">
-                  <i>
-                    <svg class="pagi-lft-arrow-svg" width="10" height="7" viewBox="0 0 10 7" fill="#D29500">
-                    <use xlink:href="#pagi-lft-arrow-svg"></use> </svg>
-                  </i>
-                </a>
-              </li>
-              <li><a class="page-numbers" href="#">1</a></li>
-              <li><a class="page-numbers" href="#">2</a></li>
-              <li><span class="page-numbers dots">…</span></li>
-              <li><a class="page-numbers" href="#3">6</a></li>
-              <li><span class="page-numbers current">7</span></li>
-              <li><a class="page-numbers" href="#3">8</a></li>
-              <li>
-                <a class="next page-numbers" href="#">
-                  <i>
-                    <svg class="pagi-rgt-arrow-svg" width="10" height="7" viewBox="0 0 10 7" fill="#D29500">
-                    <use xlink:href="#pagi-rgt-arrow-svg"></use> </svg>
-                  </i>
-                </a>
-              </li>
-            </ul>
             <?php
               $big = 999999999; // need an unlikely integer
               $wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
@@ -190,8 +153,8 @@ if( $wp_query->max_num_pages > 1 ):
               echo paginate_links( array(
                 'base'      => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
                 'type'      => 'list',
-                'prev_text' => __('<i><svg class="pagi-left-arrow" width="18" height="30" viewBox="0 0 18 30" fill="#2DAB52"><use xlink:href="#pagi-left-arrow"></use></svg></i>'),
-                'next_text' => __('<i><svg class="pagi-right-arrow" width="18" height="30" viewBox="0 0 18 30" fill="#2DAB52"><use xlink:href="#pagi-right-arrow"></use></svg></i>'),
+                'prev_text' => __('<i><svg class="pagi-lft-arrow-svg" width="10" height="7" viewBox="0 0 10 7" fill="#D29500"><use xlink:href="#pagi-lft-arrow-svg"></use> </svg></i>'),
+                'next_text' => __('<i><svg class="pagi-rgt-arrow-svg" width="10" height="7" viewBox="0 0 10 7" fill="#D29500"><use xlink:href="#pagi-rgt-arrow-svg"></use> </svg></i>'),
                 'format'    => '?paged=%#%',
                 'current'   => $current,
                 'total'     => $wp_query->max_num_pages

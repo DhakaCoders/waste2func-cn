@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('home'); ?>
 <?php
 $showhideintro = get_field('showhideintro', HOMEID);
 if($showhideintro): 
