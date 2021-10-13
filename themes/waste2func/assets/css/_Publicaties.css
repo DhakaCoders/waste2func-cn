@@ -65,10 +65,6 @@
 	}
 }
 @media(max-width: 991px){
-	.publicaties-grid-col{
-		max-width: 800px;
-		margin: 0 auto;
-	}
 	.cat-grid-list-item p{
 		font-size: 20px;
 		line-height: 20px;
@@ -84,12 +80,12 @@
 	}
 }
 @media(max-width: 767px){
-.publicaties-grid-col{
+	.publicaties-grid-col{
 		width: 100%;
 		padding-right: 0;
 	}
-	.publicaties-grid-col{
-		max-width: 368px;
+	.cat-grd-item-cntlr{
+		max-width: 400px;
 		width: 100%;
 		margin: 0 auto;
 	}
@@ -107,17 +103,26 @@
 		max-width: 82px;
 		width: 100%;
 	}
+	.cat-grd-hdr-title{
+		margin-bottom: 32px;
+	}
+	.publicaties-page-cntnt-cntlr .cta-module{
+		margin-bottom: 40px;
+	}
+	.publicaties-page-sec{
+		padding-bottom: 10px;
+	}
 }
 @media(max-width: 575px){
 	.publicaties-grid-col{
 		padding-bottom: 38px;
 	}
 	.cat-grid-list-item i{
-		max-width: 75px;
-		width: 100%;
+		max-width: 80px;
+    	width: 100%;
 	}
 	.publicaties-grid-cntlr{
-		padding-top: 40px;
+		padding-top: 25px;
 	}
 	.cat-grid-list-item{
 		align-items: initial;
@@ -126,10 +131,16 @@
 @media(max-width: 479px){
 	.publicaties-grid-col{
 		max-width: 100%;
-		padding-bottom: 15px;
+		padding-bottom: 10px;
+	}
+	.cat-grid-list-item i {
+	    max-width: 50px;
+	    width: 100%;
 	}
 	.cat-grid-list-item i img{
-		padding-top: 3px;
+		margin-top: 3px;
+	    max-height: 40px;
+	    width: auto;
 	}
 }
 /*Responsive end*/

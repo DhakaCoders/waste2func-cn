@@ -44,6 +44,9 @@
 	.pagination-sec {
 	    padding: 45px 0;
 	}
+	.wf-nieuws-grds ul li {
+	    padding-bottom: 43px;
+	}
 }
 @media(max-width: 575px){
 

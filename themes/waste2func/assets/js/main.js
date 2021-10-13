@@ -530,8 +530,8 @@ if (windowWidth <= 575){
     }
   }
   if (windowWidth <= 767){
-    if( $('#nieuws-details .gallerySlider').length ){
-      $('#nieuws-details .gallerySlider').slick({
+    if( $('.NdGallerySlider').length ){
+      $('.NdGallerySlider').slick({
         dots: false,
         arrows: false,
         infinite: false,
@@ -566,11 +566,12 @@ if (windowWidth <= 575){
         dots: false,
         arrows: false,
         infinite: false,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
         speed: 700,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+
       });
     }
   }
