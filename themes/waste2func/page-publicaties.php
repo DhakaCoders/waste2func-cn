@@ -82,12 +82,13 @@ $terms = get_terms( array(
                     <?php 
                       while($query->have_posts()): $query->the_post(); 
                       global $post;
+                      $pdf_knop = get_field('upload_file', get_the_ID()); 
                     ?>  
                     <li>
                       <div class="cat-grid-list-item">
-                        <a href="<?php the_permalink(); ?>" class="overlay-link"></a>
+                        <?php if( !empty($pdf_knop) ) printf('<a href="%s" download class="overlay-link"></a>', $pdf_knop); ?>
                         <i><img src="<?php echo THEME_URI; ?>/assets/images/Vector.svg"></i>
-                        <?php the_excerpt(); ?>
+                        <?php the_title(); ?>
                       </div>
                     </li>
                     <?php endwhile; ?>
