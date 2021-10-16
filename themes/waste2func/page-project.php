@@ -181,7 +181,7 @@ if( empty($partobj) ){
             <div class="supported-by-sec-inr">
               <h3 class="fl-h3 sbs-title"><?php _e('Supported by', 'waste2func'); ?>:</h3>
               <div class="sbs-grd-cntlr">
-              	<?php if( $clogos['ft_tekst'] ): ?>
+              	<?php if( $clogos['logo_1'] ): ?>
                 <div class="sbs-grd-col-lft">
                   <div class="sbs-grd-col-lft-con">
                     <?php 
@@ -197,7 +197,7 @@ if( empty($partobj) ){
                     <ul class="reset-list">
                      <?php if( $clogos['logo_2'] ): ?>
                       <li>
-						<?php 
+						          <?php 
 		                    if( !empty($clogos['knop_2']) ) printf('<a target="_blank" href="%s">', $clogos['knop_2']);
 		                    echo cbv_get_image_tag($clogos['logo_2']);
 		                    if( !empty($clogos['knop_2']) ) printf('</a>');
@@ -208,7 +208,7 @@ if( empty($partobj) ){
                   		if( $clogos['logo_3'] ):
                       ?>
                       <li>
-						<?php 
+						          <?php 
 		                    if( !empty($clogos['knop_3']) ) printf('<a target="_blank" href="%s">', $clogos['knop_3']);
 		                    echo cbv_get_image_tag($clogos['logo_3']);
 		                    if( !empty($clogos['knop_3']) ) printf('</a>');

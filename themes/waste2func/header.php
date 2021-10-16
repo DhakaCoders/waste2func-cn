@@ -10,24 +10,7 @@
   <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
   <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
   <?php } ?>
-
-  <link rel="stylesheet" href="<?php echo THEME_URI; ?>/assets/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/fonts/font-awesome/font-awesome.css">
-  
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/css/animate.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/fancybox3/dist/jquery.fancybox.min.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/slick.slider/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/slick.slider/slick.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/swiper/swiper-bundle.min.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/select2/select2.min.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/flatpickr/flatpickr.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/fonts/custom-fonts.css">
-
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/style.css">
-  <link rel="stylesheet" type="text/css" href="<?php echo THEME_URI; ?>/assets/css/responsive.css">
-
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -65,6 +48,14 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php 
+  $logoObj = get_field('hdlogo', 'options');
+  if( is_array($logoObj) ){
+    $logo_tag = '<img src="'.$logoObj['url'].'" alt="'.$logoObj['alt'].'" title="'.$logoObj['title'].'">';
+  }else{
+    $logo_tag = '';
+  }
+?> 
   <div class="page-body-cntlr">
     <!-- start of page header -->
     <div class="bdoverlay"></div>
@@ -83,26 +74,26 @@
           <div class="col-md-12">
             <div class="header-inr clearfix">
               <div class="hdr-lft">
-                <div class="logo">
-                  <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg"></a>
-                </div>
+              <?php if( !empty($logo_tag) ): ?>
+              <div class="logo">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                  <?php echo $logo_tag; ?>
+                </a>
+              </div>
+              <?php endif; ?>
               </div>
               <div class="hdr-rgt">
                 <div class="hdr-menu hide-sm">
                   <nav class="main-nav">
-                    <ul class="clearfix reset-list">
-                      <li class="current-menu-item"><a href="#">Projecten</a></li>
-                      <li class="menu-item-has-children">
-                        <a href="#">Nieuws</a>
-                        <ul class="sub-menu">
-                          <li><a href="#">submenu 1</a></li>
-                          <li><a href="#">submenu 2</a></li>
-                          <li><a href="#">submenu 3</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Registratie App</a></li>
-                      <li class="hdr-menu-btn"><a href="#">Contact</a></li>
-                    </ul>
+                    <?php 
+                      $menuOptions = array( 
+                          'theme_location' => 'cbv_main_menu', 
+                          'menu_class' => 'reset-list clearfix',
+                          'container' => '',
+                          'container_class' => ''
+                        );
+                      wp_nav_menu( $menuOptions ); 
+                    ?>
                   </nav>
                 </div>
                 <div class="hdr-lang-cntlr hide-sm">
@@ -138,9 +129,13 @@
           </i>
         </span>
         <div class="hdr-lft">
+          <?php if( !empty($logo_tag) ): ?>
           <div class="logo">
-            <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg"></a>
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+              <?php echo $logo_tag; ?>
+            </a>
           </div>
+          <?php endif; ?>
         </div>
         <div class="hdr-rgt">
           <div class="hamburger-cntlr show-sm">
@@ -156,19 +151,15 @@
       </div>
       <div class="xs-menu">
         <nav class="main-nav">
-          <ul class="clearfix reset-list">
-            <li class="current-menu-item"><a href="#">Home</a></li>
-            <li class="menu-item-has-children">
-              <a href="#">Project</a>
-              <ul class="sub-menu">
-                <li><a href="#">submenu 1</a></li>
-                <li><a href="#">submenu 2</a></li>
-                <li><a href="#">submenu 3</a></li>
-              </ul>
-            </li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Registratie App</a></li>
-          </ul>
+          <?php 
+            $mmenuOptions = array( 
+                'theme_location' => 'cbv_mobile_menu', 
+                'menu_class' => 'reset-list clearfix',
+                'container' => '',
+                'container_class' => ''
+              );
+            wp_nav_menu( $mmenuOptions ); 
+          ?>
         </nav>
       </div>
       <div class="xs-mbl-btm">
@@ -199,26 +190,26 @@
               <div class="col-md-12">
                 <div class="header-inr clearfix">
                   <div class="hdr-lft">
-                    <div class="logo">
-                      <a href="#"><img src="<?php echo THEME_URI; ?>/assets/images/logo.svg"></a>
-                    </div>
+                  <?php if( !empty($logo_tag) ): ?>
+                  <div class="logo">
+                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                      <?php echo $logo_tag; ?>
+                    </a>
+                  </div>
+                  <?php endif; ?>
                   </div>
                   <div class="hdr-rgt">
                     <div class="hdr-menu hide-sm">
                       <nav class="main-nav">
-                        <ul class="clearfix reset-list">
-                          <li class="current-menu-item"><a href="#">Projecten</a></li>
-                          <li class="menu-item-has-children">
-                            <a href="#">Nieuws</a>
-                            <ul class="sub-menu">
-                              <li><a href="#">submenu 1</a></li>
-                              <li><a href="#">submenu 2</a></li>
-                              <li><a href="#">submenu 3</a></li>
-                            </ul>
-                          </li>
-                          <li><a href="#">Registratie App</a></li>
-                          <li class="hdr-menu-btn"><a href="#">Contact</a></li>
-                        </ul>
+                      <?php 
+                        $menuOptions = array( 
+                            'theme_location' => 'cbv_main_menu', 
+                            'menu_class' => 'reset-list clearfix',
+                            'container' => '',
+                            'container_class' => ''
+                          );
+                        wp_nav_menu( $menuOptions ); 
+                      ?>
                       </nav>
                     </div>
                     <div class="hdr-lang-cntlr hide-sm">
