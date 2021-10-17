@@ -1,8 +1,7 @@
 <?php 
 get_header(); 
-$thisID = get_option( 'page_for_posts' );
-$customtitle = get_field('custom_page_title', $thisID);
-$post_title = !empty($customtitle)? $customtitle: get_the_title($thisID);
+$newsID = get_option( 'page_for_posts' );
+$cur_term = get_queried_object();
 ?>
 <section class="breadcrumb-sec hide-sm">
   <div class="container">
@@ -10,17 +9,17 @@ $post_title = !empty($customtitle)? $customtitle: get_the_title($thisID);
       <div class="col-md-12">
         <div class="breadcrumb-cntlr">
           <ul class="reset-list clearfix">
-            <li class="home">
-              <a href="#">
-                <span class="item">Home</span>
-              </a>
-            </li>
-            <li>
-              <a href="#"><span>Binnenpagina</span></a>
-            </li>
-            <li class="active">
-              <span>Binnenpagina</span>
-            </li>
+          <li class="home">
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+              <span class="item"><?php _e('Home', 'waste2func'); ?></span>
+            </a>
+          </li>
+          <li>
+            <a href="<?php the_permalink($newsID); ?>"><span><?php _e('Nieuws', 'waste2func'); ?></span></a>
+          </li>
+          <li class="active">
+            <span><?php echo $cur_term->name; ?></span>
+          </li>
           </ul>
         </div>
       </div>
@@ -30,7 +29,7 @@ $post_title = !empty($customtitle)? $customtitle: get_the_title($thisID);
 <?php 
 $terms = get_terms( array(
     'taxonomy' => 'category',
-    'hide_empty' => false
+    'hide_empty' => true
 ) );
 ?>
 <section class="page-entry-hdr-sec">
@@ -38,13 +37,13 @@ $terms = get_terms( array(
     <div class="row">
       <div class="col-md-12">
         <div class="page-entry-hdr">
-          <h2 class="page-entry-hdr-title fl-h2"><?php echo $post_title; ?></h2>
+          <h2 class="page-entry-hdr-title fl-h2"><?php echo $cur_term->name; ?></h2>
           <?php if( !empty($terms) && ! is_wp_error( $terms ) ): ?>
           <div class="page-entry-hdr-grds hide-sm">
             <ul class="reset-list">
-              <li class="active"><a href="#"><?php _e('Alle', 'waste2func'); ?></a></li>
+              <li><a href="<?php the_permalink($newsID); ?>"><?php _e('Alle', 'waste2func'); ?></a></li>
               <?php foreach ( $terms as $term ): ?>
-              <li><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></a></li>
+              <li<?php echo ($term->term_id == $cur_term->term_id)?' class="active"':''; ?>><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></a></li>
               <?php endforeach; ?>
             </ul>
           </div>

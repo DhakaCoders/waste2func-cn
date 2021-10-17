@@ -11,15 +11,12 @@ $post_title = !empty($customtitle)? $customtitle: get_the_title($thisID);
         <div class="breadcrumb-cntlr">
           <ul class="reset-list clearfix">
             <li class="home">
-              <a href="#">
-                <span class="item">Home</span>
+              <a href="<?php echo esc_url(home_url('/')); ?>">
+                <span class="item"><?php _e('Home', 'waste2func'); ?></span>
               </a>
             </li>
-            <li>
-              <a href="#"><span>Binnenpagina</span></a>
-            </li>
             <li class="active">
-              <span>Binnenpagina</span>
+              <span><?php echo get_the_title($thisID); ?></span>
             </li>
           </ul>
         </div>
@@ -30,7 +27,7 @@ $post_title = !empty($customtitle)? $customtitle: get_the_title($thisID);
 <?php 
 $terms = get_terms( array(
     'taxonomy' => 'category',
-    'hide_empty' => false
+    'hide_empty' => true
 ) );
 ?>
 <section class="page-entry-hdr-sec">
@@ -42,7 +39,7 @@ $terms = get_terms( array(
           <?php if( !empty($terms) && ! is_wp_error( $terms ) ): ?>
           <div class="page-entry-hdr-grds hide-sm">
             <ul class="reset-list">
-              <li class="active"><a href="#"><?php _e('Alle', 'waste2func'); ?></a></li>
+              <li class="active"><a href="<?php the_permalink($thisID); ?>"><?php _e('Alle', 'waste2func'); ?></a></li>
               <?php foreach ( $terms as $term ): ?>
               <li><a href="<?php echo esc_url( get_term_link( $term ) ); ?>"><?php echo $term->name; ?></a></li>
               <?php endforeach; ?>

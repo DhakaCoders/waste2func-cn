@@ -124,7 +124,7 @@
                 <?php endif; ?>
               </div>
               <div class="ftr-developed-by">
-                <p><?php _e( 'Website ontwerp', 'waste2func' ); ?> <a href="#"><?php _e( 'door Conversal', 'waste2func' ); ?></a></p>
+                <p><?php _e( 'Website ontwerp', 'waste2func' ); ?> <a href="https://www.conversal.be/website-laten-maken/"><?php _e( 'door Conversal', 'waste2func' ); ?></a></p>
               </div>
             </div>
           </div>

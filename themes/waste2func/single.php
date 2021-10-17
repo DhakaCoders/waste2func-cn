@@ -1,12 +1,38 @@
-<?php get_header(); ?>
-<?php get_template_part('templates/breadcrumbs'); ?>
+<?php 
+get_header(); 
+$newsID = get_option( 'page_for_posts' );
+?>
+<section class="breadcrumb-sec hide-sm">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="breadcrumb-cntlr">
+        <ul class="reset-list clearfix">
+          <li class="home">
+            <a href="<?php echo esc_url(home_url('/')); ?>">
+              <span class="item"><?php _e('Home', 'waste2func'); ?></span>
+            </a>
+          </li>
+          <li>
+            <a href="<?php the_permalink($newsID); ?>"><span><?php _e('Nieuws', 'waste2func'); ?></span></a>
+          </li>
+          <li class="active">
+            <span><?php the_title(); ?></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
 <section class="innerpage-con-wrap" id="nieuws-details">
   <article class="default-page-con">
     <?php 
-    $autotitle = false;
+    $autotitle = true;
+    $i = 1;
     while ( have_rows('inhoud') ) : the_row(); 
-      if( get_row_layout() != 'introductietekst' ){ 
-        echo $autotitle = true;
+      if( get_row_layout() == 'introductietekst' ){ 
+          $autotitle = false;
       }
     endwhile;
     wp_reset_postdata();
@@ -21,7 +47,7 @@
               <div class="block-850">
                 <div class="dfp-promo-module-des-ctlr">
                   <div class="dfp-date-module">
-                    <span><?php echo get_the_date( 'd M Y'); ?></span>
+                    <span><?php echo get_the_date( 'j M Y'); ?></span>
                   </div>
                   <div class="dfp-promo-module-des">
                     <strong class="dfp-promo-module-title fl-h1"><?php the_title() ?></strong>
@@ -301,7 +327,7 @@
         $partobj = get_sub_field('selectpartners');
         if( empty($partobj) ){
             $partobj = get_posts( array(
-              'post_type' => 'partners',
+              'post_type' => 'partner',
               'posts_per_page'=> 12,
               'orderby' => 'date',
               'order'=> 'desc',
@@ -330,12 +356,15 @@
                       foreach( $partobj as $part ): 
                       $partID = get_post_thumbnail_id($part->ID);
                       $part_tag = !empty($partID)? cbv_get_image_tag($partID): '';
+                      $prtknop = get_field('knop', $partID);
                     ?>
                     <li>
                       <div class="wf-client-grd-item">
-                        <a href="#" target="_blank">
-                          <?php echo $part_tag; ?>
-                        </a>
+                        <?php 
+                        if( !empty($prtknop) ) printf('<a href="%s" target="_blank">', $prtknop);
+                        echo $part_tag; 
+                        if( !empty($prtknop) ) printf('</a>');
+                        ?>
                       </div>
                     </li>
                     <?php endforeach; ?>

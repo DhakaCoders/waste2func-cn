@@ -31,7 +31,7 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
             <?php 
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $query = new WP_Query(array(
-              'post_type' => 'partners',
+              'post_type' => 'partner',
               'posts_per_page'=> 9,
               'orderby' => 'date',
               'order'=> 'asc',
@@ -46,20 +46,33 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
                 global $post;
                 $imgID = get_post_thumbnail_id(get_the_ID());
                 $imgtag = !empty($imgID)? cbv_get_image_tag($imgID): '';
+                $prtknop = get_field('knop', get_the_ID());
               ?>  
               <li>
                 <div class="pp-grd-item">
                   <div class="pp-grd-img">
-                    <a href="#" class="overlay-link"></a>
+                    <?php if( !empty($prtknop) ) printf('<a class="overlay-link" href="%s" target="_blank"></a>', $prtknop); ?>
                     <i>
                       <?php echo $imgtag; ?>
                     </i>
                   </div>
                   <div class="pp-grd-cont mHc">
                     <div class="pp-grd-cont-cntlr mHc1">
-                      <h2 class="fl-h5 pp-grd-cont-hdng mHc2"><a href="#"><?php the_title(); ?></a> </h2>
+                      <h2 class="fl-h5 pp-grd-cont-hdng mHc2">
+                        <?php 
+                        if( !empty($prtknop) ) printf('<a href="%s" target="_blank">', $prtknop);
+                        the_title();
+                        if( !empty($prtknop) ) printf('</a>'); 
+                        ?>
+                      </h2>
                       <?php the_excerpt(); ?>
-                      <div class="pp-grd-abs-btn  text-btn-hover"><a href="#" class="fl-btn"><?php _e('Meer Info', 'waste2func'); ?></a></div>
+                      <div class="pp-grd-abs-btn  text-btn-hover">
+                      <?php
+                      if( !empty($prtknop) ) printf('<a class="fl-btn" href="%s" target="_blank">', $prtknop); 
+                      _e('Meer Info', 'waste2func'); 
+                      if( !empty($prtknop) ) printf('</a>'); 
+                      ?>
+                      </div>
                     </div>
                   </div>
                 </div>

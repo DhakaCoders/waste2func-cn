@@ -36,7 +36,7 @@ $intro = get_field('intro_text', $thisID);
             <div class="pod-lft-des">
               <div class="dfp-text-module">
               	<?php  
-					if( !empty($intro['titel']) ) printf( '<h2">%s</h2>', $intro['titel']);
+					       if( !empty($intro['titel']) ) printf( '<h2>%s</h2>', $intro['titel']);
 		            if( !empty($intro['beschrijving']) ) echo wpautop($intro['beschrijving']);
               	?>
               </div>
@@ -59,12 +59,12 @@ $intro = get_field('intro_text', $thisID);
               <?php endif; ?>
             </div>
             <?php endif; ?>
-			<?php
-			$showhide_cta = get_field('showhide_cta', $thisID);
-			if($showhide_cta): 
-			$cta = get_field('cta', $thisID);
-			if($cta):
-			?>
+      			<?php
+      			$showhide_cta = get_field('showhide_cta', $thisID);
+      			if($showhide_cta): 
+      			$cta = get_field('cta', $thisID);
+      			if($cta):
+      			?>
             <div class="pod-rgt-sidebar">
               <div class="cta-module-ctlr">
                 <span class="cta-module-border"></span>
@@ -76,12 +76,12 @@ $intro = get_field('intro_text', $thisID);
                     <div class="cta-module-mid">
                       <?php if( !empty($cta['beschrijving']) ) echo wpautop($cta['beschrijving']); ?>
                     </div>
-					<?php 
-						$contknop = $cta['knop'];
-						if( is_array( $contknop ) &&  !empty( $contknop['url'] ) ){
-						  printf('<div class="cta-module-rgt"><div class="cta-module-btn"><a class="fl-green-btn" href="%s" target="%s">%s</a></div></div>', $contknop['url'], $contknop['target'], $contknop['title']); 
-						}
-					?>
+          					<?php 
+          						$contknop = $cta['knop'];
+          						if( is_array( $contknop ) &&  !empty( $contknop['url'] ) ){
+          						  printf('<div class="cta-module-rgt"><div class="cta-module-btn"><a class="fl-green-btn" href="%s" target="%s">%s</a></div></div>', $contknop['url'], $contknop['target'], $contknop['title']); 
+          						}
+          					?>
                   </div>
                 </div>
               </div>
@@ -101,7 +101,7 @@ $partner = get_field('partnersec', $thisID);
 $partobj = $partner['select_partners'];
 if( empty($partobj) ){
   $partobj = get_posts( array(
-    'post_type' => 'partners',
+    'post_type' => 'partner',
     'posts_per_page'=> -1,
     'orderby' => 'date',
     'order'=> 'desc'
@@ -128,12 +128,15 @@ if( empty($partobj) ){
 	              foreach( $partobj as $part ): 
 	              $partID = get_post_thumbnail_id($part->ID);
 	              $part_tag = !empty($partID)? cbv_get_image_tag($partID): '';
+                $prtknop = get_field('knop', $partID);
 	            ?>
                 <li>
                   <div class="wf-client-grd-item">
-                    <a href="#" target="_blank">
-                      <?php echo $part_tag; ?>
-                    </a>
+                    <?php 
+                    if( !empty($prtknop) ) printf('<a href="%s" target="_blank">', $prtknop);
+                    echo $part_tag; 
+                    if( !empty($prtknop) ) printf('</a>');
+                    ?>
                   </div>
                 </li>
                 <?php endforeach; ?>

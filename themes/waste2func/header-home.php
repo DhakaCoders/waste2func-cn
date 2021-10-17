@@ -169,7 +169,7 @@
           </div>
         </div>
         <div class="xs-mbl-btn">
-          <a class="fl-green-btn" href="#">Contact</a>
+          <a class="fl-green-btn" href="<?php echo get_link_by_page_template('page-contact.php'); ?>"><?php _e('Contact', 'waste2func'); ?></a>
         </div>
       </div>
     </div>

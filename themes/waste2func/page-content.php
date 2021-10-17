@@ -39,6 +39,7 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
             $telefoon = get_field('telefoon', 'options');
             $emailadres = get_field('emailadres', 'options');
             $btw = get_field('btw', 'options');
+            $media = get_field('social_media', 'options');
           ?>
           <div class="contact-form-rgt">
             <div class="contact-form-info-cntlr">
@@ -54,8 +55,9 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
                         if( !empty($telefoon) ) printf('<div class="cnt-tel cnt-details-col"><a href="tel:%s">%s</a></div>',phone_preg($telefoon), $telefoon );
                         if( !empty($telefoon) ) printf('<div class="cnt-code cnt-details-col"><span>%s: %s</span></div>',__('BTW', 'waste2func'), $btw );
                       ?>
+                      <?php if( !empty($media['linkedin_url']) ): ?>
                       <div class="cnt-social cnt-details-col">
-                        <a href="#">
+                        <a href="<?php echo $media['linkedin_url']; ?>">
                           <i>
                             <svg class="cnt-linkedin-icon" width="32" height="32" viewBox="0 0 32 32" fill="#4C5D5B">
                               <use xlink:href="#cnt-linkedin-icon"></use> 
@@ -63,6 +65,7 @@ $page_title = !empty($intro['titel']) ? $intro['titel'] : get_the_title($thisID)
                           </i>
                         </a>
                       </div>
+                      <?php endif; ?>
                     </div>
                   </div>
                 </div>

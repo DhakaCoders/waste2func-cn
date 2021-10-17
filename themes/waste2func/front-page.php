@@ -178,7 +178,7 @@ $partner = get_field('partnersec', HOMEID);
 $partobj = $partner['select_partners'];
 if( empty($partobj) ){
   $partobj = get_posts( array(
-    'post_type' => 'partners',
+    'post_type' => 'partner',
     'posts_per_page'=> -1,
     'orderby' => 'date',
     'order'=> 'desc'
@@ -204,11 +204,15 @@ if( empty($partobj) ){
               foreach( $partobj as $part ): 
               $partID = get_post_thumbnail_id($part->ID);
               $part_tag = !empty($partID)? cbv_get_image_tag($partID): '';
+              $prtknop = get_field('knop', $partID);
             ?>
             <li>
               <div class="wf-client-grd-item">
-                <a href="#" target="_blank">
-                <?php echo $part_tag; ?>
+                <?php 
+                if( !empty($prtknop) ) printf('<a href="%s" target="_blank">', $prtknop);
+                echo $part_tag; 
+                if( !empty($prtknop) ) printf('</a>');
+                ?>
                 </a>
               </div>
             </li>
