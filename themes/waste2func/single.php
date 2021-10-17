@@ -6,9 +6,10 @@
     $autotitle = false;
     while ( have_rows('inhoud') ) : the_row(); 
       if( get_row_layout() != 'introductietekst' ){ 
-        $autotitle = true;
+        echo $autotitle = true;
       }
     endwhile;
+    wp_reset_postdata();
     if($autotitle):
     ?>
     <div class="block">
@@ -23,7 +24,7 @@
                     <span><?php echo get_the_date( 'd M Y'); ?></span>
                   </div>
                   <div class="dfp-promo-module-des">
-                    <strong class="dfp-promo-module-title fl-h1"><?php title_title() ?></strong>
+                    <strong class="dfp-promo-module-title fl-h1"><?php the_title() ?></strong>
                   </div>
                 </div>
               </div>
@@ -56,12 +57,11 @@
                   <span><?php echo get_the_date( 'd M Y'); ?></span>
                 </div>
                 <div class="dfp-promo-module-des">
-                  <strong class="dfp-promo-module-title fl-h1">Sit tempor dictum ut a orci facilisi massa sed ultricies lectus rhoncus.</strong>
                 <?php 
                   if( !empty($fctitle) ) 
-                    printf('<strong class="dfp-promo-module-title fl-h2">%s</strong>', $fctitle); 
+                    printf('<strong class="dfp-promo-module-title fl-h1">%s</strong>', $fctitle); 
                   else
-                    printf('<strong class="dfp-promo-module-title fl-h2">%s</strong>', get_the_title());
+                    printf('<strong class="dfp-promo-module-title fl-h1">%s</strong>', get_the_title());
 
                   if( !empty($fc_tekst) ) echo wpautop($fc_tekst); 
                 ?>
@@ -90,7 +90,25 @@
             <div class="col-md-12">
               <div class="block-850">
                 <?php if( !empty($fc_tekst) ) echo wpautop($fc_tekst); ?>
-                <div class="gap-25 hide-sm"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php  
+      }elseif( get_row_layout() == 'large_teksteditor' ){ 
+      $fc_tekst = get_sub_field('fc_teksteditor');
+    ?>
+    <div class="block">
+      <div class="dfp-large-text-module-ctlr">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block-850">
+                <div class="dfp-large-text-module">
+                  <?php if( !empty($fc_tekst) ) echo wpautop($fc_tekst); ?>
+                </div>
               </div>
             </div>
           </div>
@@ -107,7 +125,6 @@
       if($galleries):
     ?>
     <div class="block">
-      <div class="dfp-lft-hr-border"></div>
       <div class="dfp-gallery-module">
         <div class="container">
           <div class="row">
@@ -145,7 +162,6 @@
   <?php }elseif( get_row_layout() == 'afbeelding' ){ 
     $afbeeldingen = get_sub_field('fc_afbeeldingen');
   ?>
-
     <div class="block">
       <div class="dfp-full-img-module">
         <div class="container">
@@ -232,7 +248,6 @@
   $imgposcls = ( $positie_afbeelding == 'right' ) ? ' fl-dft-rgtimg-lftdes' : '';
   ?>
     <div class="block">
-      <div class="dfp-lft-hr-border"></div>
       <div class="fl-dft-overflow-module">
         <div class="container">
           <div class="row">
@@ -253,7 +268,7 @@
     </div>
     <?php 
     }elseif( get_row_layout() == 'blockquote' ){ 
-    $blockquote = get_sub_field('fc_teksteditor');
+    $blockquote = get_sub_field('fc_tekst');
     $fc_naam = get_sub_field('fc_naam');
     ?>
     <div class="block">
@@ -287,7 +302,7 @@
         if( empty($partobj) ){
             $partobj = get_posts( array(
               'post_type' => 'partners',
-              'posts_per_page'=> 3,
+              'posts_per_page'=> 12,
               'orderby' => 'date',
               'order'=> 'desc',
 
@@ -335,7 +350,6 @@
     </div>
     <?php }elseif( get_row_layout() == 'nieuws' ){ 
         $fc_titel = get_sub_field('fc_titel');
-        $fc_tekst = get_sub_field('fc_tekst');
         $newsobj = get_sub_field('fc_nieuws');
         if( empty($newsobj) ){
             $newsobj = get_posts( array(
@@ -356,7 +370,6 @@
                 <div class="dfp-nieuws-details-lft">
                   <?php 
                     if( !empty($fc_titel) ) printf( '<h2 class="nieuws-details-lft-title fl-h2">%s</h2>', $fc_titel);
-                    if( !empty($fc_tekst) ) echo wpautop($fc_tekst);
                   ?>
                 </div>
                 <?php if($newsobj): ?>
@@ -454,12 +467,16 @@
     </div>
     <?php }elseif( get_row_layout() == 'gap' ){
       $fc_gap = get_sub_field('fc_gap');
+      $hide_mobile = get_sub_field('hide_mobile');
+      $hide_class = $hide_mobile?' hide-sm':'';
     ?>
-    <?php }elseif( get_row_layout() == 'horizontal_line' ){ ?>
-      <div class="block-850">
-      <hr>
-      </div>
-    <?php } ?>
+      <div class="gap-<?php echo $fc_gap; echo $hide_class; ?>"></div>
+    <?php 
+      }elseif( get_row_layout() == 'horizontal_line' ){ 
+      $border_positie = get_sub_field('border_positie');
+      echo ($border_positie == 'left')?'<div class="dfp-lft-hr-border"></div>':'<div class="dfp-rgt-hr-border"></div>';
+     } 
+     ?>
     <?php 
       endwhile; 
       else:

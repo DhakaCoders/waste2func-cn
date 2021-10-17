@@ -49,7 +49,6 @@
             <div class="col-md-12">
               <div class="block-850">
                 <?php if( !empty($fc_tekst) ) echo wpautop($fc_tekst); ?>
-                <div class="gap-25 hide-sm"></div>
               </div>
             </div>
           </div>
@@ -66,7 +65,6 @@
       if($galleries):
     ?>
     <div class="block">
-      <div class="dfp-lft-hr-border"></div>
       <div class="dfp-gallery-module">
         <div class="container">
           <div class="row">
@@ -102,9 +100,8 @@
     </div>
   <?php endif; ?>
   <?php }elseif( get_row_layout() == 'afbeelding' ){ 
-    $afbeeldingen = get_sub_field('fc_afbeeldingen');
+    $afbeeldingen = get_sub_field('fc_afbeelding');
   ?>
-
     <div class="block">
       <div class="dfp-full-img-module">
         <div class="container">
@@ -191,7 +188,6 @@
   $imgposcls = ( $positie_afbeelding == 'right' ) ? ' fl-dft-rgtimg-lftdes' : '';
   ?>
     <div class="block">
-      <div class="dfp-lft-hr-border"></div>
       <div class="fl-dft-overflow-module">
         <div class="container">
           <div class="row">
@@ -212,7 +208,7 @@
     </div>
     <?php 
     }elseif( get_row_layout() == 'blockquote' ){ 
-    $blockquote = get_sub_field('fc_teksteditor');
+    $blockquote = get_sub_field('fc_tekst');
     $fc_naam = get_sub_field('fc_naam');
     ?>
     <div class="block">
@@ -246,7 +242,7 @@
         if( empty($partobj) ){
             $partobj = get_posts( array(
               'post_type' => 'partners',
-              'posts_per_page'=> 3,
+              'posts_per_page'=> 12,
               'orderby' => 'date',
               'order'=> 'desc',
 
@@ -307,7 +303,6 @@
         }
     ?>
     <div class="block">
-      <div class="dfp-lft-hr-border"></div>
       <div class="dfp-nieuws-module">
         <div class="container">
           <div class="row">
@@ -414,12 +409,16 @@
     </div>
     <?php }elseif( get_row_layout() == 'gap' ){
       $fc_gap = get_sub_field('fc_gap');
+      $hide_mobile = get_sub_field('hide_mobile');
+      $hide_class = $hide_mobile?' hide-sm':'';
     ?>
-    <?php }elseif( get_row_layout() == 'horizontal_line' ){ ?>
-      <div class="block-850">
-      <hr>
-      </div>
-    <?php } ?>
+      <div class="gap-<?php echo $fc_gap; echo $hide_class; ?>"></div>
+    <?php 
+      }elseif( get_row_layout() == 'horizontal_line' ){ 
+      $border_positie = get_sub_field('border_positie');
+      echo ($border_positie == 'left')?'<div class="dfp-lft-hr-border"></div>':'<div class="dfp-rgt-hr-border"></div>';
+     } 
+     ?>
     <?php 
       endwhile; 
       else:
