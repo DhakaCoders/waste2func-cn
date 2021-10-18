@@ -392,6 +392,15 @@ textarea {
 }
 
 
+/*extra*/
+.wpforms-container .wpforms-field-description{
+    margin-top: 0;
+}
+.wpforms-container .wpforms-submit-container{
+    padding-top: 0;
+}
+
+
 @media (max-width: 1699px){
     .cnt-sec-entry-hdr-title {
         margin-bottom: 20px;
