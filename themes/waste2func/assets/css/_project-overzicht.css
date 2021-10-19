@@ -337,6 +337,9 @@
 		width: 50%;
 		padding: 0 12px;
 	}
+	.project-overview-des-cntlr .gallery.xs-po-gallery-halfslider{
+		display: flex!important;
+	}
 }
 @media (max-width: 575px){
 	.sbs-grd-col-rgt-hdr ul li{

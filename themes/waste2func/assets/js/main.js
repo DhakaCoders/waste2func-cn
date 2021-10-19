@@ -610,24 +610,69 @@ $(window).resize(function(){
   $('.nieuws-details-border').css('top', promodesHeight);
 });
 
-/*start of Dipok*/
 
 
 
-/*start of Momin*/
+if( $('.scrollto').length ){
+  $('.scrollto').on('click', function(e){
+    e.preventDefault();
+    var togo = $(this).data('to');
+    goToByScroll(togo, 0);
+  });
+}
+
+function goToByScroll(id, offset){
+  if(id){
+    // Remove "link" from the ID
+    id = id.replace("link", "");
+    // Scroll
+    $('html,body').animate(
+      {scrollTop: $(id).offset().top - offset},
+      500);
+  }
+}
 
 
-
-/*start of Jahir*/
-
-
-
-
-/*start of Rannojit*/
-
-
-
-
+/* custom sidebar */
+if( $('#customSidebar').length ){
+    var windowWidth_1920 = $('.page-body-cntlr').outerWidth();
+    var containerRightWidth = $('#customSidebarWrap').offset().left;
+    var col2inw = $('#customSidebarWrap').innerWidth();
+    //$('#customSidebar').css("left", containerRightWidth);
+    $('#customSidebar').css("max-width", col2inw);
+    
+    function containerRightWidthCal(){
+      var windowWidth_1920 = $(window).width();
+      var containerWidth = $('.page-body-cntlr').outerWidth();
+        var containerRightWidth = $('#customSidebarWrap').offset().left;
+        var col2inw = $('#customSidebarWrap').innerWidth();
+        //$('#customSidebar').css("left", containerRightWidth);
+        $('#customSidebar').css("max-width", col2inw);
+    }
+    containerRightWidthCal();
+      $(window).on('resize', function(){
+      containerRightWidthCal();
+    });
+    
+    if( windowWidth_1920 > 767 ){
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            if( $('#customSidebar .contact-form-info-cntlr').length ){
+                var boxh = $('#customSidebar .contact-form-info-cntlr').height();
+                var ftrtop = $(".footer-wrp").offset().top;
+                //var RelevantTop = $(".user-rel-camp-sec").offset().top;
+                var ftrx = (ftrtop - boxh) - 450;
+                //var RelevantTrx = (RelevantTop - boxh) - 160;
+                if( scroll < ftrx ){
+                    $('#customSidebar').css('top', scroll);
+                }
+               /* if( scroll < RelevantTrx ){
+                    $('#customSidebar').css('top', scroll);
+                }*/
+            }
+        });
+    }
+}
 
     new WOW().init();
 
