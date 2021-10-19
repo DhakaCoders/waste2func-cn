@@ -610,24 +610,69 @@ $(window).resize(function(){
   $('.nieuws-details-border').css('top', promodesHeight);
 });
 
-/*start of Dipok*/
 
 
 
-/*start of Momin*/
+if( $('.scrollto').length ){
+  $('.scrollto').on('click', function(e){
+    e.preventDefault();
+    var togo = $(this).data('to');
+    goToByScroll(togo, 0);
+  });
+}
+
+function goToByScroll(id, offset){
+  if(id){
+    // Remove "link" from the ID
+    id = id.replace("link", "");
+    // Scroll
+    $('html,body').animate(
+      {scrollTop: $(id).offset().top - offset},
+      500);
+  }
+}
 
 
-
-/*start of Jahir*/
-
-
-
-
-/*start of Rannojit*/
-
-
-
-
+/* custom sidebar */
+if( $('#customSidebar').length ){
+    var windowWidth_1920 = $('.container').outerWidth();
+    var containerRightWidth = $('#customer_details .col-2 #customSidebarWrap').offset().left;
+    var col2inw = $('#customer_details .col-2 #customSidebarWrap').innerWidth();
+    //$('#customSidebar').css("left", containerRightWidth);
+    $('#customSidebar').css("max-width", col2inw);
+    
+    function containerRightWidthCal(){
+      var windowWidth_1920 = $(window).width();
+      var containerWidth = $('.container').outerWidth();
+        var containerRightWidth = $('#customer_details .col-2 #customSidebarWrap').offset().left;
+        var col2inw = $('#customer_details .col-2 #customSidebarWrap').innerWidth();
+        //$('#customSidebar').css("left", containerRightWidth);
+        $('#customSidebar').css("max-width", col2inw);
+    }
+    containerRightWidthCal();
+      $(window).on('resize', function(){
+      containerRightWidthCal();
+    });
+    
+    if( windowWidth_1920 > 767 ){
+        $(window).scroll(function (event) {
+            var scroll = $(window).scrollTop();
+            if( $('#customSidebar .custom-checkout-order-review').length ){
+                var boxh = $('#customSidebar .custom-checkout-order-review').height();
+                var ftrtop = $(".footer-wrp").offset().top;
+                //var RelevantTop = $(".user-rel-camp-sec").offset().top;
+                var ftrx = (ftrtop - boxh) - 450;
+                //var RelevantTrx = (RelevantTop - boxh) - 160;
+                if( scroll < ftrx ){
+                    $('#customSidebar').css('top', scroll);
+                }
+               /* if( scroll < RelevantTrx ){
+                    $('#customSidebar').css('top', scroll);
+                }*/
+            }
+        });
+    }
+}
 
     new WOW().init();
 
