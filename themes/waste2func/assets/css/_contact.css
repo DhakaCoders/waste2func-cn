@@ -1,11 +1,9 @@
 .contact-form-block {
     display: flex;
     flex-wrap: wrap;
-    background: #fff;
 }
 .contact-form-lft {
     width: 70%;
-    background: #fff;
 }
 .contact-form-lft {
     padding-right: 20px;
@@ -466,6 +464,24 @@ textarea {
 }
 .contact-form-wrp .wpforms-container{
     margin-bottom: 0;
+}
+
+/* custom sidebar  */
+#customSidebarWrap {
+    width: 100%;
+    min-height: 1px;
+}
+@media (min-width: 768px){
+    #customSidebar {
+        margin-top: 0;
+        width: 100%;
+        max-width: 351px;
+        position: absolute;
+        top: 0;
+        padding-top: 0;
+        z-index: 5;
+        right: 0;
+    }
 }
 
 
