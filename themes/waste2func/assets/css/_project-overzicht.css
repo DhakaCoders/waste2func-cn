@@ -119,6 +119,23 @@
 	top: -25px;
 }
 
+/* custom sidebar  */
+#customSidebarWrap {
+    width: 100%;
+    min-height: 1px;
+}
+@media (min-width: 768px){
+    #customSidebar2 {
+        margin-top: 0;
+        width: 100%;
+        max-width: 375px;
+        position: absolute;
+        top: 0;
+        padding-top: 0;
+        z-index: 5;
+        right: 15px;
+    }
+}
 
 
 
