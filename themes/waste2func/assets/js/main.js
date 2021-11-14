@@ -24,6 +24,7 @@ $(window).scroll(function() {
 if($("ul.slick-dots li").length == 1){
    $("ul.slick-dots").hide();
 }
+
 //matchHeightCol
 if($('.mHc').length){
   $('.mHc').matchHeight();
